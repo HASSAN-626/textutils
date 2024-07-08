@@ -29,12 +29,6 @@ export default function About() {
       <div className="container" style={myStyle}>
         <h1>About Us</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
-          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
-          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
-          deleniti?
-        </p>
-        <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta totam
           suscipit ex cumque eveniet, distinctio exercitationem dolorem quaerat
           eum ad beatae! Saepe reprehenderit, exercitationem recusandae
@@ -64,42 +58,7 @@ export default function About() {
           eum ad beatae! Saepe reprehenderit, exercitationem recusandae
           inventore molestiae dolorum cum dolorem!
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
-          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
-          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
-          deleniti?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta totam
-          suscipit ex cumque eveniet, distinctio exercitationem dolorem quaerat
-          eum ad beatae! Saepe reprehenderit, exercitationem recusandae
-          inventore molestiae dolorum cum dolorem!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
-          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
-          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
-          deleniti?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta totam
-          suscipit ex cumque eveniet, distinctio exercitationem dolorem quaerat
-          eum ad beatae! Saepe reprehenderit, exercitationem recusandae
-          inventore molestiae dolorum cum dolorem!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
-          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
-          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
-          deleniti?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta totam
-          suscipit ex cumque eveniet, distinctio exercitationem dolorem quaerat
-          eum ad beatae! Saepe reprehenderit, exercitationem recusandae
-          inventore molestiae dolorum cum dolorem!
-        </p>
+       
         <button onClick={toggleStyle} className="btn btn-primary bg-red-500"  >
           {btnText}
         </button>
