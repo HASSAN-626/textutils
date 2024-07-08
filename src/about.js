@@ -59,7 +59,7 @@ export default function About() {
           inventore molestiae dolorum cum dolorem!
         </p>
        
-        <button onClick={toggleStyle} className="btn btn-primary bg-red-500"  >
+        <button onClick={toggleStyle} className="btn btn-primary bg-teal-300 "  >
           {btnText}
         </button>
       </div>
