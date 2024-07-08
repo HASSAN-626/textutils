@@ -35,6 +35,55 @@ export default function About() {
           deleniti?
         </p>
         <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed earum
+          eius officia doloribus? Officiis voluptate tempora aliquid reiciendis,
+          debitis, id amet a neque nihil, dignissimos et ex obcaecati porro
+          deleniti?
+        </p>
+        
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta totam
           suscipit ex cumque eveniet, distinctio exercitationem dolorem quaerat
           eum ad beatae! Saepe reprehenderit, exercitationem recusandae
