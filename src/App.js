@@ -1,3 +1,4 @@
+import About from "./about";
 import "./App.css";
 import ChangeColour from "./ChangeColour";
 import { useState } from "react";
@@ -8,6 +9,7 @@ function App() {
   const Changecolour = () => {
     setBackgroundColor("orange");
   };
+
 
   const Changecolours1 = () => {
     setBackgroundColor("White");
@@ -21,6 +23,7 @@ function App() {
       : "border border-red-600"
   );
   return (
+    <>
     <div
       className={` ${
         backgroundColor === "orange"
@@ -49,9 +52,11 @@ function App() {
       </div>
       <button onClick={Changecolour} className=" px-2 py-2 bg-gradient-to-r from-cyan-500 to-blue-500">Button</button>
       <button onClick={Changecolours1} className=" px-2 py-2 bg-red-400 ">
-        Button
       </button>
+      <textarea name="from-control" id="mybox" rows={10} value={onclick}></textarea>
+     <About/> 
     </div>
+    </>
   );
 }
 
