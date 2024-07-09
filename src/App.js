@@ -1,4 +1,5 @@
 import About from "./about";
+import Table from "./Table";
 import "./App.css";
 import ChangeColour from "./ChangeColour";
 import { useState } from "react";
@@ -54,7 +55,8 @@ function App() {
       <button onClick={Changecolours1} className=" px-2 py-2 bg-red-400 ">
       </button>
       <textarea name="from-control" id="mybox" rows={10} value={onclick}></textarea>
-     <About/> 
+     <About/>
+     <Table/> 
     </div>
     </>
   );
