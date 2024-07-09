@@ -2,7 +2,12 @@ import React, { useState } from "react";
 export default function Table() {
   const [show, setshow] = useState(true);
   const ButtonPressed = () => {
-    setshow(!show);
+    // setshow(!show);
+    if (show) {
+      setshow(false);
+    } else {
+      setshow(true);
+    }
   };
   return (
     <>
