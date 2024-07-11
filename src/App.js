@@ -10,12 +10,9 @@ function App() {
   const Changecolour = () => {
     setBackgroundColor("orange");
   };
-
-
   const Changecolours1 = () => {
     setBackgroundColor("White");
   };
-
   console.log(
     backgroundColor === "orange"
       ? "bg-orange-800"
@@ -56,7 +53,7 @@ function App() {
       </button>
       <textarea name="from-control" id="mybox" rows={10} value={onclick}></textarea>
      <About/>
-     <Table/> 
+     <Table  text="Home" About="About Us" Contact="Contact Us"  /> 
     </div>
     </>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-export default function Table() {
+export default function Table(props) {
   const [show, setshow] = useState(true);
   const ButtonPressed = () => {
     // setshow(!show);
@@ -11,6 +11,11 @@ export default function Table() {
   };
   return (
     <>
+    <li>
+   <a href="https://www.linkedin.com/company/homeapartmentsau"><li>{props.text}</li></a>
+   <a href="https://about.linkedin.com/"><li>{props.About}</li></a>
+   <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fhelp%2Flinkedin%2Fask"><li>{props.Contact}</li></a>
+   </li>
       <div>
         <table className={`TableView  ${show == true ? "block" : "hidden"}`}>
           <tr>
