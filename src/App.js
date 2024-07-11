@@ -1,5 +1,6 @@
 import About from "./about";
 import Table from "./Table";
+import Alert from "./Alert";
 import "./App.css";
 import ChangeColour from "./ChangeColour";
 import { useState } from "react";
@@ -22,6 +23,7 @@ function App() {
   );
   return (
     <>
+    <Alert alert="This is Alert"/>
     <div
       className={` ${
         backgroundColor === "orange"
@@ -53,7 +55,8 @@ function App() {
       </button>
       <textarea name="from-control" id="mybox" rows={10} value={onclick}></textarea>
      <About/>
-     <Table  text="Home" About="About Us" Contact="Contact Us"  /> 
+     <Table  text="Home" About="About Us" Contact="Contact Us"  />
+      
     </div>
     </>
   );
