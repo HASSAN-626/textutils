@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import About from "./about";
+import PropTypes from 'prop-types'
+
 export default function Table(props) {
   const [show, setshow] = useState(true);
   const ButtonPressed = () => {
@@ -76,4 +79,10 @@ export default function Table(props) {
       </div>
     </>
   );
+}
+
+
+Table.propTypes = {text: PropTypes.string,
+  About: PropTypes.string, 
+  Contact: PropTypes.string 
 }
