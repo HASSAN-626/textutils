@@ -1,63 +1,59 @@
-import About from "./about";
-import Table from "./Table";
-import Alert from "./Alert";
 import "./App.css";
-import ChangeColour from "./ChangeColour";
 import { useState } from "react";
-let name = "Hassan";
+
 function App() {
-  const [backgroundColor, setBackgroundColor] = useState("White");
-  const [backgroundColor1, setBackgroundColor1] = useState("Orange");
-  const Changecolour = () => {
-    setBackgroundColor("orange");
-  };
-  const Changecolours1 = () => {
-    setBackgroundColor("White");
-  };
-  console.log(
-    backgroundColor === "orange"
-      ? "bg-orange-800"
-      : backgroundColor1 === "White"
-      ? " bg-white "
-      : "border border-red-600"
-  );
   return (
     <>
-    <Alert alert="This is Alert"/>
-    <div
-      className={` ${
-        backgroundColor === "orange"
-          ? "bg-orange-800"
-          : backgroundColor1 === "White"
-          ? " bg-black "
-          : "border border-red-600"
-      } h-screen `}
-    >
-      <div className="blank">lovely</div>
-      <nav>
-        <li>home</li>
-        <li>About Us</li>
-        <li className="hassan">Contact</li>
-        <li>Blogs</li>
-      </nav>
-      <h1>Hello {name}</h1>
-      <div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, sit vel
-          dignissimos perferendis unde excepturi placeat ullam delectus minus
-          libero? Cupiditate veniam tempore beatae exercitationem ipsum enim
-          tenetur excepturi obcaecati.
-        </p>
-        {/* <ChangeColour /> */}
+      <div className="flex flex-row">
+        <div className="px-10 py-20  h-screen bg-slate-400 border border-gray-900 ">
+          <a href="" className="p-3">
+            <li>Dashboard</li>
+          </a>
+          <a href="" className="p-3">
+            <li>Personal</li>
+          </a>
+          <a href="" className="p-3">
+            <li>My Rota</li>
+          </a>
+          <a href="" className="p-3">
+            <li>Inbox</li>
+          </a>
+          <a href="" className="p-3">
+            <li>c2o Profile</li>
+          </a>
+          <a href="" className="p-3">
+            <li>Chats</li>
+          </a>
+        </div>
+        <div className="flex flex-col w-full">
+          <div className="bg-gray-100  text-right ">
+            <p>Abdul Manan</p>
+            <p>abdulmzak36@gmail.com</p>
+          </div>
+          <div className=" w-full ">
+            <div className=" pl-5 pt-24 w-full  flex items-center ">
+              <div className="bg-gray-100 p-5  w-3/4 rounded-md">
+                <p>
+                  <b>Good Morning!</b>
+                </p>
+                <b> Abdul Manan </b>
+                <p>
+                  {" "}
+                  Remember every good conversation starts with listening..{" "}
+                </p>
+              </div>
+
+              <div className="bg-gray-100 p-5 h-28 flex items-center justify-center ml-2 w-1/4 rounded-md ">
+                <b>No Shifts Today</b>
+              </div>
+            </div>
+          </div>
+          <div className="pl-5 pt-7 font-sans md:font-serif">
+            <p>Recent Events</p>
+          </div>
+
+        </div>
       </div>
-      <button onClick={Changecolour} className=" px-2 py-2 bg-gradient-to-r from-cyan-500 to-blue-500">Button</button>
-      <button onClick={Changecolours1} className=" px-2 py-2 bg-red-400 ">
-      </button>
-      <textarea name="from-control" id="mybox" rows={10} value={onclick}></textarea>
-     <About/>
-     <Table  text="Home" About="About Us" Contact="Contact Us"  />
-      
-    </div>
     </>
   );
 }
