@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="flex flex-row">
-        <div className="px-10 py-20  h-screen bg-slate-400 border border-gray-900 ">
+        <div className="px-10 py-20  h-screen border border-gray-900 fixed left-0 font-sans md:font-serif">
           <a href="" className="p-3">
             <li>Dashboard</li>
           </a>
@@ -31,7 +31,7 @@ function App() {
             <p>abdulmzak36@gmail.com</p>
           </div>
           <div className=" w-full ">
-            <div className=" pl-5 pt-24 w-full  flex items-center ">
+            <div className="  pt-24 w-full  flex items-center ">
               <div className="bg-gray-100 p-5  w-3/4 rounded-md">
                 <p>
                   <b>Good Morning!</b>
@@ -51,7 +51,9 @@ function App() {
           <div className="pl-5 pt-7 font-sans md:font-serif">
             <p>Recent Events</p>
           </div>
-
+          <video muted loop autoPlay className="pl-10">
+          <source src="./WhatsApp Video 2024-07-12 at 12.33.28 PM.mp4" type="video/mp4"></source>
+          </video>
         </div>
       </div>
     </>
