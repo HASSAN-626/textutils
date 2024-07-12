@@ -25,7 +25,7 @@ function App() {
             <li>Chats</li>
           </a>
         </div>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full ml-48">
           <div className="bg-gray-100  text-right ">
             <p>Abdul Manan</p>
             <p>abdulmzak36@gmail.com</p>
@@ -47,10 +47,10 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="pl-5 pt-7 font-sans md:font-serif">
+          <div className="pl-5 pt-10 font-sans md:font-serif">
             <p>Recent Events</p>
           </div>
-          <video muted loop autoPlay className="pl-10">
+          <video muted loop autoPlay className="p-10">
           <source src="./WhatsApp Video 2024-07-12 at 12.33.28 PM.mp4" type="video/mp4"></source>
           </video>
         </div>
