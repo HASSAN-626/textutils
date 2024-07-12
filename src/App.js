@@ -38,8 +38,7 @@ function App() {
                 </p>
                 <b> Abdul Manan </b>
                 <p>
-                  {" "}
-                  Remember every good conversation starts with listening..{" "}
+                  Remember every good conversation starts with listening..
                 </p>
               </div>
 
