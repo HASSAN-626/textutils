@@ -32,7 +32,7 @@ function App() {
           </div>
           <div className=" w-full ">
             <div className="  pt-24 w-full  flex items-center ">
-              <div className="bg-gray-100 p-5  w-3/4 rounded-md">
+              <div className="bg-gray-100 p-5  w-3/4 ">
                 <p>
                   <b>Good Morning!</b>
                 </p>
@@ -50,8 +50,8 @@ function App() {
           <div className="pl-5 pt-10 font-sans md:font-serif">
             <p>Recent Events</p>
           </div>
-          <video muted loop autoPlay className="p-10">
-          <source src="./WhatsApp Video 2024-07-12 at 12.33.28 PM.mp4" type="video/mp4"></source>
+          <video muted loop autoPlay className="rounded-lg  m-10 ">
+          <source src="./WhatsApp Video 2024-07-12 at 12.33.28 PM.mp4" className="" type="video/mp4"></source>
           </video>
         </div>
       </div>
