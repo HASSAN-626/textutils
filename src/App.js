@@ -9,20 +9,32 @@ function App() {
           <a href="" className="p-3">
             <li>Dashboard</li>
           </a>
-          <a href="" className="p-3">
+          <a href="" className="p-4">
             <li>Personal</li>
           </a>
-          <a href="" className="p-3">
+          <a href="" className="p-4">
             <li>My Rota</li>
           </a>
-          <a href="" className="p-3">
+          <a href="" className="p-4">
             <li>Inbox</li>
           </a>
-          <a href="" className="p-3">
+          <a href="" className="p-4">
             <li>c2o Profile</li>
           </a>
-          <a href="" className="p-3">
+          <a href="" className="p-4">
             <li>Chats</li>
+          </a>
+          <a href="" className="p-4">
+            <li>ATS</li>
+          </a>
+          <a href="" className="p-4">
+            <li>CMS</li>
+          </a>
+          <a href="" className="p-4">
+            <li>OCCS</li>
+          </a>
+          <a href="" className="p-4">
+            <li>Preference</li>
           </a>
         </div>
         <div className="flex flex-col w-full ml-48">
@@ -48,11 +60,15 @@ function App() {
             </div>
           </div>
           <div className="pl-5 pt-10 font-sans md:font-serif">
-            <p>Recent Events</p>
+            <b>Recent Events</b>
           </div>
           <video muted loop autoPlay className="rounded-lg  m-10 ">
           <source src="./WhatsApp Video 2024-07-12 at 12.33.28 PM.mp4" className="" type="video/mp4"></source>
           </video>
+          <div className="pl-5 pt-6 font-sans md:font-serif">
+            <b>Current Meetings</b>
+            <p className="pt-5 pl-14">No Job Openings</p>
+          </div>
         </div>
       </div>
     </>
