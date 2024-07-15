@@ -4,38 +4,38 @@ import { useState } from "react";
 function App() {
   return (
     <>
-    <div className="bg-gray-100">
+    <div className="bg-gray-50">
       <div className="flex flex-row">
         <div className="px-10 py-20  h-screen border border-gray-900 fixed left-0 font-sans md:font-serif">
           <a href="" className="p-3">
-            <li>Dashboard</li>
+            <p>Dashboard</p>
           </a>
           <a href="" className="p-4">
-            <li>Personal</li>
+            <p>Personal</p>
           </a>
           <a href="" className="p-4">
-            <li>My Rota</li>
+           <p> My Rota </p>
           </a>
           <a href="" className="p-4">
-            <li>Inbox</li>
+            <p>Inbox</p>
           </a>
           <a href="" className="p-4">
-            <li>c2o Profile</li>
+            <p>c2o Profile</p>
           </a>
           <a href="" className="p-4">
-            <li>Chats</li>
+            <p>Chats</p>
           </a>
           <a href="" className="p-4">
-            <li>ATS</li>
+            <p>ATS</p>
           </a>
           <a href="" className="p-4">
-            <li>CMS</li>
+            <p>CMS</p>
           </a>
           <a href="" className="p-4">
-            <li>OCCS</li>
+            <p>OCCS</p>
           </a>
           <a href="" className="p-4">
-            <li>Preference</li>
+            <p>Preference</p>
           </a>
         </div>
         <div className="flex flex-col w-full ml-48">
@@ -106,13 +106,39 @@ function App() {
           <div className="pl-5 pt-6 font-sans md:font-serif">
             <b>Current Meetings</b>       <button className=" text-zinc-50 rounded
              bg-slate-500">View All</button>
-            <p className="pt-5 pl-14">No Job Openings</p>
+             <div className=" w-full ">
+            <div className="  pt-12 w-full  flex items-center ">
+              <div className="bg-gray-100 p-5  w-full h-28">
+                <p className="flex items-center justify-center">
+                  New Life Investment</p>
+              </div>
+              <div className="bg-gray-100 p-5 h-28 flex items-center justify-center ml-2 w-full rounded-md ">
+                <b>Coming Soon</b>              </div>
+              <div className="flex items-center justify-center bg-gray-100 p-5 h-28  ml-2 w-full rounded-md ">
+                <b>Coming Soon</b>
+              </div>
+            </div>
+          </div>
+          <div className=" w-full ">
+            <div className="  pt-2 w-full  flex items-center ">
+              <div className="bg-gray-100 p-5  w-full h-28">
+                <p className="flex items-center justify-center">
+                  247 Cars</p>
+              </div>
+              <div className="bg-gray-100 p-5 h-28 flex items-center justify-center  ml-2 w-full rounded-md ">
+                <b>Coming Soon</b>              </div>
+              <div className="bg-gray-100 p-5 h-28  ml-2 w-full rounded-md flex items-center justify-center">
+                <b>Coming Soon</b>
+              </div>
+            </div>
+          </div>
+
+
           </div>
           
           <div className="pl-5 pt-11">
             <b>Suggested CSRs of the Month(Coming Soon)</b>
             </div>
-            
         
           </div>
       </div>
