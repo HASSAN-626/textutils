@@ -49,9 +49,7 @@ function App() {
                   <b>Good Morning!</b>
                 </p>
                 <b> Abdul Manan </b>
-                <p>
-                  Remember every good conversation starts with listening..
-                </p>
+                <p>Remember every good conversation starts with listening..</p>
               </div>
 
               <div className="bg-gray-100 p-5 h-28 flex items-center justify-center ml-2 w-1/4 rounded-md ">
@@ -63,13 +61,23 @@ function App() {
             <b>Recent Events</b>
           </div>
           <video muted loop autoPlay className="rounded-lg  m-10 ">
-          <source src="./WhatsApp Video 2024-07-12 at 12.33.28 PM.mp4" className="" type="video/mp4"></source>
+            <source
+              src="./WhatsApp Video 2024-07-12 at 12.33.28 PM.mp4"
+              className=""
+              type="video/mp4"
+            ></source>
           </video>
           <div className="pl-5 pt-6 font-sans md:font-serif">
-            <b>Current Meetings</b>
+            <b>Current Meetings</b> 
             <p className="pt-5 pl-14">No Job Openings</p>
           </div>
-        </div>
+          
+          <div className="pl-5 pt-11">
+            <b>Suggested CSRs of the Month(Coming Soon)</b>      <button className=" text-blue-700 rounded
+             bg-slate-500">View All</button>
+            </div>
+        
+          </div>
       </div>
     </>
   );
