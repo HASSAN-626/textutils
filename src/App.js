@@ -7,7 +7,8 @@ function App() {
     <div className="bg-gray-50">
       <div className="flex flex-row">
         <div className="px-10 py-20  h-screen border border-gray-900 fixed left-0 font-sans md:font-serif">
-          <a href="" className="p-3">
+          <img src="./download.jpg" alt="" width={85} height={85}/>
+          <a href="" className="pt-4">
             <p>Dashboard</p>
           </a>
           <a href="" className="p-4">
