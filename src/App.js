@@ -4,6 +4,7 @@ import { useState } from "react";
 function App() {
   return (
     <>
+    <div className="bg-gray-100">
       <div className="flex flex-row">
         <div className="px-10 py-20  h-screen border border-gray-900 fixed left-0 font-sans md:font-serif">
           <a href="" className="p-3">
@@ -67,32 +68,43 @@ function App() {
               type="video/mp4"
             ></source>
           </video>
+          <div className="pl-5 pt-6 font-sans md:font-serif">
+            <b>Upcoming Meetings</b>       <button className=" text-zinc-50 rounded
+             bg-slate-500">View All</button>
+            <p className="pt-5 pl-14">No Schedule Meeting</p>
+          </div>
           <div className="  pt-2  w-full  flex ">
-              <div className="bg-gray-100 p-5  w-3/4  ">
-              <p>Status:Meeting</p> 
+              <div className="pt-10 bg-slate-50 p-5  w-3/4 border-2 border-sky-200  ">
+              <b>Testing Company</b>
+              <p className="pt-2">Status:Meeting</p> 
               <p>Joining Date:5/28/2024</p>
               </div>
               
 
-              <div className="bg-gray-100 p-5 h-28 flex items-center justify-center ml-2 w-3/4 rounded-md ">
-                <b>No Shifts Today</b>
+              <div className="pt-9 bg-slate-50 p-5 h-40  ml-2 w-3/4 rounded-md border-2 border-y-sky-200 ">
+              <b>HBL TEST</b>
+              <p className="pt-2">Status:Meeting</p> 
+              <p>Joining Date:5/28/2024</p>
               </div>
             </div>
             <div className="  pt-2  w-full  flex ">
-              <div className="bg-gray-100 p-5  w-3/4  ">
-              <p>Status:Meeting</p> 
+              <div className="pt-10 bg-slate-50 p-5  w-3/4  border-2 border-y-sky-200 ">
+              <b>Testing Company</b>
+              <p className="pt-2">Status:Meeting</p> 
               <p>Joining Date:5/28/2024</p>
                 
                  
               </div>
 
-              <div className="bg-gray-100 p-5 h-28 flex items-center justify-center ml-2 w-3/4 rounded-md ">
-                <b>No Shifts Today</b>
+              <div className="pt-9 bg-slate-50 p-5 h-40 ml-2 w-3/4 rounded-md border-2 border-y-sky-200  ">
+              <b>HBL TEST</b>
+              <p className="pt-2">Status:Meeting</p> 
+              <p>Joining Date:5/28/2024</p>
               </div>
             </div>
             
           <div className="pl-5 pt-6 font-sans md:font-serif">
-            <b>Current Meetings</b>       <button className=" text-blue-700 rounded
+            <b>Current Meetings</b>       <button className=" text-zinc-50 rounded
              bg-slate-500">View All</button>
             <p className="pt-5 pl-14">No Job Openings</p>
           </div>
@@ -100,8 +112,10 @@ function App() {
           <div className="pl-5 pt-11">
             <b>Suggested CSRs of the Month(Coming Soon)</b>
             </div>
+            
         
           </div>
+      </div>
       </div>
     </>
   );
