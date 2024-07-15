@@ -8,7 +8,7 @@ function App() {
       <div className="flex flex-row">
         <div className="px-10 py-20  h-screen border border-gray-900 fixed left-0 font-sans md:font-serif">
           <img src="./download.jpg" alt="" width={85} height={85}/>
-          <a href="" className="pt-4">
+          <a href="" className="p-3">
             <p>Dashboard</p>
           </a>
           <a href="" className="p-4">
