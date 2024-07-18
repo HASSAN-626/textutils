@@ -19,28 +19,16 @@ export default function Dashboard(props) {
     </>
   );
 }
+
 function AsideButton({ text, border = true }) {
   return (
     <a
       href=""
       className={`p-4 font-semibold flex justify-center w-full ${
-        border ? "border border-red-700 " : ""
+        border ? "border-red-900 border" : S"border"
       } `}
     >
       <p>{text}</p>
     </a>
   );
 }
-function AsideButton({ text, border = true }) {
-    return (
-      <a
-        href=""
-        className={`p-4 font-semibold flex justify-center w-full ${
-          border ? "border-red-700 border" : ""
-        } `}
-      >
-        <p>{text}</p>
-      </a>
-    );
-  }
-  
