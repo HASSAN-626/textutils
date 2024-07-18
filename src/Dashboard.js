@@ -16,7 +16,7 @@ export default function Dashboard(props) {
   let showArray = [];
   for (let i = 0; i <= arr.length; i++) {
     let border = false;
-    if (arr[i]=="Dashboard") { !"£$%^&*("£$%^&*()
+    if (arr[i]=="Dashboard") { 
       border = true;
     }
     showArray.push(<AsideButton text={arr[i]} border={border} />);
