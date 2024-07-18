@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function CurrentMeetings() {
+export default function UpcomingMeetings() {
   return (
     <>
     <div className="pl-5 pt-28 font-sans md:font-serif">

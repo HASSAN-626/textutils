@@ -17,10 +17,11 @@ function App() {
             <div className=" w-full ">
               <div className="  pt-24 w-full  flex items-center ">
                 <Separate />
-                <div className="bg-gray-100 p-5 h-28 flex items-center justify-center ml-2 w-1/4 rounded-md ">
+                <div className="bg-gray-100 p-5 h-28 flex items-center justify-center ml-2 w-1/4 rounded-md  border-blue-400     border ">
                   <b>No Shifts Today</b>
                 </div>
               </div>
+              
             </div>
             <div className="pl-5 pt-10 font-sans md:font-sans">
               <b>Recent Events</b>

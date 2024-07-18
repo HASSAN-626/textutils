@@ -3,7 +3,7 @@ import React from 'react'
 export default function UpcomingMeetings() {
   return (
     <>
-    <div className="pl-5 pt-6 font-sans md:font-serif">
+    <div className="pl-5 pt-6 font-sans md:font-serif border border-black">
               <b>Upcoming Meetings</b>{" "}
               <button
                 className="p-2 text-zinc-50 rounded
