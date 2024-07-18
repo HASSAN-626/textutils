@@ -4,7 +4,7 @@ export default function Dashboard(props) {
   return (
     <>
       <div className="px-10 py-20  h-screen border border-gray-900 fixed left-0 font-sans md:font-serif">
-        <img src="./download.jpg" alt="" width={85} height={85} />
+        <img src="./download.jpg" alt="" width={85} height={85}/>
         <AsideButton text={"Dashboard"}/>
         <AsideButton text={"Personal"}/>
         <AsideButton text={"My Rota"}/>
@@ -22,7 +22,7 @@ export default function Dashboard(props) {
 function AsideButton({ text }) {
   return (
     <a href="" className="p-4 font-semibold">
-      <p>{text}</p>
+      <p>props.text</p>
     </a>
   );
 }
