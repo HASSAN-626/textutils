@@ -3,7 +3,7 @@ import React from 'react'
 export default function Separate() {
   return (
     <>
-    <div className="bg-gray-100 p-5  w-3/4 font-sans">
+    <div className="bg-gray-100 p-5  w-3/4 font-sans border-blue-400     border">
                 <p>
                   <b>Good Morning!</b>
                 </p>
