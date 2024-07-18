@@ -19,13 +19,12 @@ export default function Dashboard(props) {
     </>
   );
 }
-
 function AsideButton({ text, border = true }) {
   return (
     <a
       href=""
       className={`p-4 font-semibold flex justify-center w-full ${
-        border ? "border-red-700 border" : ""
+        border ? "border border-red-700 " : ""
       } `}
     >
       <p>{text}</p>
