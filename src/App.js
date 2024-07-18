@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 import CurrentMeetings from "./CurrentMeetings";
 import UpcomingMeetings from "./UpcomingMeetings";
 import BackgroundVideo from "./BackgroundVideo";
+import Nav from "./Nav";
 function App() {
   return (
     <>
@@ -12,10 +13,7 @@ function App() {
         <div className="flex flex-row">
           <Dashboard/>
           <div className="flex flex-col w-full ml-48">
-            <div className="bg-gray-100  text-right font-sans">
-              <p>Hassan Sardar</p>
-              <p>hassansrdar626@gmail.com</p>
-            </div>
+            <Nav/>
             <div className=" w-full ">
               <div className="  pt-24 w-full  flex items-center ">
                 <Separate />
