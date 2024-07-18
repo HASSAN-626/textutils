@@ -25,7 +25,7 @@ function AsideButton({ text, border = true }) {
     <a
       href=""
       className={`p-4 font-semibold flex justify-center w-full ${
-        border ? "border-red-900 border" : S"border"
+        border ? "border-red-900 border" : "border"
       } `}
     >
       <p>{text}</p>
