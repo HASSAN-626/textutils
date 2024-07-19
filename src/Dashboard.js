@@ -19,13 +19,18 @@ export default function Dashboard(props) {
     if (arr[i]=="Dashboard") { 
       border = true;
     }
+    if (arr[i]=="Personal") { 
+      border = true;
+    }
     showArray.push(<AsideButton text={arr[i]} border={border} />);
   }
   return (
     <>
-      <div className="w-48 py-8 h-screen border border-gray-900 fixed left-0 font-sans md:font-serif flex flex-col items-center ">
+      <div className="w-48 py-8 h-screen border border-gray-900 fixed left-0 font-sans md:font-serif
+       flex flex-col items-center">
         <img src="./download.jpg" alt="" width={85} height={85} />
         {showArray}
+        
       </div>
     </>
   );
