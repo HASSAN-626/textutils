@@ -19,9 +19,6 @@ export default function Dashboard(props) {
     if (arr[i]=="Dashboard") { 
       border = true;
     }
-    if (arr[i]=="Personal") { 
-      border = true;
-    }
     showArray.push(<AsideButton text={arr[i]} border={border} />);
   }
   return (
