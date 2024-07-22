@@ -6,6 +6,7 @@ import CurrentMeetings from "./CurrentMeetings";
 import UpcomingMeetings from "./UpcomingMeetings";
 import BackgroundVideo from "./BackgroundVideo";
 import Nav from "./Nav";
+import Body from "./Body";
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
               <b>Recent Events</b>
             </div>
             <BackgroundVideo/>
+            <Body/>
             <UpcomingMeetings/>
             <CurrentMeetings/>
             <div className="pl-5 pt-11">
