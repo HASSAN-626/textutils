@@ -16,45 +16,51 @@ export default function Dashboard(props) {
     <>
       <div
         className="w-48 py-8 h-screen  border border-gray-900 fixed left-0  
-       flex flex-col items-center"
+       flex flex-col items-center text-slate-700"
       >
-        <img src="./download.jpg" alt="" width={85} height={85} />
-
-        <a href="" className="p-3 font-semibold flex">
-          <IconLayoutDashboard />
+        <img src="./09261924-a421-4778-be9b-f359c690718f.jpeg" alt="" width={140} height={140} className="mt-6"/>
+        <div className="mt-8">
+        <a href="" className="p-3 font-semibold flex   hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconLayoutDashboard />&nbsp;
           Dashboard
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconUser />
+        <a href="" className="p-4 font-semibold flex hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconUser />&nbsp;
           Personal
         </a>
-        <a href="" className="p-4 font-semibold flex  ">
-          <IconSquareRotated /> My Rota
+        <a href="" className="p-4 font-semibold flex   hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconSquareRotated />&nbsp;
+           My Rota
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconMailOpenedFilled /> Inbox
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconMailOpenedFilled />&nbsp;
+           Inbox
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconUserScan /> c2o Profile
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconUserScan />&nbsp;
+           c2o Profile
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconBrandHipchat />s Chats
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconBrandHipchat />&nbsp;
+           Chats
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconAssembly />
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconAssembly />&nbsp;
           ATS
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconAbacus /> CMS
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconAbacus />&nbsp;
+           CMS
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconFocus />
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconFocus />&nbsp;
           OCCS
         </a>
-        <a href="" className="p-4 font-semibold flex">
-          <IconLayersDifference />
-          Preference
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+          <IconLayersDifference />&nbsp;
+          Preferences
         </a>
+        </div>
       </div>
     </>
   );

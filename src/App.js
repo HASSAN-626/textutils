@@ -23,7 +23,7 @@ function App() {
               </div>
               
             </div>
-            <div className="pl-5 pt-10 font-sans md:font-sans">
+            <div className="pl-5 pt-10 ">
               <b>Recent Events</b>
             </div>
             <BackgroundVideo/>
