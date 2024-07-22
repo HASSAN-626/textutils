@@ -13,10 +13,10 @@ import React from "react";
 
 export default function Dashboard(props) {
   return (
-    <>
+    <><div className="bg-white">
       <div
-        className="w-48 py-8 h-screen  border border-gray-900 fixed left-0  
-       flex flex-col items-center text-slate-700 rounded-lg"
+        className="w-48  py-6 h-full   fixed left-0  
+       flex flex-col items-center text-slate-700 rounded-lg text-lg bg-white"
       >
         <img src="./09261924-a421-4778-be9b-f359c690718f.jpeg" alt="" width={140} height={140} className="mt-6"/>
         <div className="mt-8">
@@ -61,6 +61,7 @@ export default function Dashboard(props) {
           Preferences
         </a>
         </div>
+      </div>
       </div>
     </>
   );
