@@ -1,48 +1,114 @@
+import { IconLayoutDashboard } from "@tabler/icons-react";
+import { IconUser } from "@tabler/icons-react";
+import { IconSquareRotated } from "@tabler/icons-react";
+import { IconMailOpenedFilled } from "@tabler/icons-react";
+import { IconUserScan } from "@tabler/icons-react";
+import { IconBrandHipchat } from "@tabler/icons-react";
+import { IconAssembly } from "@tabler/icons-react";
+import { IconAbacus } from "@tabler/icons-react";
+import { IconFocus } from "@tabler/icons-react";
+import { IconLayersDifference } from "@tabler/icons-react";
+
 import React from "react";
 
 export default function Dashboard(props) {
-  let arr = [
-    "Dashboard",
-    "Personal",
-    "My Rota",
-    "Inbox",
-    "c2o Profile",
-    "Chats",
-    "ATS",
-    "CMS",
-    "OSCS",
-    "Preference",
-  ];
-  let showArray = [];
-  for (let i = 0; i <= arr.length; i++) {
-    let border = false;
-    if (arr[i] == "Dashboard") {
-      border = true;
-  
-    }
-    showArray.push(<AsideButton text={arr[i]} border={border} />);
-  }
   return (
     <>
       <div
-        className="w-48 py-8 h-screen border border-gray-900 fixed left-0 font-sans md:font-serif
+        className="w-48 py-8 h-screen  border border-gray-900 fixed left-0  
        flex flex-col items-center"
       >
         <img src="./download.jpg" alt="" width={85} height={85} />
-        {showArray}
+
+        <a href="" className="p-3 font-semibold flex">
+          <IconLayoutDashboard />
+          Dashboard
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconUser />
+          Personal
+        </a>
+        <a href="" className="p-4 font-semibold flex  ">
+          <IconSquareRotated /> My Rota
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconMailOpenedFilled /> Inbox
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconUserScan /> c2o Profile
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconBrandHipchat />s Chats
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconAssembly />
+          ATS
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconAbacus /> CMS
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconFocus />
+          OCCS
+        </a>
+        <a href="" className="p-4 font-semibold flex">
+          <IconLayersDifference />
+          Preference
+        </a>
       </div>
     </>
   );
 }
-function AsideButton({ text, border = false }) {
-  return (
-    <a
-      href=""
-      className={`p-4 font-semibold flex justify-center w-full ${
-        border ? "border-red-900 border" : ""
-      } `}
-    >
-      <p>{text}</p>
-    </a>
-  );
-}
+
+// import { IconLayoutDashboard } from "@tabler/icons-react";
+// import { IconUser } from "@tabler/icons-react";
+// import React from "react";
+
+// export default function Dashboard(props) {
+//   let arr = [
+//     "Dashboard",
+//     "Personal",
+//     "My Rota",
+//     "Inbox",
+//     "c2o Profile",
+//     "Chats",
+//     "ATS",
+//     "CMS",
+//     "OSCS",
+//     "Preference",
+//   ];
+//   let showArray = [];
+//   for (let i = 0; i <= arr.length; i++) {
+//     let border = false;
+//     if (arr[i] == "Dashboard") {
+//       border = true;
+
+//     }
+//     showArray.push(<AsideButton text={arr[i]} border={border} />);
+//   }
+//   return (
+//     <>
+//       <div
+//         className="w-48 py-8 h-screen  border border-gray-900 fixed left-0 font-sans md:font-serif
+//        flex flex-col items-center"
+//       >
+//         <img src="./download.jpg" alt="" width={85} height={85} />
+//         <IconLayoutDashboard />
+//         <IconUser/>
+//         {showArray}
+//       </div>
+//     </>
+//   );
+// }
+// function AsideButton({ text, border = false }) {
+//   return (
+//     <a
+//       href=""
+//       className={`p-4 font-semibold flex justify-center w-full ${
+//         border ? "border-red-900 border" : ""
+//       } `}
+//     >
+//       <p>{text}</p>
+//     </a>
+//   );
+// }
