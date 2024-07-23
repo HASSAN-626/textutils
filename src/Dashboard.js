@@ -20,43 +20,43 @@ export default function Dashboard(props) {
       >
         <img src="./09261924-a421-4778-be9b-f359c690718f.jpeg" alt="" width={140} height={140} className="mt-6"/>
         <div className="mt-8">
-        <a href="" className="p-3 font-semibold flex   hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-3 font-semibold flex   hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconLayoutDashboard />&nbsp;
           Dashboard
         </a>
-        <a href="" className="p-4 font-semibold flex hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconUser />&nbsp;
           Personal
         </a>
-        <a href="" className="p-4 font-semibold flex   hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex   hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconSquareRotated />&nbsp;
            My Rota
         </a>
-        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconMailOpenedFilled />&nbsp;
            Inbox
         </a>
-        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconUserScan />&nbsp;
            c2o Profile
         </a>
-        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconBrandHipchat />&nbsp;
            Chats
         </a>
-        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconAssembly />&nbsp;
           ATS
         </a>
-        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconAbacus />&nbsp;
            CMS
         </a>
-        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconFocus />&nbsp;
           OCCS
         </a>
-        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-slate-100 hover:rounded-lg">
+        <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
           <IconLayersDifference />&nbsp;
           Preferences
         </a>
