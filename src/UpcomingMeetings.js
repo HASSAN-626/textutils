@@ -1,7 +1,6 @@
 import React from "react";
 import { IconBuildingSkyscraper } from "@tabler/icons-react";
 import { IconUsers } from "@tabler/icons-react";
-import { IconUser } from "@tabler/icons-react";
 export default function UpcomingMeetings() {
   return (
     <>
@@ -25,11 +24,8 @@ export default function UpcomingMeetings() {
             </div>
 
             <div className=" pl-56 flex-col font-normal text-black">
-            <p >
-            <IconUser className="text-primary size-10" />
-              <p className="">Asif Wani</p>                
+              <p className="pt-2">Asif Wani</p>                
               <p>testingcompany@gmail.com</p>
-            </p>
             </div>
           </div>
         </div>
