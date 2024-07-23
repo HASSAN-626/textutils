@@ -1,6 +1,7 @@
 import React from "react";
 import { IconBuildingSkyscraper } from "@tabler/icons-react";
 import { IconUsers } from "@tabler/icons-react";
+import { IconUser } from "@tabler/icons-react";
 export default function UpcomingMeetings() {
   return (
     <>
@@ -17,8 +18,20 @@ export default function UpcomingMeetings() {
       <div className="  pt-2 ml-4 w-full  flex ">
         <div className="pt-10 ml-4 bg-white p-5  w-3/4 border-2 rounded-lg ">
           <b>Testing Company</b>
-          <p className="pt-2">Status:Meeting</p>
-          <p>Joining Date:&nbsp;5/28/2024</p>
+          <div className="flex">
+            <div className="flex-col">
+              <p className="pt-2">Status:Meeting</p>
+              <p>Joining Date:&nbsp;5/28/2024</p>
+            </div>
+
+            <div className=" pl-56 flex-col font-normal text-black">
+            <p >
+            <IconUser className="text-primary size-10" />
+              <p className="">Asif Wani</p>                
+              <p>testingcompany@gmail.com</p>
+            </p>
+            </div>
+          </div>
         </div>
 
         <div className="pt-9 ml-4 bg-white p-5 h-40   w-3/4 rounded-lg border-2   ">
@@ -38,10 +51,11 @@ export default function UpcomingMeetings() {
         </div>
 
         <div className="pt-9 ml-4 bg-white p-5 h-40  w-3/4 rounded-lg border-2   ">
-          <p className="flex items-center"> 
-          <IconUsers className="text-primary size-8" />&nbsp;
-          <p className="text-black font-medium">HBL TEST</p>
-             </p>
+          <p className="flex items-center">
+            <IconUsers className="text-primary size-8" />
+            &nbsp;
+            <p className="text-black font-medium">HBL TEST</p>
+          </p>
           <p className="pt-2">Status:Meeting</p>
           <p>Joining Date:&nbsp;3/14/2024</p>
         </div>
