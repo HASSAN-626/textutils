@@ -1,8 +1,12 @@
 import React from "react";
 import { IconLogout } from "@tabler/icons-react";
+import { IconHelpOctagon } from "@tabler/icons-react";
 export default function Nav() {
   return (
     <>
+    <div className="w-25 ">
+      <button><IconHelpOctagon /></button>
+    </div>
       <div className="w-75 pl-136   ">
         <div className="pr-12  ml-80 mr-8 -mb-11 rounded-2xl mt-4 bg-slate-200 pl-6 flex-col">
           <div className="flex items-center">
