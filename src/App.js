@@ -25,7 +25,7 @@ function App() {
               
             </div>
             <div className="pl-10 pt-10 text-black-light">
-              <b className="  ">Recent Events</b>
+              <b className="">Recent Events</b>
             </div>
             <BackgroundVideo/>
             <Body/>

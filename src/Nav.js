@@ -1,14 +1,14 @@
 import React from "react";
-import { IconLogout } from "@tabler/icons-react";
-import { IconHelpOctagon } from "@tabler/icons-react";
+import { IconBell, IconLogout, IconHelpOctagon  } from "@tabler/icons-react";
 export default function Nav() {
   return (
     <>
-    <div className="w-16 text-center pt-2 mr-44  mt-4  ml-148  -mb-11 bg-white rounded-2xl">
-      <button><IconHelpOctagon /></button>
+    <div className=" w-52 pl-24 flex text-center m-8 mr-44   gap-4 ml-148  -mb-11 ">
+      <button><IconBell className="bg-#FBFBFC size-10 pl-1 pr-1 rounded-2xl shadow-md" /></button>
+      <button><IconHelpOctagon className="bg-#FBFBFC size-10 pl-1 pr-1 rounded-2xl shadow-md" /></button>
     </div>
       <div className="w-75 pl-136   ">
-        <div className="pr-12  ml-80 mr-8 -mb-11 rounded-2xl  bg-slate-200 pl-6 flex-col">
+        <div className="pr-12  ml-80 mr-8 -mb-11 rounded-2xl  bg-slate-200 pl-6 flex-col shadow-md">
           <div className="flex items-center">
             <img  className="rounded-full " width={30} height={30} src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg" alt="" />
             <div className="pl-3">
