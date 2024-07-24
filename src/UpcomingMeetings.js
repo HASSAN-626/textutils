@@ -5,17 +5,32 @@ export default function UpcomingMeetings() {
   return (
     <>
       <div className="pl-5 pt-6  ">
-        <b className="text-black-light text-xl">Upcoming Meetings</b>
+        <b className="text-black-light text-xl pl-5">Upcoming Meetings</b>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200">
+        <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 ">
           View All
         </button>
         <p className="pt-5 pl-14 text-black-lighter text-lg mb-10">
           No Schedule Meeting
         </p>
       </div>
+
+      <div className="pl-5 pb-5  ">
+        <b className="text-black-light text-xl pl-5">Clients</b>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 ">
+          View All
+        </button>
+        {/* <p className="pt-5 pl-14 text-black-lighter text-lg mb-10">
+          No Schedule Meeting
+        </p> */}
+      </div>
+
+
+
+
       <div className="  pt-2 ml-4 w-full  flex ">
-        <div className="pt-10 ml-4 bg-white p-5  w-3/4 border-2 rounded-lg ">
+        <div className="pt-10 ml-4 bg-white p-5  w-3/4 border-2 rounded-lg shadow-md">
           <b>Testing Company</b>
           <div className="flex">
             <div className="flex-col">
@@ -30,7 +45,7 @@ export default function UpcomingMeetings() {
           </div>
         </div>
 
-        <div className="pt-9 ml-4 bg-white p-5 h-40   w-3/4 rounded-lg border-2   ">
+        <div className="pt-9 ml-4 bg-white p-5 h-40   w-3/4 rounded-lg border-2 shadow-md mr-8">
           <p className="flex items-center">
             <IconBuildingSkyscraper className="text-primary size-8" />
             &nbsp;<p className="text-black font-medium "> HBL TEST </p>
@@ -40,13 +55,13 @@ export default function UpcomingMeetings() {
         </div>
       </div>
       <div className="  pt-2 ml-4 w-full  flex ">
-        <div className="pt-10 ml-4 bg-white p-5  w-3/4 rounded-lg border-2  ">
+        <div className="pt-10 ml-4 bg-white p-5  w-3/4 rounded-lg border-2  shadow-md">
           <b>Ryde</b>
           <p className="pt-2">Status:Meeting</p>
           <p>Joining Date:&nbsp;5/28/2024</p>
         </div>
 
-        <div className="pt-9 ml-4 bg-white p-5 h-40  w-3/4 rounded-lg border-2   ">
+        <div className="pt-9 ml-4 bg-white p-5 h-40  w-3/4 rounded-lg border-2  shadow-md mr-8">
           <p className="flex items-center">
             <IconUsers className="text-primary size-8" />
             &nbsp;

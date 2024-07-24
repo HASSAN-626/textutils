@@ -7,7 +7,7 @@ export default function Body() {
     <div>
       <div className=" w-full ">
         <div className="  pb-7 w-full p-8 flex items-center ">
-          <div className="bg-white pl-4 p-2 flex  w-full h-18 font-semibold rounded-3xl "> 
+          <div className="bg-white pl-4 p-2 flex  w-full h-18 font-semibold rounded-3xl shadow-2xl "> 
               <p className="flex items-center">
                 <IconBuildingSkyscraper className="text-primary size-10"/>
                 <div className="flex-col pl-6">
@@ -16,7 +16,7 @@ export default function Body() {
                 </div>
               </p>
           </div>
-          <div className="bg-white  p-4 m-4  w-full h-16 flex items-center font-semibold rounded-3xl ">
+          <div className="bg-white  p-4 m-4  w-full h-16 flex items-center font-semibold rounded-3xl shadow-2xl">
             <p className="flex items-center">
             <IconUsers className="text-primary size-10"/>
             <div className="flex-col pl-6">
@@ -25,7 +25,7 @@ export default function Body() {
               </div>
             </p>
           </div>
-          <div className="bg-white  p-4 m-2 flex items-center  w-full h-16 font-semibold rounded-3xl ">
+          <div className="bg-white  p-4 m-2 flex items-center  w-full h-16 font-semibold rounded-3xl shadow-2xl">
             <p className="flex items-center">
             <IconDeviceLaptop className="text-primary size-10"/>
             <div className="flex-col pl-6">
