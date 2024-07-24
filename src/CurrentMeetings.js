@@ -6,7 +6,7 @@ export default function UpcomingMeetings() {
     <div className="pl-5 pt-16 ">
               <b className='text-black-light text-xl pl-5'>Current Openings</b>&nbsp;&nbsp;&nbsp;&nbsp;
               <button
-                className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200"
+                className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 hover:bg-blue-300"
               >
                 View All
               </button>

@@ -7,7 +7,7 @@ export default function UpcomingMeetings() {
       <div className="pl-5 pt-6  ">
         <b className="text-black-light text-xl pl-5">Upcoming Meetings</b>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 ">
+        <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 hover:bg-blue-300">
           View All
         </button>
         <p className="pt-5 pl-14 text-black-lighter text-lg mb-10">
@@ -18,7 +18,7 @@ export default function UpcomingMeetings() {
       <div className="pl-5 pb-5  ">
         <b className="text-black-light text-xl pl-5">Clients</b>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 ">
+        <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 hover:bg-blue-300">
           View All
         </button>
         {/* <p className="pt-5 pl-14 text-black-lighter text-lg mb-10">

@@ -5,7 +5,7 @@ export default function Nav() {
     <>
     <div className=" w-52 pl-24 flex text-center m-8 mr-44   gap-4 ml-148  -mb-11 ">
       <button><IconBell className="bg-#FBFBFC size-10 pl-1 pr-1 rounded-2xl shadow-md" /></button>
-      <button><IconHelpOctagon className="bg-#FBFBFC size-10 pl-1 pr-1 rounded-2xl shadow-md" /></button>
+      <button><IconHelpOctagon className="bg-#FBFBFC size-10 pl-1 pr-1 rounded-2xl shadow-md hover:bg-black-light" /></button>
     </div>
       <div className="w-75 pl-136   ">
         <div className="pr-12  ml-80 mr-8 -mb-11 rounded-2xl  bg-slate-200 pl-6 flex-col shadow-md">
