@@ -8,22 +8,21 @@ import {
 export default function Nav() {
   return (
     <>
-      <div className="flex justify-center ">
-        <div className="  flex justify-start  ">
+      <div className="flex justify-between m-3 gap-2 items-center ">
+        <div className="  ">
           <button>
-            <IconMoon className="bg-#FBFBFC size-8   rounded-lg shadow-md " />
+            <IconMoon className="bg-#FBFBFC size-8 ml-10  rounded-lg shadow-md  hover:opacity-40" />
           </button>
         </div>
-        <div className="  gap-2 ">
-          <button>
-            <IconBell className="bg-#FBFBFC size-8  rounded-lg shadow-md" />
-          </button>
-          <button>
-            <IconHelpOctagon className="bg-#FBFBFC size-8  rounded-lg shadow-md " />
-          </button>
-        </div>
-        &nbsp;&nbsp;&nbsp;
         <div className=" flex   ">
+          <div className="  gap-2  ">
+            <button>
+              <IconBell className="bg-#FBFBFC size-8 m-2 rounded-lg shadow-md hover:opacity-40" />
+            </button>
+            <button>
+              <IconHelpOctagon className="bg-#FBFBFC size-8 m-2 mr-3  rounded-lg shadow-md hover:opacity-40" />
+            </button>
+          </div>
           <div className="rounded-2xl  bg-slate-200 pl-1 flex-col shadow-md">
             <div className="flex items-center">
               <img
