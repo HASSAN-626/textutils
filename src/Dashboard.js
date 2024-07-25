@@ -1,7 +1,7 @@
 import { IconLayoutDashboard } from "@tabler/icons-react";
 import { IconUser } from "@tabler/icons-react";
 import { IconSquareRotated } from "@tabler/icons-react";
-import { IconMailOpenedFilled } from "@tabler/icons-react";
+import { IconMessages } from "@tabler/icons-react";
 import { IconUserScan } from "@tabler/icons-react";
 import { IconBrandHipchat } from "@tabler/icons-react";
 import { IconAssembly } from "@tabler/icons-react";
@@ -33,7 +33,7 @@ export default function Dashboard(props) {
            My Rota
         </a>
         <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
-          <IconMailOpenedFilled />&nbsp;
+          <IconMessages />&nbsp;
            Inbox
         </a>
         <a href="" className="p-4 font-semibold flex  hover:bg-slate-400 hover:text-white hover:rounded-lg">
