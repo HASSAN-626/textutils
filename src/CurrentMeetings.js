@@ -11,9 +11,9 @@ export default function UpcomingMeetings() {
                 View All
               </button>
               <div className=" w-full ">
-                <div className="  pt-12 w-full  flex items-center ">
+                <div className="  pt-12 w-full  flex items-center  ">
                   <div className="bg-white p-5  w-full h-28 rounded-lg shadow-md ml-4">
-                    <p className="flex items-center justify-center">
+                    <p className="flex items-center  justify-center ">
                       New Life Investment
                     </p>
                   </div>
