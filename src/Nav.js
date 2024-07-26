@@ -12,18 +12,18 @@ export default function Nav() {
       <div className="flex justify-between m-3 gap-2 items-center ">
         <div className=" ml-10  ">
           <button>
-            <IconPinned className="bg-#FBFBFC size-8 rounded-lg shadow-md  hover:opacity-65" />
+            <IconPinned className="bg-#FBFBFC size-8 p-2 rounded-lg shadow-md  hover:opacity-65" />
           </button>
           <button>
-            <IconMoon className="bg-#FBFBFC size-8 ml-4  rounded-lg shadow-md  hover:opacity-65" />
+            <IconMoon className="bg-#FBFBFC size-8 p-2 ml-4  rounded-lg shadow-md  hover:opacity-65" />
           </button>
         </div>
         <div className=" flex items-center ">
           <button>
-            <IconBell className="bg-#FBFBFC size-8 m-2 rounded-lg shadow-md hover:opacity-65" />
+            <IconBell className="bg-#FBFBFC size-8 p-2 m-2 rounded-lg shadow-md hover:opacity-65" />
           </button>
           <button>
-            <IconHelpOctagon className="bg-#FBFBFC size-8 m-2 mr-5  rounded-lg shadow-md hover:opacity-65" />
+            <IconHelpOctagon className="bg-#FBFBFC size-8 p-2 m-2 mr-5  rounded-lg shadow-md hover:opacity-65" />
           </button>
           <div className="rounded-2xl flex items-center bg-slate-200 px-3 py-2 shadow-md">
             <div className=" h-full w-12 ">
