@@ -9,109 +9,8 @@ export default function Separate() {
         </p>
         <b>Hassan Sardar</b>
         <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
-        <p>
-          <b>GOOD AFTERNOON!</b>
-        </p>
-        <b>Hassan Sardar</b>
-        <p>Remember every good conversation starts with listening..</p>
-      </div><div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
+      </div>
+      <div className="bg-white p-5  w-3/4 ml-10 rounded-lg   text-black-light shadow-lg">
         <p>
           <b>GOOD AFTERNOON!</b>
         </p>
@@ -382,7 +281,6 @@ export default function Separate() {
         <b>Hassan Sardar</b>
         <p>Remember every good conversation starts with listening..</p>
       </div>
- 
     </>
   );
 }
