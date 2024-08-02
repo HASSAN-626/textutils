@@ -51,7 +51,7 @@ function AsideButton({title,Icon}) {
   return (
     <a
       href="Picture"
-      className="pl-8 p-3 mt-4 font-semibold flex  w-full hover:bg-slate-400 hover:text-white hover:rounded-md"
+      className="pl-8 p-1 mt-4 font-semibold flex  w-full hover:bg-primary hover:text-white hover:rounded-md"
     >
       <Icon className="mr-2 " />
       <p>{title}</p>

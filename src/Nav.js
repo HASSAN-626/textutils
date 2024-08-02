@@ -21,7 +21,7 @@ export default function Nav() {
         <div className=" flex items-center relative">
           <button className="relative" >
             <IconBell className=" bg-#FBFBFC size-8 p-2 m-2 rounded-lg shadow-md hover:opacity-65" />
-            <p className="bg-red-600 text-sm absolute top-0 -right-2 rounded-full">My</p>
+            <p className="bg-red-600 text-sm absolute top-0 -right-2 text-white rounded-full">80</p>
           </button>
           <button>
             <IconHelpOctagon className="bg-#FBFBFC size-8 p-2 m-2 mr-5  rounded-lg shadow-md hover:opacity-65" />
