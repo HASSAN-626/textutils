@@ -18,7 +18,6 @@ export default function AsideButton(props) {
     "My Rota",
     "Inbox",
     "c2o Profile",
-
     "Chats",
     "ATS",
     "CMS",
@@ -42,7 +41,6 @@ export default function AsideButton(props) {
           height={140}
           className="mt-6"
         />
-
         {showArray}
       </div>
     </>
