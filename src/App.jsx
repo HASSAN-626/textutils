@@ -1,11 +1,11 @@
 import "./App.css";
-import Separate from "./Dashboard/Separate";
-import CurrentMeetings from "./Dashboard/CurrentMeetings";
-import UpcomingMeetings from "./Dashboard/UpcomingMeetings";
-import BackgroundVideo from "./Dashboard/BackgroundVideo";
-import Nav from "./Navigation/Nav";
-import Main from "./Dashboard/Main";
-import Aside from "./Dashboard/Aside";
+import Separate from "./Components/Dashboard/Separate";
+import CurrentMeetings from "./Components/Dashboard/CurrentMeetings";
+import UpcomingMeetings from "./Components/Dashboard/UpcomingMeetings";
+import BackgroundVideo from "./Components/Dashboard/BackgroundVideo";
+import Nav from "./Components/Navigation/Nav";
+import Main from "./Components/Dashboard/Main";
+import Aside from "./Components/Dashboard/Aside";
 function App() {
   return (
     <>
