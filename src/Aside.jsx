@@ -11,51 +11,51 @@ import { IconLayersDifference } from "@tabler/icons-react";
 
 import React from "react";
 
-export default function AsideButton(props) {
-  let arr = [
-    "Dashboard",
-    "Personal",
-    "My Rota",
-    "Inbox",
-    "c2o Profile",
-    "Chats",
-    "ATS",
-    "CMS",
-    "OSCS",
-    "Preference",
+export default function Aside(props) {
+  const arr = [
+    { title: "Dashboard", Icon: IconLayoutDashboard },
+    { title: "Personal", Icon: IconUser },
+    { title: "My Rota", Icon: IconSquareRotated },
+    { title: "Inbox", Icon: IconMessages },
+    { title: "c2o Profile", Icon: IconUserScan },
+    { title: "Chats", Icon: IconBrandHipchat },
+    { title: "ATS", Icon: IconAssembly },
+    { title: "CMS", Icon: IconAbacus },
+    { title: "OSCS", Icon: IconFocus },
+    { title: "Preference", Icon: IconLayersDifference }
   ];
+
   let showArray = [];
-  for (let i = 0; i <= arr.length; i++) {
-    showArray.push(<AsadeButton text={arr[i]} />);
+  for (let i = 0; i < arr.length; i++) {
+    showArray.push(<AsideButton key={i} title={arr[i].title} Icon={arr[i].Icon} />);
   }
+
   return (
-    <>
-      <div
-        className="w-48 py-6 h-screen   fixed left-0 
-         flex flex-col items-center bg-white rounded-lg"
-      >
-        <img
-          src="./09261924-a421-4778-be9b-f359c690718f.jpeg"
-          alt=""
-          width={140}
-          height={140}
-          className="mt-6"
-        />
-        {showArray}
-      </div>
-    </>
+    <div
+      className="w-48 py-6 h-screen fixed left-0 
+      flex flex-col items-center justify bg-white rounded-lg"
+    >
+      <img
+        src="./09261924-a421-4778-be9b-f359c690718f.jpeg"
+        alt=""
+        width={140}
+        height={140}
+        className="mt-6"
+      />
+      {showArray}
+    </div>
   );
 }
-function AsadeButton({ text }) {
+
+function AsideButton({title,Icon}) {
   return (
-    <>
-      <a
-        href=""
-        className="p-3 mt-3 font-semibold flex items-center justify-center w-full hover:bg-slate-400 hover:text-white hover:rounded-md "
-      >
-        <p>{text}</p>
-      </a>
-    </>
+    <a
+      href="Picture"
+      className="pl-8 p-3 mt-4 font-semibold flex  w-full hover:bg-slate-400 hover:text-white hover:rounded-md"
+    >
+      <Icon className="mr-2 " />
+      <p>{title}</p>
+    </a>
   );
 }
 

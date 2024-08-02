@@ -12,6 +12,357 @@ export default function Separate() {
               </div>
               {/* <div class="container mx-auto">
 </div> */}
+  <p>
+                  <b>GOOD AFTERNOON!</b>
+                </p>
+                <b>Hassan Sardar</b>
+                <p>Remember every good conversation starts with listening..</p>
+              </div>
+              {/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+                  <b>GOOD AFTERNOON!</b>
+                </p>
+                <b>Hassan Sardar</b>
+                <p>Remember every good conversation starts with listening..</p>
+              </div>
+              {/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+                  <b>GOOD AFTERNOON!</b>
+                </p>
+                <b>Hassan Sardar</b>
+                <p>Remember every good conversation starts with listening..</p>
+              </div>
+              {/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+<b>GOOD AFTERNOON!</b>
+</p>
+<b>Hassan Sardar</b>
+<p>Remember every good conversation starts with listening..</p>
+</div>
+{/* <div class="container mx-auto">
+</div> */}  <p>
+                  <b>GOOD AFTERNOON!</b>
+                </p>
+                <b>Hassan Sardar</b>
+                <p>Remember every good conversation starts with listening..</p>
+              </div>
+              {/* <div class="container mx-auto">
+</div> */}  <p>
+                  <b>GOOD AFTERNOON!</b>
+                </p>
+                <b>Hassan Sardar</b>
+                <p>Remember every good conversation starts with listening..</p>
+              </div>
+              {/* <div class="container mx-auto">
+</div> */}
               
     </>
   )
