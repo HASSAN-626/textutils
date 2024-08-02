@@ -5,8 +5,8 @@ import Nav from "./Nav";
 export default function Personal() {
   return (
     <div>
-      <Aside/>
-      <Nav/>
+      <Aside />
+      <Nav />
     </div>
   );
 }

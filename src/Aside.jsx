@@ -22,14 +22,15 @@ export default function Aside(props) {
     { title: "ATS", Icon: IconAssembly },
     { title: "CMS", Icon: IconAbacus },
     { title: "OSCS", Icon: IconFocus },
-    { title: "Preference", Icon: IconLayersDifference }
+    { title: "Preference", Icon: IconLayersDifference },
   ];
 
   let showArray = [];
   for (let i = 0; i < arr.length; i++) {
-    showArray.push(<AsideButton key={i} title={arr[i].title} Icon={arr[i].Icon} />);
+    showArray.push(
+      <AsideButton key={i} title={arr[i].title} Icon={arr[i].Icon} />
+    );
   }
-
   return (
     <div
       className="w-48 py-6 h-screen fixed left-0 
@@ -47,7 +48,7 @@ export default function Aside(props) {
   );
 }
 
-function AsideButton({title,Icon}) {
+function AsideButton({ title, Icon }) {
   return (
     <a
       href="Picture"

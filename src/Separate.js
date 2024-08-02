@@ -10,7 +10,6 @@ export default function Separate() {
         <b>Hassan Sardar</b>
         <p>Remember every good conversation starts with listening..</p>
       </div>
-      
     </>
   );
 }

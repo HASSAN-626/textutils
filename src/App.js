@@ -1,4 +1,4 @@
-import "./App.css"; 
+import "./App.css";
 import Separate from "./Separate";
 import CurrentMeetings from "./CurrentMeetings";
 import UpcomingMeetings from "./UpcomingMeetings";
@@ -11,9 +11,9 @@ function App() {
     <>
       <div className="bg-gray-100 ">
         <div className="flex flex-row">
-           <Aside/> 
+          <Aside />
           <div className="flex flex-col w-full ml-48">
-            <Nav/>
+            <Nav />
             <div className=" w-full ">
               <div className="  pt-6 w-full  flex items-center ">
                 <Separate />
@@ -21,15 +21,14 @@ function App() {
                   <b>No Shifts Today</b>
                 </div>
               </div>
-              
             </div>
             <div className="pl-10 pt-8 text-black-light">
               <b className="">Recent Events</b>
             </div>
-            <BackgroundVideo/>
-            <Body/>
-            <UpcomingMeetings/>
-            <CurrentMeetings/>
+            <BackgroundVideo />
+            <Body />
+            <UpcomingMeetings />
+            <CurrentMeetings />
             <div className="pl-10 pt-11">
               <b>Suggested CSRs of the Month(Coming Soon)</b>
             </div>
