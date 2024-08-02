@@ -4,7 +4,7 @@ import CurrentMeetings from "./Dashboard/CurrentMeetings";
 import UpcomingMeetings from "./Dashboard/UpcomingMeetings";
 import BackgroundVideo from "./Dashboard/BackgroundVideo";
 import Nav from "./Navigation/Nav";
-import Body from "./Dashboard/Body";
+import Main from "./Dashboard/Main";
 import Aside from "./Dashboard/Aside";
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
               <b className="">Recent Events</b>
             </div>
             <BackgroundVideo />
-            <Body />
+            <Main />
             <UpcomingMeetings />
             <CurrentMeetings />
             <div className="pl-10 pt-11">

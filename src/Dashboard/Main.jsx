@@ -2,7 +2,7 @@ import React from "react";
 import { IconBuildingSkyscraper} from "@tabler/icons-react";
 import { IconUsers} from "@tabler/icons-react";
 import {IconDeviceLaptop} from "@tabler/icons-react";
-export default function Body() {
+export default function Main() {
   return (
     <div>
       <div className=" w-full ">
