@@ -1,18 +1,17 @@
-import "./App.css";
-import { useState } from "react";
+import "./App.css"; 
 import Separate from "./Separate";
-import Dashboard from "./Dashboard";
 import CurrentMeetings from "./CurrentMeetings";
 import UpcomingMeetings from "./UpcomingMeetings";
 import BackgroundVideo from "./BackgroundVideo";
 import Nav from "./Nav";
 import Body from "./Body";
+import AsideButton from "./AsideButton";
 function App() {
   return (
     <>
       <div className="bg-gray-100 ">
         <div className="flex flex-row">
-          <Dashboard/>
+          <AsideButton/>
           <div className="flex flex-col w-full ml-48">
             <Nav/>
             <div className=" w-full ">
