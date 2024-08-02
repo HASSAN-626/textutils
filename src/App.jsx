@@ -3,7 +3,7 @@ import Separate from "./Dashboard/Separate";
 import CurrentMeetings from "./Dashboard/CurrentMeetings";
 import UpcomingMeetings from "./Dashboard/UpcomingMeetings";
 import BackgroundVideo from "./Dashboard/BackgroundVideo";
-import Nav from "./Nav";
+import Nav from "./Navigation/Nav";
 import Body from "./Dashboard/Body";
 import Aside from "./Dashboard/Aside";
 function App() {
