@@ -22,16 +22,10 @@ function App() {
     <>
       <div className="bg-gray-100 ">
         <div className="flex flex-row">
-          <Aside />
+          <Aside setActiveComponent={setActiveComponent} />
           <div className="flex flex-col w-full ml-48">
             <Nav />
             <div className="">
-              <Dashbord />
-              <Personal />
-              <div onClick={() => setActiveComponent("dashboard")}>
-              </div>
-              <div onClick={() => setActiveComponent("personal")}>
-              </div>
               {Condition()}
             </div>
           </div>
@@ -40,7 +34,9 @@ function App() {
     </>
   );
 }
+
 export default App;
+
 
 // {/* <div className="bg-gray-100 ">
 //         <div className="flex flex-row">
