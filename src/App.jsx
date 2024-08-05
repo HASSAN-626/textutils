@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "./Components/Navigation/Nav";
 import Aside from "./Components/Dashboard/Aside";
+import Dashbord from "./Dashbord";
 function App() {
   return (
     <>
@@ -9,6 +10,9 @@ function App() {
           <Aside />
           <div className="flex flex-col w-full ml-48">
             <Nav />
+            <div className={` ${ b === "dashboard" ? "<Dashbord/>" : "" } border border-red-600 `}>
+            <Dashbord/>
+            </div>
           </div>
         </div>
       </div>
