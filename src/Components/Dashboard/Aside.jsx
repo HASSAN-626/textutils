@@ -58,7 +58,7 @@ function AsideButton({ title, Icon, onClick }) {
   return (
     <div
       onClick={onClick}
-      className="pl-8 p-1 mt-4 font-semibold flex w-full hover:bg-primary hover:text-white hover:rounded-md cursor-pointer"
+      className="p-3 pl-8 mt-1 font-semibold flex w-full hover:bg-primary hover:text-white hover:rounded-md cursor-pointer"
     >
       <Icon className="mr-2 " />
       <p>{title}</p>
