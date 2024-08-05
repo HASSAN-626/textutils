@@ -3,7 +3,21 @@ import Nav from "./Components/Navigation/Nav";
 import Aside from "./Components/Dashboard/Aside";
 import Dashbord from "./Dashbord";
 import Personal from "./Components/Personal/Personal";
+import { useState } from "react";
+
 function App() {
+  const [ActiveComponent, setActiveComponent] = useState("dashboard");
+
+  const Condition = () => {
+    if (ActiveComponent === "dashboard") {
+      return <Dashbord />;
+    } else if (ActiveComponent === "personal") {
+      return <Personal />;
+    } else {
+      return <Dashbord />;
+    }
+  };
+
   return (
     <>
       <div className="bg-gray-100 ">
@@ -11,9 +25,14 @@ function App() {
           <Aside />
           <div className="flex flex-col w-full ml-48">
             <Nav />
-            <div className={`${onclick==="dashboard"?"<Dashbord/>":"<Personal/>"}`}>
-            <Dashbord/>
-            <Personal/>
+            <div className="">
+              <Dashbord />
+              <Personal />
+              <div onClick={() => setActiveComponent("dashboard")}>
+              </div>
+              <div onClick={() => setActiveComponent("personal")}>
+              </div>
+              {Condition()}
             </div>
           </div>
         </div>
@@ -22,41 +41,6 @@ function App() {
   );
 }
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // {/* <div className="bg-gray-100 ">
 //         <div className="flex flex-row">
