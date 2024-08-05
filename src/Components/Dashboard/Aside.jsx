@@ -11,25 +11,30 @@ import { IconLayersDifference } from "@tabler/icons-react";
 
 import React from "react";
 
-export default function Aside(props) {
+export default function Aside({ setActiveComponent }) {
   
   const arr = [
-    { title: "Dashboard", Icon: IconLayoutDashboard },
-    { title: "Personal", Icon: IconUser },
-    { title: "My Rota", Icon: IconSquareRotated },
-    { title: "Inbox", Icon: IconMessages },
-    { title: "c2o Profile", Icon: IconUserScan },
-    { title: "Chats", Icon: IconBrandHipchat },
-    { title: "ATS", Icon: IconAssembly },
-    { title: "CMS", Icon: IconAbacus },
-    { title: "OSCS", Icon: IconFocus },
-    { title: "Preference", Icon: IconLayersDifference },
+    { title: "Dashboard", Icon: IconLayoutDashboard, component: "dashboard" },
+    { title: "Personal", Icon: IconUser, component: "personal" },
+    { title: "My Rota", Icon: IconSquareRotated, component: "myRota" },
+    { title: "Inbox", Icon: IconMessages, component: "inbox" },
+    { title: "c2o Profile", Icon: IconUserScan, component: "c2oProfile" },
+    { title: "Chats", Icon: IconBrandHipchat, component: "chats" },
+    { title: "ATS", Icon: IconAssembly, component: "ats" },
+    { title: "CMS", Icon: IconAbacus, component: "cms" },
+    { title: "OSCS", Icon: IconFocus, component: "oscs" },
+    { title: "Preference", Icon: IconLayersDifference, component: "preference" },
   ];
 
   let showArray = [];
   for (let i = 0; i < arr.length; i++) {
     showArray.push(
-      <AsideButton key={i} title={arr[i].title} Icon={arr[i].Icon} />
+      <AsideButton 
+        key={i} 
+        title={arr[i].title} 
+        Icon={arr[i].Icon} 
+        onClick={() => setActiveComponent(arr[i].component)} 
+      />
     );
   }
   return (
@@ -49,17 +54,18 @@ export default function Aside(props) {
   );
 }
 
-function AsideButton({ title, Icon }) {
+function AsideButton({ title, Icon, onClick }) {
   return (
-    <a
-      href="Picture"
-      className="pl-8 p-1 mt-4 font-semibold flex  w-full hover:bg-primary hover:text-white hover:rounded-md"
+    <div
+      onClick={onClick}
+      className="pl-8 p-1 mt-4 font-semibold flex w-full hover:bg-primary hover:text-white hover:rounded-md cursor-pointer"
     >
       <Icon className="mr-2 " />
       <p>{title}</p>
-    </a>
+    </div>
   );
 }
+
 
 //     <><div className="bg-white">
 //       <div
