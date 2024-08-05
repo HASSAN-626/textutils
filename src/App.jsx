@@ -2,6 +2,7 @@ import "./App.css";
 import Nav from "./Components/Navigation/Nav";
 import Aside from "./Components/Dashboard/Aside";
 import Dashbord from "./Dashbord";
+import Personal from "./Components/Personal/Personal";
 function App() {
   return (
     <>
@@ -10,8 +11,9 @@ function App() {
           <Aside />
           <div className="flex flex-col w-full ml-48">
             <Nav />
-            <div className={` ${ b === "dashboard" ? "<Dashbord/>" : "" } border border-red-600 `}>
+            <div className={`${onclick==="dashboard"?"<Dashbord/>":"<Personal/>"}`}>
             <Dashbord/>
+            <Personal/>
             </div>
           </div>
         </div>

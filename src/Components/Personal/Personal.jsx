@@ -4,7 +4,7 @@ import Nav from "../Navigation/Nav";
 
 export default function Personal() {
   return (
-    <div>
+    <div className="bg-red-500">
       
 
       
