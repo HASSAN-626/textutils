@@ -89,6 +89,7 @@ export default function Personal() {
                 <p className="text-black-lighter  text-sm pl-5">(Active)</p>
             </div>
           </div>
+          <div className="mt-3 w-full border border- mx-2 "></div>
         </div>
       </div>
     </>
