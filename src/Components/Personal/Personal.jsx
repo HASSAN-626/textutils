@@ -3,7 +3,7 @@ export default function Personal() {
   return (
     <>
       <div className="pt-4 ml-4">
-        <div className=" ml-4 bg-white p-4  w-full border-2 rounded-lg shadow-md ">
+        <div className=" ml-5 bg-white p-4  w-full border-2 rounded-lg shadow-md ">
           <p className="text-black font-semibold">PERSONAL INFORMATION</p>
           <div className="flex items-center gap-48">
             <div className="pt-2 grid grid-rows-4 grid-flow-col gap-x-64">
@@ -107,24 +107,56 @@ export default function Personal() {
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
           <p className="text-black font-semibold pt-4">BANK DETAILS</p>
-          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-28">
+          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-48">
             <div>
-              <p className="text-black-light font-semibold text-sm">Bank Name</p>
+              <p className="text-black-light font-semibold text-sm">
+                Bank Name
+              </p>
               <p>Nayapay</p>
             </div>
 
             <div>
-            <p className="text-black-light font-semibold text-sm">Branch Name</p>
-            <p>Online</p>
+              <p className="text-black-light font-semibold text-sm">
+                Branch Name
+              </p>
+              <p>Online</p>
             </div>
 
             <div>
-            <p className="text-black-light font-semibold text-sm">Account Title</p>
-            <p>Savings</p>
+              <p className="text-black-light font-semibold text-sm ">
+                Account Title
+              </p>
+              <p>Savings</p>
             </div>
 
-            <div>4</div>
+            <div>
+              <p className="text-black-light font-semibold text-sm">
+                Account Number
+              </p>
+              <p>03165105988</p>
+            </div>
+          </div>
+          <div className="mt-3 w-full border border- mx-2 "></div>
+          <p className="text-black font-semibold pt-4">EMERGENCY DETAILS</p>
+          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-48">
+            <div>
+              <p className="text-black-light font-semibold text-sm ">Name</p>
+              <p>Wahab Javed</p>
+            </div>
+            <div>
+              <p className="text-black-light font-semibold text-sm">Relation</p>
+              <p>Brother</p>
+            </div>
 
+            <div>
+              <p className="text-black-light font-semibold text-sm ">Number</p>
+              <p>03355599885</p>
+            </div>
+
+            <div>
+              <p className="text-black-light font-semibold text-sm ">Number</p>
+              <p>03355599885</p>
+            </div>
           </div>
         </div>
       </div>
