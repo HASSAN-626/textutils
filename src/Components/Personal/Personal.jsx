@@ -108,11 +108,22 @@ export default function Personal() {
           <div className="mt-3 w-full border border- mx-2 "></div>
           <p className="text-black font-semibold pt-4">BANK DETAILS</p>
           <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-28">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>4</div>
+            <div>
+              <p className="text-black-light font-semibold text-sm">Bank Name</p>
+              <p>Nayapay</p>
+            </div>
 
+            <div>
+            <p className="text-black-light font-semibold text-sm">Branch Name</p>
+            <p>Online</p>
+            </div>
+
+            <div>
+            <p className="text-black-light font-semibold text-sm">Account Title</p>
+            <p>Savings</p>
+            </div>
+
+            <div>4</div>
 
           </div>
         </div>
