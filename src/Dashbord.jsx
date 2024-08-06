@@ -10,7 +10,7 @@ export default function Dashbord() {
       <div className=" w-full ">
         <div className="  pt-6 w-full  flex items-center ">
           <Separate />
-          <div className="bg-white p-5 h-28 flex items-center justify-center ml-2 w-1/4 rounded-lg mr-12 pl-4 shadow-lg">
+          <div className="bg-white p-5 h-28 flex items-center justify-center ml-2 w-1/4 rounded-lg mr-12 pl-4 shadow-xl">
             <b>No Shifts Today</b>
           </div>
         </div>

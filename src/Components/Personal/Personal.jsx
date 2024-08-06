@@ -11,80 +11,80 @@ export default function Personal() {
                 <p className="text-black-light font-semibold text-sm">
                   Joining Date
                 </p>
-                <p>2024-06-24</p>
+                <p className="text-sm">2024-06-24</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">Email</p>
-                <p>hassansrdar626@gmail.com</p>
+                <p className="text-sm">hassansrdar626@gmail.com</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">Gender</p>
-                <p>Male</p>
+                <p className="text-sm">Male</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Parent/Guardian Phone No
                 </p>
-                <p>03325146837</p>
+                <p className="text-sm">03325146837</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Date Of Birth
                 </p>
-                <p>2004-05-09</p>
+                <p className="text-sm">2004-05-09</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Phone Number
                 </p>
-                <p>03165105988</p>
+                <p className="text-sm">03165105988</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Blood Group
                 </p>
-                <p>O+</p>
+                <p className="text-sm">O+</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Parent/Guardian
                 </p>
-                <p>37405-39969996-4</p>
+                <p className="text-sm">37405-39969996-4</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Martial Status
                 </p>
-                <p>Single</p>
+                <p className="text-sm">Single</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   CNIC Number
                 </p>
-                <p>37405-4563494-1</p>
+                <p className="text-sm">37405-4563494-1</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Parent/Guardian Name
                 </p>
-                <p>Riffat Samina</p>
+                <p className="text-sm">Riffat Samina</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Address
                 </p>
-                <p>
+                <p className="text-sm">
                   Haroown chowk , Kurri Road , Near Hasnain Shopping Mall,
                   <p>Rawalpindi</p>
                 </p>
@@ -112,28 +112,28 @@ export default function Personal() {
               <p className="text-black-light font-semibold text-sm">
                 Bank Name
               </p>
-              <p>Nayapay</p>
+              <p className="text-sm">Nayapay</p>
             </div>
 
             <div>
               <p className="text-black-light font-semibold text-sm">
                 Branch Name
               </p>
-              <p>Online</p>
+              <p className="text-sm">Online</p>
             </div>
 
             <div>
               <p className="text-black-light font-semibold text-sm ">
                 Account Title
               </p>
-              <p>Savings</p>
+              <p className="text-sm">Savings</p>
             </div>
 
             <div>
               <p className="text-black-light font-semibold text-sm">
                 Account Number
               </p>
-              <p>03165105988</p>
+              <p className="text-sm">03165105988</p>
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
@@ -141,16 +141,16 @@ export default function Personal() {
           <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-24">
             <div>
               <p className="text-black-light font-semibold text-sm ">Name</p>
-              <p>Wahab Javed</p>
+              <p className="text-sm">Wahab Javed</p>
             </div>
             <div className="pr-12">
               <p className="text-black-light font-semibold text-sm">Relation</p>
-              <p>Brother</p>
+              <p className="text-sm">Brother</p>
             </div>
 
             <div className="pr-11">
               <p className="text-black-light font-semibold text-sm ">Number</p>
-              <p>03355599885</p>
+              <p className="text-sm">03355599885</p>
             </div>
 
             <div>
