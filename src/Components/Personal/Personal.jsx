@@ -138,24 +138,24 @@ export default function Personal() {
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
           <p className="text-black font-semibold pt-4">EMERGENCY DETAILS</p>
-          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-48">
+          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-24">
             <div>
               <p className="text-black-light font-semibold text-sm ">Name</p>
               <p>Wahab Javed</p>
             </div>
-            <div>
+            <div className="pr-12">
               <p className="text-black-light font-semibold text-sm">Relation</p>
               <p>Brother</p>
             </div>
 
-            <div>
+            <div className="pr-11">
               <p className="text-black-light font-semibold text-sm ">Number</p>
               <p>03355599885</p>
             </div>
 
             <div>
-              <p className="text-black-light font-semibold text-sm ">Number</p>
-              <p>03355599885</p>
+              <p className="text-black-light font-semibold text-sm "></p>
+              <p></p>
             </div>
           </div>
         </div>
