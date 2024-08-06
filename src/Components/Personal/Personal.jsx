@@ -4,11 +4,13 @@ export default function Personal() {
     <>
       <div className="pt-4 ml-4">
         <div className=" ml-4 bg-white p-4  w-full border-2 rounded-lg shadow-md ">
-        <p className="text-black font-semibold">PERSONAL INFORMATION</p>
+          <p className="text-black font-semibold">PERSONAL INFORMATION</p>
           <div className="flex items-center gap-48">
             <div className="pt-2 grid grid-rows-4 grid-flow-col gap-x-64">
               <div>
-                <p className="text-black-light font-semibold text-sm">Joining Date</p>
+                <p className="text-black-light font-semibold text-sm">
+                  Joining Date
+                </p>
                 <p>2024-06-24</p>
               </div>
 
@@ -30,17 +32,23 @@ export default function Personal() {
               </div>
 
               <div>
-                <p className="text-black-light font-semibold text-sm">Date Of Birth</p>
+                <p className="text-black-light font-semibold text-sm">
+                  Date Of Birth
+                </p>
                 <p>2004-05-09</p>
               </div>
 
               <div>
-                <p className="text-black-light font-semibold text-sm">Phone Number</p>
+                <p className="text-black-light font-semibold text-sm">
+                  Phone Number
+                </p>
                 <p>03165105988</p>
               </div>
 
               <div>
-                <p className="text-black-light font-semibold text-sm">Blood Group</p>
+                <p className="text-black-light font-semibold text-sm">
+                  Blood Group
+                </p>
                 <p>O+</p>
               </div>
 
@@ -52,12 +60,16 @@ export default function Personal() {
               </div>
 
               <div>
-                <p className="text-black-light font-semibold text-sm">Martial Status</p>
+                <p className="text-black-light font-semibold text-sm">
+                  Martial Status
+                </p>
                 <p>Single</p>
               </div>
 
               <div>
-                <p className="text-black-light font-semibold text-sm">CNIC Number</p>
+                <p className="text-black-light font-semibold text-sm">
+                  CNIC Number
+                </p>
                 <p>37405-4563494-1</p>
               </div>
 
@@ -69,27 +81,40 @@ export default function Personal() {
               </div>
 
               <div>
-                <p className="text-black-light font-semibold text-sm">Address</p>
+                <p className="text-black-light font-semibold text-sm">
+                  Address
+                </p>
                 <p>
                   Haroown chowk , Kurri Road , Near Hasnain Shopping Mall,
                   <p>Rawalpindi</p>
                 </p>
               </div>
-              </div>
-              <div>
-                <img
-                  src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
-                  className="h-38 w-28 object-cover rounded-xl"
-                  alt=""
-                />
-                <p className="text-black-light font-semibold">Hassan Sardar</p>
-                <p className="text-black-lighter font-semibold text-sm pl-2">
-                  IT - Web Dept
-                </p>
-                <p className="text-black-lighter  text-sm pl-5">(Active)</p>
+            </div>
+            <div>
+              <img
+                src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
+                className="h-38 w-28 object-cover rounded-xl"
+                alt=""
+              />
+              <p className="text-black-light font-semibold">Hassan Sardar</p>
+              <p className="text-black-lighter font-semibold text-sm pl-2">
+                IT - Web Dept
+              </p>
+              <p className="text-black-lighter  text-sm pl-5">
+                <div className="bg-cyan-400  rounded-full"></div>(Active){" "}
+              </p>
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
+          <p className="text-black font-semibold pt-4">BANK DETAILS</p>
+          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-28">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+
+
+          </div>
         </div>
       </div>
     </>
