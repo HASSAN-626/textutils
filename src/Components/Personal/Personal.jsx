@@ -160,6 +160,7 @@ export default function Personal() {
           <p className="text-black font-semibold pt-4">COMPANIES</p>
           <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-24">
             <div className="w-1/5 p-5 bg-white rounded-2xl shadow-md text-lg text-black-light">
+            <img src="" alt="" />
             3. c2o Management
             </div>
           </div>
