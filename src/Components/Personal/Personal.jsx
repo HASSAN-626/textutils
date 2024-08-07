@@ -191,11 +191,11 @@ export default function Personal() {
             </div>
             <div className="flex justify-between w-full m-2 p-3 rounded-lg bg-gray-100  hover:bg-gray-200 ">
               <p className="text-m text-black-light">CNIC front</p>
-              <p className="pr-56 text-m text-black-light"><IconDownload className="text-primary"/></p>
+              <p className="pr-56 text-m text-black-light"><IconDownload className="text-primary hover:bg-slate-300 rounded-sm"/></p>
             </div>
             <div className="flex justify-between w-full m-2 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 ">
               <p className="text-m text-black-light">CNIC back</p>
-              <p className="pr-56 text-m text-black-light"><IconDownload className="text-primary"/></p>
+              <p className="pr-56 text-m text-black-light"><IconDownload className="text-primary hover:bg-slate-300 rounded-sm" width={'24'} height={'24'} /></p>
             </div>
           </div>
         </div>
