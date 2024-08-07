@@ -158,6 +158,11 @@ export default function Personal() {
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
           <p className="text-black font-semibold pt-4">COMPANIES</p>
+          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-24">
+            <div className="w-1/5 p-5 bg-white rounded-2xl shadow-md text-lg text-black-light">
+            3. c2o Management
+            </div>
+          </div>
         </div>
       </div>
     </>
