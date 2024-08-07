@@ -1,4 +1,5 @@
 import React from "react";
+import IconDownload from "@tabler/icons-react";
 export default function Personal() {
   return (
     <>
@@ -186,13 +187,13 @@ export default function Personal() {
           <div className="flex-col">
             <div className="flex justify-between w-full m-2 p-2 rounded-lg bg-gray-200 ">
               <p className="text-m text-black-light">Name</p>
-              <p className="pr-56 text-m text-black-light">Download</p>
+              <p className="pr-56 text-m text-black-light"><IconDownload/></p>
             </div>
-            <div className="flex justify-between w-full m-2 p-2 rounded-lg bg-gray-100 ">
+            <div className="flex justify-between w-full m-2 p-3 rounded-lg bg-gray-100  hover:bg-gray-200 ">
               <p className="text-m text-black-light">CNIC front</p>
               <p className="pr-56 text-m text-black-light">Download</p>
             </div>
-            <div className="flex justify-between w-full m-2 p-2 rounded-lg bg-gray-100 hover-bg-gray-200 ">
+            <div className="flex justify-between w-full m-2 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 ">
               <p className="text-m text-black-light">CNIC back</p>
               <p className="pr-56 text-m text-black-light">Download</p>
             </div>
