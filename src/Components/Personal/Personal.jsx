@@ -158,10 +158,21 @@ export default function Personal() {
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
           <p className="text-black font-semibold pt-4">COMPANIES</p>
-          <div className="pt-2 flex">
+          <div className="pt-2 flex justify-between">
             <div className="flex p-3 pr-36  bg-white rounded-2xl shadow-md text-lg text-black-lighter ">
-            <img src="./79cd3aed-63d8-4c5f-87fe-bb360eb094d8.jpeg" width={'40'} height={'14'} alt="" />
-            <p className="pl-4 font-semibold ">3. c2o Management</p>
+              <img
+                src="./79cd3aed-63d8-4c5f-87fe-bb360eb094d8.jpeg"
+                width={"40"}
+                height={"14"}
+                alt=""
+              />
+              <p className="pl-4 font-semibold ">3. c2o Management</p>
+            </div>
+            <div className="pr-36">
+              <p>COMPANY DETAILS</p>
+              <p>Department Web Department</p>
+              <p>Wage / Salary ---</p>
+              <p>Job Type Trainee</p>
             </div>
           </div>
         </div>
