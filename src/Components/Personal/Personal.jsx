@@ -1,12 +1,19 @@
 import React from "react";
 import { IconDownload } from "@tabler/icons-react";
+import { IconUser } from "@tabler/icons-react";
+import Modal from "./Modal";
 export default function Personal() {
   return (
     <>
-      <div className="pt-4 ml-4">
+      <div className="pt-4 ml-4 mb-10">
         <div className=" ml-5 bg-white p-4  w-full border-2 rounded-lg shadow-md ">
-          <p className="text-black font-semibold">PERSONAL INFORMATION</p>
-          <div className="flex items-center gap-48">
+          <p className="pl-3 text-black font-semibold flex h-4 ">
+            <IconUser width={"20"} height={"20"} />
+            Profile
+          </p>
+          <div className="mt-3 w-full border border- mx-2 "></div>
+          <p className="pl-2 text-black font-semibold">PERSONAL INFORMATION</p>
+          <div className="pl-2 flex items-center gap-48">
             <div className="pt-2 grid grid-rows-4 grid-flow-col gap-x-64">
               <div>
                 <p className="text-black-light font-semibold text-sm">
@@ -92,23 +99,34 @@ export default function Personal() {
               </div>
             </div>
             <div>
+              <div>
+                <button className="pl-44 p-4 ">
+                  <p className=" bg-blue-100 pl-4 pr-4 pt-1 pb-1 text-blue-600 text-m font-semibold hover:bg-blue-200 rounded">Edit</p>
+                </button>
+              </div>
+              <Modal/>
               <img
                 src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
                 className="h-38 w-28 object-cover rounded-xl"
                 alt=""
               />
+
               <p className="text-black-light font-semibold">Hassan Sardar</p>
-              <p className="text-black-lighter font-semibold text-sm pl-2">
-                IT - Web Dept
+              <p className="text-black-lighter font-semibold text-sm pl-0">
+              <div className="flex">
+                <div className=" box-border h-1 w-2 border-4 mt-1.5 mr-1  border-cyan-400 rounded "></div><p>IT - Web Dept</p>
+                </div>
               </p>
-              <p className="text-black-lighter  text-sm pl-5">
-                <div className="bg-cyan-400  rounded-full"></div>(Active){" "}
+          
+              
+              <p className="text-black-lighter  text-sm pl-6 ">
+                (Active)
               </p>
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
-          <p className="text-black font-semibold pt-4">BANK DETAILS</p>
-          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-48">
+          <p className="pl-2 text-black font-semibold pt-4">BANK DETAILS</p>
+          <div className="pl-2 pt-2 grid grid-rows-1 grid-flow-col gap-x-48">
             <div>
               <p className="text-black-light font-semibold text-sm">
                 Bank Name
@@ -138,8 +156,10 @@ export default function Personal() {
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
-          <p className="text-black font-semibold pt-4">EMERGENCY DETAILS</p>
-          <div className="pt-2 grid grid-rows-1 grid-flow-col gap-x-24">
+          <p className="pl-2 text-black font-semibold pt-4">
+            EMERGENCY DETAILS
+          </p>
+          <div className="pl-2 pt-2 grid grid-rows-1 grid-flow-col gap-x-24">
             <div>
               <p className="text-black-light font-semibold text-sm ">Name</p>
               <p className="text-sm">Wahab Javed</p>
@@ -158,8 +178,8 @@ export default function Personal() {
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
-          <p className="text-black font-semibold pt-4">COMPANIES</p>
-          <div className="pt-1 flex justify-between">
+          <p className="pl-2 text-black font-semibold pt-4">COMPANIES</p>
+          <div className="pl-2 pt-1 flex justify-between">
             <div className="flex h-12 p-3 pr-36  bg-white rounded-2xl shadow-md text-lg text-black-lighter ">
               <img
                 src="./79cd3aed-63d8-4c5f-87fe-bb360eb094d8.jpeg"
@@ -183,19 +203,27 @@ export default function Personal() {
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
-          <p className="text-black font-semibold pt-4">DOCUMENTS</p>
-          <div className="flex-col">
+          <p className="pl-2 text-black font-semibold pt-4">DOCUMENTS</p>
+          <div className="pl-2 flex-col">
             <div className="flex justify-between w-full m-2 p-2 rounded-lg bg-gray-200 ">
               <p className="text-m text-black-light">Name</p>
-              <p className="pr-56 text-m text-black-light">Download</p>
+              <p className="pr-52 text-m text-black-light">Download</p>
             </div>
             <div className="flex justify-between w-full m-2 p-3 rounded-lg bg-gray-100  hover:bg-gray-200 ">
               <p className="text-m text-black-light">CNIC front</p>
-              <p className="pr-56 text-m text-black-light"><IconDownload className="text-primary hover:bg-slate-300 rounded-sm"/></p>
+              <p className="pr-56 text-m text-black-light">
+                <IconDownload className="text-primary hover:bg-slate-300 rounded-sm" />
+              </p>
             </div>
             <div className="flex justify-between w-full m-2 p-3 rounded-lg bg-gray-100 hover:bg-gray-200 ">
               <p className="text-m text-black-light">CNIC back</p>
-              <p className="pr-56 text-m text-black-light"><IconDownload className="text-primary hover:bg-slate-300 rounded-sm" width={'24'} height={'24'} /></p>
+              <p className="pr-56 text-m text-black-light">
+                <IconDownload
+                  className="text-primary hover:bg-slate-300 rounded-sm"
+                  width={"24"}
+                  height={"24"}
+                />
+              </p>
             </div>
           </div>
         </div>
