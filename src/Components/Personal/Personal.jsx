@@ -119,13 +119,15 @@ export default function Personal() {
                 <p className="text-black-light">BASIC INFORMATION</p>
                 <div className="grid grid-rows-1 grid-flow-col mt-2">
                   <div >
-                  <label htmlFor="employeeid">Employee ID*</label><br />
+                  <label htmlFor="employeeid">Employee ID *</label><br />
                   <input type="text" placeholder="c2o-" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>
                   </div>
 
                   <div >
-                  <label htmlFor="employeeid">Employee ID*</label><br />
-                  <input type="text" placeholder="c2o-" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>
+                  <label htmlFor="title">Title *</label><br />
+                  <input type="checkbox" placeholder="Mr"  className="p-1 bg-slate-200 rounded pl-1 w-40 "/>Mr
+                  <input type="checkbox"  className="p-1 bg-slate-200 rounded pl-1 w-40 "/>Mrs
+                  <input type="checkbox" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>Other
                   </div>
                 </div>
 
