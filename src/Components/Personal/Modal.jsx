@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = ({isVisible}) => {
+const Modal = ({isVisible , onClose}) => {
   if ( !isVisible ) return null;
   return (<>
     <div
@@ -8,9 +8,9 @@ const Modal = ({isVisible}) => {
     flex justify-center items-center"
     >
       <div className="w-2/4 flex flex-col">
-      <button className="place-self-end text-white text-lg">X</button>
+      <button className="place-self-end text-white text-lg" onClick={()=>onClose()}>X</button>
       <div className="p-2 bg-white rounded">
-      Modal
+      Cheen Tapak Dum Dum
       </div>
       </div>
     </div>
