@@ -110,55 +110,112 @@ export default function Personal() {
                   </p>
                 </button>
               </div>
-              <Modal
-                isVisible={showModal}
-                onClose={() => setShowModal(false)}
-              >
+              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
                 <form action="">
-                <div className="p-2"> 
-                <p className="text-black-light">BASIC INFORMATION</p>
-                <div className="grid grid-rows-1 grid-flow-col mt-2">
-                  <div >
-                  <label htmlFor="employeeid">Employee ID *</label><br />
-                  <input type="text" placeholder="c2o-" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>
+                  <div className="p-2">
+                    <p className="text-black-light">BASIC INFORMATION</p>
+                    <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3">
+                      <div>
+                        <label htmlFor="employeeid" className="text-sm text-black-light">Employee ID *</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder="c2o-"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="title" className="text-sm text-black-light">Title *</label>
+                        <br />
+                        <select
+                          name="select"
+                          id=""
+                          className="p-1 bg-slate-200 rounded-lg pl-1  w-24 border hover:border-black"
+                        >
+                          <option
+                            value="text"
+                            className="bg-white hover:bg-black-light"
+                          >
+                            Mr
+                          </option>
+                          <option value="text" className="bg-white">
+                            Mrs
+                          </option>
+                          <option value="text" className="bg-white">
+                            Other
+                          </option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label htmlFor="firstname" className="text-sm text-black-light">First Name *</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="middlename" className="text-sm text-black-light">Middle Name</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="secondname" className="text-sm text-black-light">Second Name *</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
+                    <div>
+                        <label htmlFor="dateofbirth" className="text-sm text-black-light">Date Of Birth *</label>
+                        <br />
+                        <input
+                          type="date"
+                          className="p-1 pl-3 bg-slate-200 rounded-lg mr-2 w-72 text-black-lighter border hover:border-black"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="email" className="text-sm text-black-light">Email *</label>
+                        <br />
+                        <input
+                          type="email"
+                          placeholder="c2o@gmail.com"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="phonnumber" className="text-sm text-black-light">Phone Number *</label>
+                        <br />
+                        <input
+                          type="number"
+                          placeholder="0333-3333333"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="phonnumber" className="text-sm text-black-light">CNIC Number *</label>
+                        <br />
+                        <input
+                          type="number"
+                          placeholder="33333-3333333-3"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+                    </div>
                   </div>
-
-                  <div >
-                  <label htmlFor="title">Title *</label><br />
-                  <input type="checkbox" placeholder="Mr"  className="p-1 bg-slate-200 rounded pl-1 w-40 "/>Mr
-                  <input type="checkbox"  className="p-1 bg-slate-200 rounded pl-1 w-40 "/>Mrs
-                  <input type="checkbox" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>Other
-                  </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-              
-                </div>
                 </form>
               </Modal>
               <img
