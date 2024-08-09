@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { IconDownload } from "@tabler/icons-react";
 import { IconUser } from "@tabler/icons-react";
 import Modal from "./Modal";
 export default function Personal() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <div className="pt-4 ml-4 mb-10">
@@ -101,10 +102,15 @@ export default function Personal() {
             <div>
               <div>
                 <button className="pl-44 p-4 ">
-                  <p className=" bg-blue-100 pl-4 pr-4 pt-1 pb-1 text-blue-600 text-m font-semibold hover:bg-blue-200 rounded">Edit</p>
+                  <p
+                    className=" bg-blue-100 pl-4 pr-4 pt-1 pb-1 text-blue-600 text-m font-semibold hover:bg-blue-200 rounded" 
+                  onClick={()=>setShowModal(true)}
+                  >
+                    Edit
+                  </p>
                 </button>
               </div>
-              <Modal/>
+              <Modal isVisible={showModal} />
               <img
                 src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
                 className="h-38 w-28 object-cover rounded-xl"
@@ -113,15 +119,13 @@ export default function Personal() {
 
               <p className="text-black-light font-semibold">Hassan Sardar</p>
               <p className="text-black-lighter font-semibold text-sm pl-0">
-              <div className="flex">
-                <div className=" box-border h-1 w-2 border-4 mt-1.5 mr-1  border-cyan-400 rounded "></div><p>IT - Web Dept</p>
+                <div className="flex">
+                  <div className=" box-border h-1 w-2 border-4 mt-1.5 mr-1  border-cyan-400 rounded "></div>
+                  <p>IT - Web Dept</p>
                 </div>
               </p>
-          
-              
-              <p className="text-black-lighter  text-sm pl-6 ">
-                (Active)
-              </p>
+
+              <p className="text-black-lighter  text-sm pl-6 ">(Active)</p>
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
