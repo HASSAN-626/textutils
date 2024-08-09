@@ -114,7 +114,50 @@ export default function Personal() {
                 isVisible={showModal}
                 onClose={() => setShowModal(false)}
               >
-                
+                <form action="">
+                <div className="p-2"> 
+                <p className="text-black-light">BASIC INFORMATION</p>
+                <div className="grid grid-flow-row mt-2">
+                  <div >
+                  <label htmlFor="employeeid">Employee ID*</label><br />
+                  <input type="text" placeholder="c2o-" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>
+                  </div>
+
+                  <div >
+                  <label htmlFor="employeeid">Employee ID*</label><br />
+                  <input type="text" placeholder="c2o-" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                </div>
+                </form>
               </Modal>
               <img
                 src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
