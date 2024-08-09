@@ -1,7 +1,7 @@
 import React from "react";
 
-const Modal = ({isvisible}) => {
-  if ( !isvisible ) return null;
+const Modal = ({isVisible}) => {
+  if ( !isVisible ) return null;
   return (<>
     <div
       className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm

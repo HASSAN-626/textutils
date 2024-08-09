@@ -101,16 +101,14 @@ export default function Personal() {
             </div>
             <div>
               <div>
-                <button className="pl-44 p-4 ">
+                <button className="pl-44 p-4 " onClick={()=>setShowModal(true)}>
                   <p
-                    className=" bg-blue-100 pl-4 pr-4 pt-1 pb-1 text-blue-600 text-m font-semibold hover:bg-blue-200 rounded" 
-                  onClick={()=>setShowModal(true)}
-                  >
+                    className=" bg-blue-100 pl-4 pr-4 pt-1 pb-1 text-blue-600 text-m font-semibold hover:bg-blue-200 rounded">
                     Edit
                   </p>
                 </button>
               </div>
-              <Modal isVisible={showModal} />
+              <Modal isVisible={showModal} onClose={()=>setShowModal(false)} />
               <img
                 src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
                 className="h-38 w-28 object-cover rounded-xl"
