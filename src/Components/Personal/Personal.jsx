@@ -117,7 +117,7 @@ export default function Personal() {
                 <form action="">
                 <div className="p-2"> 
                 <p className="text-black-light">BASIC INFORMATION</p>
-                <div className="grid grid-flow-row mt-2">
+                <div className="grid grid-rows-1 grid-flow-col mt-2">
                   <div >
                   <label htmlFor="employeeid">Employee ID*</label><br />
                   <input type="text" placeholder="c2o-" className="p-1 bg-slate-200 rounded pl-1 w-40 "/>
