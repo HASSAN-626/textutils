@@ -179,7 +179,7 @@ export default function Personal() {
                       </div>
                     </div>
                     <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                    <div>
+                     <div>
                         <label htmlFor="dateofbirth" className="text-sm text-black-light">Date Of Birth *</label>
                         <br />
                         <input
@@ -214,6 +214,95 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                         />
                       </div>
+                    </div>
+                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
+                    <div>
+                        <label htmlFor="title" className="text-sm text-black-light">Gender *</label>
+                        <br />
+                        <select
+                          name="select"
+                          id=""
+                          className="p-1 bg-slate-200 rounded-lg pl-1  w-36 border hover:border-black"
+                        >
+                          <option
+                            value="text"
+                            className="bg-white hover:bg-black-light"
+                          >
+                            Male
+                          </option>
+                          <option value="text" className="bg-white">
+                            Female
+                          </option>
+                          <option value="text" className="bg-white">
+                            None
+                          </option>
+                        </select>
+                      </div>
+                      <div>
+                        <label htmlFor="title" className="text-sm text-black-light">Blood Group *</label>
+                        <br />
+                        <select
+                          name="select"
+                          id=""
+                          className="p-1 bg-slate-200 rounded-lg pl-1  w-32 border hover:border-black"
+                        >
+                          <option
+                            value="text"
+                            className="bg-white hover:bg-black-light"
+                          >
+                            A+
+                          </option>
+                          <option value="text" className="bg-white">
+                            A-
+                          </option>
+                          <option value="text" className="bg-white">
+                            B+
+                          </option>
+                          <option value="text" className="bg-white">
+                            AB+
+                          </option>
+                          <option value="text" className="bg-white">
+                            AB-
+                          </option>
+                          <option value="text" className="bg-white">
+                            O+
+                          </option>
+                          <option value="text" className="bg-white">
+                            O-
+                          </option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label htmlFor="phonnumber" className="text-sm text-black-light">Parent / Guardian Name </label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="phonnumber" className="text-sm text-black-light">Parent / Guardian Phone No</label>
+                        <br />
+                        <input
+                          type="number"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+
+                      <div>
+                        <label htmlFor="phonnumber" className="text-sm text-black-light">Parent / Guardian CNIC</label>
+                        <br />
+                        <input
+                          type="number"
+                          placeholder="33333-3333333-3"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+
                     </div>
                   </div>
                 </form>
