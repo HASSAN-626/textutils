@@ -355,9 +355,61 @@ export default function Personal() {
                         />
                       </div>
                     </div>
-                    <div className="text-sm font-thin">
-                      <input type="checkbox" className="checked:bg-blue-500 mt-3 rounded text-sm" />&nbsp;Match Above
+                    <div className="text-sm font-light ">
+                      <input type="checkbox" className="checked:bg-blue-500 mt-4 rounded text-sm" />&nbsp;Match Above
                     </div>
+                    <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3 ">
+                    <div>
+                        <label htmlFor="presentaddress" className="text-sm text-black-light">Permanent Address</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="street" className="text-sm text-black-light">Street</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="city" className="text-sm text-black-light">City</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="country" className="text-sm text-black-light">Country</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="postalcode" className="text-sm text-black-light">Postal Code</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                        />
+                      </div>
+                    </div>
+                    <div className="mt-4 pr-2 w-full border border- "></div>
                   </div>
                 </form>
               </Modal>
