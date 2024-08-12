@@ -112,13 +112,19 @@ export default function Personal() {
               </div>
               <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
                 <form action="">
-                  <div className="p-2">
+                  <div
+                    className="p-2 h-60vh overflow-auto  "
+                      style={{
+                        scrollbarWidth: "thin",
+                      }}
+                  >
                     <p className="pl-3 pb-5 text-black font-semibold flex h-4 ">
-                      <IconUser width={"20"} height={"20"} />&nbsp;
-                      EDIT HASSAN SARDAR - PROFILE
+                      <IconUser width={"20"} height={"20"} />
+                      &nbsp; EDIT HASSAN SARDAR - PROFILE
                     </p>
                     <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
-                    <div className="flex  ">
+                    <div className="flex" 
+                     >
                       <img
                         src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
                         className="h-38 w-28 object-cover rounded-2xl p-2"
