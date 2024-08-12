@@ -355,6 +355,9 @@ export default function Personal() {
                         />
                       </div>
                     </div>
+                    <div>
+                      <input type="checkbox" className="checked:bg-blue-500 mt-3" />
+                    </div>
                   </div>
                 </form>
               </Modal>

@@ -15,7 +15,7 @@ const Modal = ({ isVisible, onClose,children }) => {
           >
             X
           </button>
-          <div className="p-2 bg-white rounded font-semibold">
+          <div className="p-2 bg-white rounded-xl font-semibold">
             {children}
           </div>
         </div>
