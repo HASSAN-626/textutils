@@ -274,7 +274,7 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="phonnumber" className="text-sm text-black-light">Parent / Guardian Name </label>
+                        <label htmlFor="parent/guardianname" className="text-sm text-black-light">Parent / Guardian Name </label>
                         <br />
                         <input
                           type="text"
@@ -284,7 +284,7 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="phonnumber" className="text-sm text-black-light">Parent / Guardian Phone No</label>
+                        <label htmlFor="parent/guardianphoneno" className="text-sm text-black-light">Parent / Guardian Phone No</label>
                         <br />
                         <input
                           type="number"
@@ -294,7 +294,7 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="phonnumber" className="text-sm text-black-light">Parent / Guardian CNIC</label>
+                        <label htmlFor="parent/guardiancnic" className="text-sm text-black-light">Parent / Guardian CNIC</label>
                         <br />
                         <input
                           type="number"
@@ -303,6 +303,57 @@ export default function Personal() {
                         />
                       </div>
 
+                    </div>
+                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
+                    <div>
+                        <label htmlFor="presentaddress" className="text-sm text-black-light">Present Address</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="street" className="text-sm text-black-light">Street</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="city" className="text-sm text-black-light">City</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="country" className="text-sm text-black-light">Country</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                        />
+                      </div>
+                      
+                      <div>
+                        <label htmlFor="postalcode" className="text-sm text-black-light">Postal Code</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                        />
+                      </div>
                     </div>
                   </div>
                 </form>
