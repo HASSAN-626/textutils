@@ -580,6 +580,11 @@ export default function Personal() {
                       </div>
                     </div>
                     <div className="mt-4 mb-3 pr-2 w-full border border- "></div>
+                    <div className="flex items-end justify-end gap-8">
+                     <button className="bg-blue-100 p-1 rounded-md text-blue-600 pl-10 pr-10">SAVE & NEXT</button>
+                     <button className="bg-purple-100 p-1 rounded-md text-purple-600 pl-10 pr-10">NEXT</button>
+                      <button className="bg-green-100 p-1 rounded-md text-green-600">SAVE & EXIT</button>
+                    </div>
                   </div>
                 </form>
               </Modal>
