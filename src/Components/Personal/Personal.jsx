@@ -113,6 +113,19 @@ export default function Personal() {
               <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
                 <form action="">
                   <div className="p-2">
+                    <div className="flex  ">
+                      <img
+                        src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
+                        className="h-38 w-28 object-cover rounded-2xl p-2"
+                        alt=""
+                      />
+
+                      <div className="flex-col">
+                        <p>HASSAN SARDAR</p>
+                        <p>IT-Web-dept</p>
+                      </div>
+                    </div>
+
                     <p className="text-black-light">BASIC INFORMATION</p>
                     <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3">
                       <div>
@@ -581,9 +594,15 @@ export default function Personal() {
                     </div>
                     <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
                     <div className="mt-4 flex items-end justify-end gap-6">
-                     <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">SAVE & NEXT</button>
-                     <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">NEXT</button>
-                      <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">SAVE & EXIT</button>
+                      <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
+                        SAVE & NEXT
+                      </button>
+                      <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
+                        NEXT
+                      </button>
+                      <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
+                        SAVE & EXIT
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -712,5 +731,3 @@ export default function Personal() {
     </>
   );
 }
-
-// className="h-64 w-32 object-cover rounded"
