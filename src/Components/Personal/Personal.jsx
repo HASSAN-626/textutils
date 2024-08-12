@@ -116,7 +116,12 @@ export default function Personal() {
                     <p className="text-black-light">BASIC INFORMATION</p>
                     <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3">
                       <div>
-                        <label htmlFor="employeeid" className="text-sm text-black-light">Employee ID *</label>
+                        <label
+                          htmlFor="employeeid"
+                          className="text-sm text-black-light"
+                        >
+                          Employee ID *
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -126,7 +131,12 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="title" className="text-sm text-black-light">Title *</label>
+                        <label
+                          htmlFor="title"
+                          className="text-sm text-black-light"
+                        >
+                          Title *
+                        </label>
                         <br />
                         <select
                           name="select"
@@ -149,7 +159,12 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="firstname" className="text-sm text-black-light">First Name *</label>
+                        <label
+                          htmlFor="firstname"
+                          className="text-sm text-black-light"
+                        >
+                          First Name *
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -159,7 +174,12 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="middlename" className="text-sm text-black-light">Middle Name</label>
+                        <label
+                          htmlFor="middlename"
+                          className="text-sm text-black-light"
+                        >
+                          Middle Name
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -169,7 +189,12 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="secondname" className="text-sm text-black-light">Second Name *</label>
+                        <label
+                          htmlFor="secondname"
+                          className="text-sm text-black-light"
+                        >
+                          Second Name *
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -179,8 +204,13 @@ export default function Personal() {
                       </div>
                     </div>
                     <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                     <div>
-                        <label htmlFor="dateofbirth" className="text-sm text-black-light">Date Of Birth *</label>
+                      <div>
+                        <label
+                          htmlFor="dateofbirth"
+                          className="text-sm text-black-light"
+                        >
+                          Date Of Birth *
+                        </label>
                         <br />
                         <input
                           type="date"
@@ -188,7 +218,12 @@ export default function Personal() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="text-sm text-black-light">Email *</label>
+                        <label
+                          htmlFor="email"
+                          className="text-sm text-black-light"
+                        >
+                          Email *
+                        </label>
                         <br />
                         <input
                           type="email"
@@ -197,7 +232,12 @@ export default function Personal() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="phonnumber" className="text-sm text-black-light">Phone Number *</label>
+                        <label
+                          htmlFor="phonnumber"
+                          className="text-sm text-black-light"
+                        >
+                          Phone Number *
+                        </label>
                         <br />
                         <input
                           type="number"
@@ -206,7 +246,12 @@ export default function Personal() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="phonnumber" className="text-sm text-black-light">CNIC Number *</label>
+                        <label
+                          htmlFor="phonnumber"
+                          className="text-sm text-black-light"
+                        >
+                          CNIC Number *
+                        </label>
                         <br />
                         <input
                           type="number"
@@ -216,8 +261,13 @@ export default function Personal() {
                       </div>
                     </div>
                     <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                    <div>
-                        <label htmlFor="title" className="text-sm text-black-light">Gender *</label>
+                      <div>
+                        <label
+                          htmlFor="title"
+                          className="text-sm text-black-light"
+                        >
+                          Gender *
+                        </label>
                         <br />
                         <select
                           name="select"
@@ -239,7 +289,12 @@ export default function Personal() {
                         </select>
                       </div>
                       <div>
-                        <label htmlFor="title" className="text-sm text-black-light">Blood Group *</label>
+                        <label
+                          htmlFor="title"
+                          className="text-sm text-black-light"
+                        >
+                          Blood Group *
+                        </label>
                         <br />
                         <select
                           name="select"
@@ -274,7 +329,12 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="parent/guardianname" className="text-sm text-black-light">Parent / Guardian Name </label>
+                        <label
+                          htmlFor="parent/guardianname"
+                          className="text-sm text-black-light"
+                        >
+                          Parent / Guardian Name{" "}
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -284,7 +344,12 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="parent/guardianphoneno" className="text-sm text-black-light">Parent / Guardian Phone No</label>
+                        <label
+                          htmlFor="parent/guardianphoneno"
+                          className="text-sm text-black-light"
+                        >
+                          Parent / Guardian Phone No
+                        </label>
                         <br />
                         <input
                           type="number"
@@ -294,7 +359,12 @@ export default function Personal() {
                       </div>
 
                       <div>
-                        <label htmlFor="parent/guardiancnic" className="text-sm text-black-light">Parent / Guardian CNIC</label>
+                        <label
+                          htmlFor="parent/guardiancnic"
+                          className="text-sm text-black-light"
+                        >
+                          Parent / Guardian CNIC
+                        </label>
                         <br />
                         <input
                           type="number"
@@ -302,11 +372,15 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                         />
                       </div>
-
                     </div>
                     <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                    <div>
-                        <label htmlFor="presentaddress" className="text-sm text-black-light">Present Address</label>
+                      <div>
+                        <label
+                          htmlFor="presentaddress"
+                          className="text-sm text-black-light"
+                        >
+                          Present Address
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -314,9 +388,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="street" className="text-sm text-black-light">Street</label>
+                        <label
+                          htmlFor="street"
+                          className="text-sm text-black-light"
+                        >
+                          Street
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -324,9 +403,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="city" className="text-sm text-black-light">City</label>
+                        <label
+                          htmlFor="city"
+                          className="text-sm text-black-light"
+                        >
+                          City
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -334,9 +418,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="country" className="text-sm text-black-light">Country</label>
+                        <label
+                          htmlFor="country"
+                          className="text-sm text-black-light"
+                        >
+                          Country
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -344,9 +433,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="postalcode" className="text-sm text-black-light">Postal Code</label>
+                        <label
+                          htmlFor="postalcode"
+                          className="text-sm text-black-light"
+                        >
+                          Postal Code
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -356,11 +450,20 @@ export default function Personal() {
                       </div>
                     </div>
                     <div className="text-sm font-light ">
-                      <input type="checkbox" className="checked:bg-blue-500 mt-4 rounded text-sm" />&nbsp;Match Above
+                      <input
+                        type="checkbox"
+                        className="checked:bg-blue-500 mt-4 rounded text-sm"
+                      />
+                      &nbsp;Match Above
                     </div>
                     <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3 ">
-                    <div>
-                        <label htmlFor="presentaddress" className="text-sm text-black-light">Permanent Address</label>
+                      <div>
+                        <label
+                          htmlFor="presentaddress"
+                          className="text-sm text-black-light"
+                        >
+                          Permanent Address
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -368,9 +471,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="street" className="text-sm text-black-light">Street</label>
+                        <label
+                          htmlFor="street"
+                          className="text-sm text-black-light"
+                        >
+                          Street
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -378,9 +486,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="city" className="text-sm text-black-light">City</label>
+                        <label
+                          htmlFor="city"
+                          className="text-sm text-black-light"
+                        >
+                          City
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -388,9 +501,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="country" className="text-sm text-black-light">Country</label>
+                        <label
+                          htmlFor="country"
+                          className="text-sm text-black-light"
+                        >
+                          Country
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -398,9 +516,14 @@ export default function Personal() {
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
                         />
                       </div>
-                      
+
                       <div>
-                        <label htmlFor="postalcode" className="text-sm text-black-light">Postal Code</label>
+                        <label
+                          htmlFor="postalcode"
+                          className="text-sm text-black-light"
+                        >
+                          Postal Code
+                        </label>
                         <br />
                         <input
                           type="text"
@@ -409,38 +532,54 @@ export default function Personal() {
                         />
                       </div>
                     </div>
-                    <div className="mt-4 pr-2 w-full border border- "></div>
+                    <div className="mt-4 mb-3 pr-2 w-full border border- "></div>
                     <p className="text-black-light">EMERGENCY CONTACT</p>
 
-                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                    <div>
-                        <label htmlFor="emergencycontactname" className="text-sm text-black-light">Emergency Contact Name</label>
+                    <div className="grid grid-rows-1 grid-flow-col mt-2  gap-3 ">
+                      <div>
+                        <label
+                          htmlFor="emergencycontactname"
+                          className="text-sm text-black-light"
+                        >
+                          Emergency Contact Name
+                        </label>
                         <br />
                         <input
                           type="text"
                           placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
                         />
                       </div>
                       <div>
-                        <label htmlFor="relationttoemployee" className="text-sm text-black-light">Relation To Employee</label>
+                        <label
+                          htmlFor="relationttoemployee"
+                          className="text-sm text-black-light"
+                        >
+                          Relation To Employee
+                        </label>
                         <br />
                         <input
                           type="text"
                           placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
                         />
                       </div>
                       <div>
-                        <label htmlFor="emergencyphonenumber" className="text-sm text-black-light">Emergency Phone Number</label>
+                        <label
+                          htmlFor="emergencyphonenumber"
+                          className="text-sm text-black-light"
+                        >
+                          Emergency Phone Number
+                        </label>
                         <br />
                         <input
                           type="number"
                           placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
                         />
                       </div>
                     </div>
+                    <div className="mt-4 mb-3 pr-2 w-full border border- "></div>
                   </div>
                 </form>
               </Modal>
