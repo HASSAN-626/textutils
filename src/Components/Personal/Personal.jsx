@@ -581,9 +581,9 @@ export default function Personal() {
                     </div>
                     <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
                     <div className="mt-4 flex items-end justify-end gap-6">
-                     <button className="bg-blue-100 p-1 rounded-md text-blue-700 pl-10 pr-10 font-medium">SAVE & NEXT</button>
-                     <button className="bg-purple-100 p-1 rounded-md text-purple-700 pl-10 pr-10 font-medium ">NEXT</button>
-                      <button className="bg-green-100 p-1 rounded-md text-green-700 pl-10 pr-10 font-medium">SAVE & EXIT</button>
+                     <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">SAVE & NEXT</button>
+                     <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">NEXT</button>
+                      <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">SAVE & EXIT</button>
                     </div>
                   </div>
                 </form>
