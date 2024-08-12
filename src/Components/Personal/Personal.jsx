@@ -355,8 +355,8 @@ export default function Personal() {
                         />
                       </div>
                     </div>
-                    <div>
-                      <input type="checkbox" className="checked:bg-blue-500 mt-3" />
+                    <div className="text-sm font-thin">
+                      <input type="checkbox" className="checked:bg-blue-500 mt-3 rounded text-sm" />&nbsp;Match Above
                     </div>
                   </div>
                 </form>
