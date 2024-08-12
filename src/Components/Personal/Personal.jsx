@@ -414,7 +414,7 @@ export default function Personal() {
 
                     <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
                     <div>
-                        <label htmlFor="presentaddress" className="text-sm text-black-light">Emergency Contact Name</label>
+                        <label htmlFor="emergencycontactname" className="text-sm text-black-light">Emergency Contact Name</label>
                         <br />
                         <input
                           type="text"
@@ -423,7 +423,7 @@ export default function Personal() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="presentaddress" className="text-sm text-black-light">Relation To Employee</label>
+                        <label htmlFor="relationttoemployee" className="text-sm text-black-light">Relation To Employee</label>
                         <br />
                         <input
                           type="text"
@@ -432,10 +432,10 @@ export default function Personal() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="presentaddress" className="text-sm text-black-light">Emergency Contact Name</label>
+                        <label htmlFor="emergencyphonenumber" className="text-sm text-black-light">Emergency Phone Number</label>
                         <br />
                         <input
-                          type="text"
+                          type="number"
                           placeholder=""
                           className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                         />
