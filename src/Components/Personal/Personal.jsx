@@ -410,6 +410,19 @@ export default function Personal() {
                       </div>
                     </div>
                     <div className="mt-4 pr-2 w-full border border- "></div>
+                    <p className="text-black-light">BASIC INFORMATION</p>
+
+                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
+                    <div>
+                        <label htmlFor="presentaddress" className="text-sm text-black-light">Permanent Address</label>
+                        <br />
+                        <input
+                          type="text"
+                          placeholder=""
+                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </form>
               </Modal>
