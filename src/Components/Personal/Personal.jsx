@@ -113,6 +113,11 @@ export default function Personal() {
               <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
                 <form action="">
                   <div className="p-2">
+                    <p className="pl-3 pb-5 text-black font-semibold flex h-4 ">
+                      <IconUser width={"20"} height={"20"} />&nbsp;
+                      EDIT HASSAN SARDAR - PROFILE
+                    </p>
+                    <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
                     <div className="flex  ">
                       <img
                         src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
@@ -120,9 +125,11 @@ export default function Personal() {
                         alt=""
                       />
 
-                      <div className="flex-col">
+                      <div className="flex-col pt-10">
                         <p>HASSAN SARDAR</p>
-                        <p>IT-Web-dept</p>
+                        <p className="text-black-light text-sm">
+                          IT - Web Dept
+                        </p>
                       </div>
                     </div>
 
