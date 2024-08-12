@@ -124,12 +124,21 @@ export default function Personal() {
                     }}
                   >
                     <div className="flex">
-                      <img
-                        src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
-                        className="h-38 w-28 object-cover rounded-2xl p-2"
-                        alt=""
-                      />
-
+                      <form action="">
+                        <label htmlFor="file">
+                          <img
+                            src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
+                            className="h-38 w-28 object-cover rounded-2xl p-2"
+                            alt=""
+                          />
+                        </label>
+                        <input
+                          type="file"
+                          className="hidden"
+                          id="file"
+                          name="file"
+                        />
+                      </form>
                       <div className="flex-col pt-10">
                         <p>HASSAN SARDAR</p>
                         <p className="text-black-light text-sm">
