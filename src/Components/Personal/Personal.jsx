@@ -576,6 +576,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="number"
+                  name="emergencyPhoneNumber"
+                  value={data.emergencyPhoneNumber}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
                 />
