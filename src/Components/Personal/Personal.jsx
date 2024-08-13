@@ -445,7 +445,9 @@ export default function Personal() {
             <div className="text-sm font-light ">
               <input
                 type="checkbox"
-                className="checked:bg-blue-500 mt-4 rounded text-sm"
+                className="
+                checked:bg-blue-500 mt-4 rounded text-sm"
+               
               />
               &nbsp;Match Above
             </div>
