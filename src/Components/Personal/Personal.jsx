@@ -442,14 +442,15 @@ export default function Personal() {
                 />
               </div>
             </div>
-            <div className="text-sm font-light ">
-              <input
-                type="checkbox"
-                className="
-                checked:bg-blue-500 mt-4 rounded text-sm"
-               
-              />
-              &nbsp;Match Above
+            <div className="text-sm font-light">
+              <label htmlFor="matchAbove">
+                <input
+                  type="checkbox"
+                  id="matchAbove"
+                  className="checked:bg-blue-500 mt-4 rounded text-sm"
+                />
+                &nbsp;Match Above
+              </label>
             </div>
             <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3 ">
               <div>
