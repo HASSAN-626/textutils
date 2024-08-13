@@ -10,7 +10,7 @@ export default function Personal() {
     firstName: "Hassan",
     middleName: "Sardar",
     lastName: "Satti",
-    dateOfBirth: "9/05/2004",
+    dateOfBirth: "05/09/2004",
     email: "hassanjaveed626@gmail.com",
     phoneNumber: "03165105988",
     cnicNumber: "3740545634941",
@@ -19,13 +19,15 @@ export default function Personal() {
     parentguardianName: "Riffat Samina",
     parentguardianPhoneNumber: "03325146837",
     parentguardianCNIC: "3740539969964",
-    presentAddress:"House No 5 , Street No 5 , Kurri road , Rawalpindi",
-    street:"5",
-    city:"Rawalpindi",
-    country:"Pakistan",
-    postalCode:"46000",
-    permanentAddress:"House No 5 , Street No 5 , Kurri road , Rawalpindi",
-
+    presentAddress: "House No 5 , Street No 5 , Kurri road , Rawalpindi",
+    street: "5",
+    city: "Rawalpindi",
+    country: "Pakistan",
+    postalCode: "46000",
+    permanentAddress: "House No 5,Kurri road,Rawalpindi",
+    emergencyContactName:"Wahab Javed",
+    relationToEmployee:"Brother",
+    emergencyPhoneNumber:"03355599885"
   });
 
   function handleIdChange(e) {
@@ -288,7 +290,6 @@ export default function Personal() {
                     AB-
                   </option>
                   <option
-                  
                     className="bg-white "
                     name="gender"
                     value={data.gender}
@@ -500,6 +501,9 @@ export default function Personal() {
                 </label>
                 <br />
                 <input
+                  name="country"
+                  value={data.country}
+                  onChange={handleIdChange}
                   type="text"
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
@@ -515,6 +519,9 @@ export default function Personal() {
                 </label>
                 <br />
                 <input
+                  name="postalCode"
+                  value={data.postalCode}
+                  onChange={handleIdChange}
                   type="text"
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
