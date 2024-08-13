@@ -470,6 +470,9 @@ export default function Personal() {
                 </label>
                 <br />
                 <input
+                  name="street"
+                  value={data.street}
+                  onChange={handleIdChange}
                   type="text"
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
@@ -482,6 +485,9 @@ export default function Personal() {
                 </label>
                 <br />
                 <input
+                  name="city"
+                  value={data.city}
+                  onChange={handleIdChange}
                   type="text"
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
