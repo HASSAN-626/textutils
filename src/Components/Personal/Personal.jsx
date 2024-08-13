@@ -142,11 +142,14 @@ export default function Personal() {
                   htmlFor="secondname"
                   className="text-sm text-black-light"
                 >
-                  Second Name *
+                  Last Name *
                 </label>
                 <br />
                 <input
                   type="text"
+                  name="secondName"
+                  value={data.lastName}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
                 />
