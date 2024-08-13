@@ -25,9 +25,9 @@ export default function Personal() {
     country: "Pakistan",
     postalCode: "46000",
     permanentAddress: "House No 5,Kurri road,Rawalpindi",
-    emergencyContactName:"Wahab Javed",
-    relationToEmployee:"Brother",
-    emergencyPhoneNumber:"03355599885"
+    emergencyContactName: "Wahab Javed",
+    relationToEmployee: "Brother",
+    emergencyPhoneNumber: "03355599885",
   });
 
   function handleIdChange(e) {
@@ -101,8 +101,6 @@ export default function Personal() {
                 <br />
                 <select
                   name="title"
-                  value={data.title}
-                  onChange={handleIdChange}
                   id=""
                   className="p-1 bg-slate-200 rounded-lg pl-1  w-24 border hover:border-black"
                 >
@@ -112,7 +110,12 @@ export default function Personal() {
                   >
                     Mr
                   </option>
-                  <option value="text" className="bg-white">
+                  <option
+                    name="title"
+                    value={data.title}
+                    onChange={handleIdChange}
+                    className="bg-white"
+                  >
                     Mrs
                   </option>
                   <option value="text" className="bg-white">
