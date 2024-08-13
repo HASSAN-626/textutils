@@ -4,8 +4,518 @@ import { IconUser } from "@tabler/icons-react";
 import Modal from "./Modal";
 export default function Personal() {
   const [showModal, setShowModal] = useState(false);
+  const [data, setData] = useState({
+    employeeId: "c2o-626",
+    title: "Mr",
+    firstName: "Hassan",
+    middleName: "Sardar",
+    lastName: "Satti",
+
+  });
+
+  function handleIdChange(e) {
+    let name = e.target.name;
+    let value = e.target.value;
+
+    setData((d) => {
+      d[name] = value;
+      return { ...d };
+    });
+  }
+
+  console.log(data);
+
   return (
     <>
+      <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
+        <form action="">
+          <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
+            <IconUser width={"20"} height={"20"} />
+            &nbsp; EDIT HASSAN SARDAR - PROFILE
+          </p>
+          <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
+          <div
+            className="p-2 h-60vh overflow-auto  "
+            style={{
+              scrollbarWidth: "thin",
+            }}
+          >
+            <div className="flex">
+              <form action="">
+                <label htmlFor="file">
+                  <img
+                    src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
+                    className="h-38 w-28 object-cover rounded-2xl p-2"
+                    alt=""
+                  />
+                </label>
+                <input type="file" className="hidden" id="file" name="file" />
+              </form>
+              <div className="flex-col pt-10">
+                <p>HASSAN SARDAR</p>
+                <p className="text-black-light text-sm">IT - Web Dept</p>
+              </div>
+            </div>
+
+            <p className="text-black-light">BASIC INFORMATION</p>
+            <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3">
+              <div>
+                <label
+                  htmlFor="employeeid"
+                  className="text-sm text-black-light"
+                >
+                  Employee ID *
+                </label>
+                <br />
+                <input
+                  type="text"
+                  name="employeeId"
+                  placeholder="c2o-"
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
+                  value={data.employeeId}
+                  onChange={handleIdChange}
+                />
+              </div>
+
+              <div>
+                <label htmlFor="title" className="text-sm text-black-light">
+                  Title *
+                </label>
+                <br />
+                <select
+                  name="title"
+                  value={data.title}
+                  onChange={handleIdChange}
+                  id=""
+                  className="p-1 bg-slate-200 rounded-lg pl-1  w-24 border hover:border-black"
+                >
+                  <option
+                    value="text"
+                    className="bg-white hover:bg-black-light"
+                  >
+                    Mr
+                  </option>
+                  <option value="text" className="bg-white">
+                    Mrs
+                  </option>
+                  <option value="text" className="bg-white">
+                    Other
+                  </option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="firstname" className="text-sm text-black-light">
+                  First Name *
+                </label>
+                <br />
+                <input
+                  type="text"
+                  name="firstName"
+                  value={data.firstName}
+                  onChange={handleIdChange}
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="middlename"
+                  className="text-sm text-black-light"
+                >
+                  Middle Name
+                </label>
+                <br />
+                <input
+                  name="middleName"
+                  type="text"
+                  value={data.middleName}
+                  onChange={handleIdChange}
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="secondname"
+                  className="text-sm text-black-light"
+                >
+                  Second Name *
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
+                />
+              </div>
+            </div>
+            <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
+              <div>
+                <label
+                  htmlFor="dateofbirth"
+                  className="text-sm text-black-light"
+                >
+                  Date Of Birth *
+                </label>
+                <br />
+                <input
+                  type="date"
+                  className="p-1 pl-3 bg-slate-200 rounded-lg mr-2 w-72 text-black-lighter border hover:border-black"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="text-sm text-black-light">
+                  Email *
+                </label>
+                <br />
+                <input
+                  type="email"
+                  placeholder="c2o@gmail.com"
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="phonnumber"
+                  className="text-sm text-black-light"
+                >
+                  Phone Number *
+                </label>
+                <br />
+                <input
+                  type="number"
+                  placeholder="0333-3333333"
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="phonnumber"
+                  className="text-sm text-black-light"
+                >
+                  CNIC Number *
+                </label>
+                <br />
+                <input
+                  type="number"
+                  placeholder="33333-3333333-3"
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+            </div>
+            <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
+              <div>
+                <label htmlFor="title" className="text-sm text-black-light">
+                  Gender *
+                </label>
+                <br />
+                <select
+                  name="select"
+                  id=""
+                  className="p-1 bg-slate-200 rounded-lg pl-1  w-36 border hover:border-black"
+                >
+                  <option
+                    value="text"
+                    className="bg-white hover:bg-black-light"
+                  >
+                    Male
+                  </option>
+                  <option value="text" className="bg-white">
+                    Female
+                  </option>
+                  <option value="text" className="bg-white">
+                    None
+                  </option>
+                </select>
+              </div>
+              <div>
+                <label htmlFor="title" className="text-sm text-black-light">
+                  Blood Group *
+                </label>
+                <br />
+                <select
+                  name="select"
+                  id=""
+                  className="p-1 bg-slate-200 rounded-lg pl-1  w-32 border hover:border-black"
+                >
+                  <option
+                    value="text"
+                    className="bg-white hover:bg-black-light"
+                  >
+                    A+
+                  </option>
+                  <option value="text" className="bg-white">
+                    A-
+                  </option>
+                  <option value="text" className="bg-white">
+                    B+
+                  </option>
+                  <option value="text" className="bg-white">
+                    AB+
+                  </option>
+                  <option value="text" className="bg-white">
+                    AB-
+                  </option>
+                  <option value="text" className="bg-white">
+                    O+
+                  </option>
+                  <option value="text" className="bg-white">
+                    O-
+                  </option>
+                </select>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="parent/guardianname"
+                  className="text-sm text-black-light"
+                >
+                  Parent / Guardian Name{" "}
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="parent/guardianphoneno"
+                  className="text-sm text-black-light"
+                >
+                  Parent / Guardian Phone No
+                </label>
+                <br />
+                <input
+                  type="number"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="parent/guardiancnic"
+                  className="text-sm text-black-light"
+                >
+                  Parent / Guardian CNIC
+                </label>
+                <br />
+                <input
+                  type="number"
+                  placeholder="33333-3333333-3"
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+            </div>
+            <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
+              <div>
+                <label
+                  htmlFor="presentaddress"
+                  className="text-sm text-black-light"
+                >
+                  Present Address
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="street" className="text-sm text-black-light">
+                  Street
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="city" className="text-sm text-black-light">
+                  City
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="country" className="text-sm text-black-light">
+                  Country
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="postalcode"
+                  className="text-sm text-black-light"
+                >
+                  Postal Code
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                />
+              </div>
+            </div>
+            <div className="text-sm font-light ">
+              <input
+                type="checkbox"
+                className="checked:bg-blue-500 mt-4 rounded text-sm"
+              />
+              &nbsp;Match Above
+            </div>
+            <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3 ">
+              <div>
+                <label
+                  htmlFor="presentaddress"
+                  className="text-sm text-black-light"
+                >
+                  Permanent Address
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="street" className="text-sm text-black-light">
+                  Street
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="city" className="text-sm text-black-light">
+                  City
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="country" className="text-sm text-black-light">
+                  Country
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="postalcode"
+                  className="text-sm text-black-light"
+                >
+                  Postal Code
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
+                />
+              </div>
+            </div>
+            <div className="mt-4 mb-3 pr-2 w-full border border- "></div>
+            <p className="text-black-light">EMERGENCY CONTACT</p>
+
+            <div className="grid grid-rows-1 grid-flow-col mt-2  gap-3 ">
+              <div>
+                <label
+                  htmlFor="emergencycontactname"
+                  className="text-sm text-black-light"
+                >
+                  Emergency Contact Name
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="relationttoemployee"
+                  className="text-sm text-black-light"
+                >
+                  Relation To Employee
+                </label>
+                <br />
+                <input
+                  type="text"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="emergencyphonenumber"
+                  className="text-sm text-black-light"
+                >
+                  Emergency Phone Number
+                </label>
+                <br />
+                <input
+                  type="number"
+                  placeholder=""
+                  className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
+                />
+              </div>
+            </div>
+            <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
+            <div className="mt-4 flex items-end justify-end gap-6">
+              <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
+                SAVE & NEXT
+              </button>
+              <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
+                NEXT
+              </button>
+              <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
+                SAVE & EXIT
+              </button>
+            </div>
+          </div>
+        </form>
+      </Modal>
       <div className="pt-4 ml-4 mb-10">
         <div className=" ml-5 bg-white p-4  w-full border-2 rounded-lg shadow-md ">
           <p className="pl-3 text-black font-semibold flex h-4 ">
@@ -110,524 +620,7 @@ export default function Personal() {
                   </p>
                 </button>
               </div>
-              <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-                <form action="">
-                  <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
-                    <IconUser width={"20"} height={"20"} />
-                    &nbsp; EDIT HASSAN SARDAR - PROFILE
-                  </p>
-                  <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
-                  <div
-                    className="p-2 h-60vh overflow-auto  "
-                    style={{
-                      scrollbarWidth: "thin",
-                    }}
-                  >
-                    <div className="flex">
-                      <form action="">
-                        <label htmlFor="file">
-                          <img
-                            src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
-                            className="h-38 w-28 object-cover rounded-2xl p-2"
-                            alt=""
-                          />
-                        </label>
-                        <input
-                          type="file"
-                          className="hidden"
-                          id="file"
-                          name="file"
-                        />
-                      </form>
-                      <div className="flex-col pt-10">
-                        <p>HASSAN SARDAR</p>
-                        <p className="text-black-light text-sm">
-                          IT - Web Dept
-                        </p>
-                      </div>
-                    </div>
 
-                    <p className="text-black-light">BASIC INFORMATION</p>
-                    <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3">
-                      <div>
-                        <label
-                          htmlFor="employeeid"
-                          className="text-sm text-black-light"
-                        >
-                          Employee ID *
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder="c2o-"
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="title"
-                          className="text-sm text-black-light"
-                        >
-                          Title *
-                        </label>
-                        <br />
-                        <select
-                          name="select"
-                          id=""
-                          className="p-1 bg-slate-200 rounded-lg pl-1  w-24 border hover:border-black"
-                        >
-                          <option
-                            value="text"
-                            className="bg-white hover:bg-black-light"
-                          >
-                            Mr
-                          </option>
-                          <option value="text" className="bg-white">
-                            Mrs
-                          </option>
-                          <option value="text" className="bg-white">
-                            Other
-                          </option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="firstname"
-                          className="text-sm text-black-light"
-                        >
-                          First Name *
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="middlename"
-                          className="text-sm text-black-light"
-                        >
-                          Middle Name
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="secondname"
-                          className="text-sm text-black-light"
-                        >
-                          Second Name *
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-1 w-48 border hover:border-black"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                      <div>
-                        <label
-                          htmlFor="dateofbirth"
-                          className="text-sm text-black-light"
-                        >
-                          Date Of Birth *
-                        </label>
-                        <br />
-                        <input
-                          type="date"
-                          className="p-1 pl-3 bg-slate-200 rounded-lg mr-2 w-72 text-black-lighter border hover:border-black"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="email"
-                          className="text-sm text-black-light"
-                        >
-                          Email *
-                        </label>
-                        <br />
-                        <input
-                          type="email"
-                          placeholder="c2o@gmail.com"
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="phonnumber"
-                          className="text-sm text-black-light"
-                        >
-                          Phone Number *
-                        </label>
-                        <br />
-                        <input
-                          type="number"
-                          placeholder="0333-3333333"
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="phonnumber"
-                          className="text-sm text-black-light"
-                        >
-                          CNIC Number *
-                        </label>
-                        <br />
-                        <input
-                          type="number"
-                          placeholder="33333-3333333-3"
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                      <div>
-                        <label
-                          htmlFor="title"
-                          className="text-sm text-black-light"
-                        >
-                          Gender *
-                        </label>
-                        <br />
-                        <select
-                          name="select"
-                          id=""
-                          className="p-1 bg-slate-200 rounded-lg pl-1  w-36 border hover:border-black"
-                        >
-                          <option
-                            value="text"
-                            className="bg-white hover:bg-black-light"
-                          >
-                            Male
-                          </option>
-                          <option value="text" className="bg-white">
-                            Female
-                          </option>
-                          <option value="text" className="bg-white">
-                            None
-                          </option>
-                        </select>
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="title"
-                          className="text-sm text-black-light"
-                        >
-                          Blood Group *
-                        </label>
-                        <br />
-                        <select
-                          name="select"
-                          id=""
-                          className="p-1 bg-slate-200 rounded-lg pl-1  w-32 border hover:border-black"
-                        >
-                          <option
-                            value="text"
-                            className="bg-white hover:bg-black-light"
-                          >
-                            A+
-                          </option>
-                          <option value="text" className="bg-white">
-                            A-
-                          </option>
-                          <option value="text" className="bg-white">
-                            B+
-                          </option>
-                          <option value="text" className="bg-white">
-                            AB+
-                          </option>
-                          <option value="text" className="bg-white">
-                            AB-
-                          </option>
-                          <option value="text" className="bg-white">
-                            O+
-                          </option>
-                          <option value="text" className="bg-white">
-                            O-
-                          </option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="parent/guardianname"
-                          className="text-sm text-black-light"
-                        >
-                          Parent / Guardian Name{" "}
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="parent/guardianphoneno"
-                          className="text-sm text-black-light"
-                        >
-                          Parent / Guardian Phone No
-                        </label>
-                        <br />
-                        <input
-                          type="number"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="parent/guardiancnic"
-                          className="text-sm text-black-light"
-                        >
-                          Parent / Guardian CNIC
-                        </label>
-                        <br />
-                        <input
-                          type="number"
-                          placeholder="33333-3333333-3"
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid grid-rows-1 grid-flow-col mt-4 gap-3 ">
-                      <div>
-                        <label
-                          htmlFor="presentaddress"
-                          className="text-sm text-black-light"
-                        >
-                          Present Address
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="street"
-                          className="text-sm text-black-light"
-                        >
-                          Street
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="city"
-                          className="text-sm text-black-light"
-                        >
-                          City
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="country"
-                          className="text-sm text-black-light"
-                        >
-                          Country
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="postalcode"
-                          className="text-sm text-black-light"
-                        >
-                          Postal Code
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
-                        />
-                      </div>
-                    </div>
-                    <div className="text-sm font-light ">
-                      <input
-                        type="checkbox"
-                        className="checked:bg-blue-500 mt-4 rounded text-sm"
-                      />
-                      &nbsp;Match Above
-                    </div>
-                    <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3 ">
-                      <div>
-                        <label
-                          htmlFor="presentaddress"
-                          className="text-sm text-black-light"
-                        >
-                          Permanent Address
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="street"
-                          className="text-sm text-black-light"
-                        >
-                          Street
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="city"
-                          className="text-sm text-black-light"
-                        >
-                          City
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="country"
-                          className="text-sm text-black-light"
-                        >
-                          Country
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
-                        />
-                      </div>
-
-                      <div>
-                        <label
-                          htmlFor="postalcode"
-                          className="text-sm text-black-light"
-                        >
-                          Postal Code
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
-                        />
-                      </div>
-                    </div>
-                    <div className="mt-4 mb-3 pr-2 w-full border border- "></div>
-                    <p className="text-black-light">EMERGENCY CONTACT</p>
-
-                    <div className="grid grid-rows-1 grid-flow-col mt-2  gap-3 ">
-                      <div>
-                        <label
-                          htmlFor="emergencycontactname"
-                          className="text-sm text-black-light"
-                        >
-                          Emergency Contact Name
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="relationttoemployee"
-                          className="text-sm text-black-light"
-                        >
-                          Relation To Employee
-                        </label>
-                        <br />
-                        <input
-                          type="text"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="emergencyphonenumber"
-                          className="text-sm text-black-light"
-                        >
-                          Emergency Phone Number
-                        </label>
-                        <br />
-                        <input
-                          type="number"
-                          placeholder=""
-                          className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
-                        />
-                      </div>
-                    </div>
-                    <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
-                    <div className="mt-4 flex items-end justify-end gap-6">
-                      <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
-                        SAVE & NEXT
-                      </button>
-                      <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
-                        NEXT
-                      </button>
-                      <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
-                        SAVE & EXIT
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </Modal>
               <img
                 src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
                 className="h-38 w-28 object-cover rounded-xl"
