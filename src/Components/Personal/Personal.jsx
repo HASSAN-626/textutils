@@ -458,7 +458,7 @@ export default function Personal() {
                   type="text"
                   name="permanentAddress"
                   value={data.permanentAddress}
-                  oncahnge
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
