@@ -558,6 +558,9 @@ export default function Personal() {
                 </label>
                 <br />
                 <input
+                  name="relationToEmployee"
+                  value={data.relationToEmployee}
+                  onChange={handleIdChange}
                   type="text"
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-72 border hover:border-black"
