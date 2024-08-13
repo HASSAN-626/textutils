@@ -10,6 +10,20 @@ export default function Personal() {
     firstName: "Hassan",
     middleName: "Sardar",
     lastName: "Satti",
+    dateOfBirth: "9/05/2004",
+    email: "hassanjaveed626@gmail.com",
+    phoneNumber: "03165105988",
+    cnicNumber: "3740545634941",
+    gender: "Male",
+    bloodGroup: "O+",
+    parentguardianName: "Riffat Samina",
+    parentguardianPhoneNumber: "03325146837",
+    parentguardianCNIC: "3740539969964",
+    presentAddress:"House No 5 , Street No 5 , Kurri road , Rawalpindi",
+    street:"5",
+    city:"Rawalpindi",
+    country:"Pakistan",
+    postalCode:"46000",
 
   });
 
@@ -138,16 +152,13 @@ export default function Personal() {
               </div>
 
               <div>
-                <label
-                  htmlFor="secondname"
-                  className="text-sm text-black-light"
-                >
+                <label htmlFor="lastname" className="text-sm text-black-light">
                   Last Name *
                 </label>
                 <br />
                 <input
                   type="text"
-                  name="secondName"
+                  name="lastName"
                   value={data.lastName}
                   onChange={handleIdChange}
                   placeholder=""
@@ -166,6 +177,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="date"
+                  name="dateOfBirth"
+                  value={data.dateOfBirth}
+                  onChange={handleIdChange}
                   className="p-1 pl-3 bg-slate-200 rounded-lg mr-2 w-72 text-black-lighter border hover:border-black"
                 />
               </div>
@@ -176,6 +190,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="email"
+                  name="email"
+                  value={data.email}
+                  onChange={handleIdChange}
                   placeholder="c2o@gmail.com"
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
@@ -190,13 +207,16 @@ export default function Personal() {
                 <br />
                 <input
                   type="number"
+                  name="phoneNumber"
+                  value={data.phoneNumber}
+                  onChange={handleIdChange}
                   placeholder="0333-3333333"
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
               </div>
               <div>
                 <label
-                  htmlFor="phonnumber"
+                  htmlFor="cnicNumber"
                   className="text-sm text-black-light"
                 >
                   CNIC Number *
@@ -204,6 +224,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="number"
+                  name="cnicNumber"
+                  value={data.cnicNumber}
+                  onChange={handleIdChange}
                   placeholder="33333-3333333-3"
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
@@ -216,12 +239,13 @@ export default function Personal() {
                 </label>
                 <br />
                 <select
-                  name="select"
                   id=""
                   className="p-1 bg-slate-200 rounded-lg pl-1  w-36 border hover:border-black"
                 >
                   <option
-                    value="text"
+                    name="gender"
+                    value={data.gender}
+                    onChange={handleIdChange}
                     className="bg-white hover:bg-black-light"
                   >
                     Male
@@ -262,7 +286,13 @@ export default function Personal() {
                   <option value="text" className="bg-white">
                     AB-
                   </option>
-                  <option value="text" className="bg-white">
+                  <option
+                  
+                    className="bg-white "
+                    name="gender"
+                    value={data.gender}
+                    onChange={handleIdChange}
+                  >
                     O+
                   </option>
                   <option value="text" className="bg-white">
@@ -281,6 +311,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="text"
+                  name="parentguardianName"
+                  value={data.parentguardianName}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
@@ -296,6 +329,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="number"
+                  name="parentguardianPhoneNumber"
+                  value={data.parentguardianPhoneNumber}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
@@ -311,6 +347,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="number"
+                  name="parentguardianCNIC"
+                  value={data.parentguardianCNIC}
+                  onChange={handleIdChange}
                   placeholder="33333-3333333-3"
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
@@ -327,6 +366,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="text"
+                  name="presentAddress"
+                  value={data.presentAddress}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
@@ -339,6 +381,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="text"
+                  name="street"
+                  value={data.street}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
                 />
@@ -351,6 +396,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="text"
+                  name="city"
+                  value={data.city}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-44 border hover:border-black"
                 />
