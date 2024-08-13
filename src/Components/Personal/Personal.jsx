@@ -24,6 +24,7 @@ export default function Personal() {
     city:"Rawalpindi",
     country:"Pakistan",
     postalCode:"46000",
+    permanentAddress:"House No 5 , Street No 5 , Kurri road , Rawalpindi",
 
   });
 
@@ -306,7 +307,7 @@ export default function Personal() {
                   htmlFor="parent/guardianname"
                   className="text-sm text-black-light"
                 >
-                  Parent / Guardian Name{" "}
+                  Parent / Guardian Name
                 </label>
                 <br />
                 <input
@@ -411,6 +412,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="text"
+                  name="country"
+                  value={data.country}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
                 />
@@ -426,6 +430,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="text"
+                  name="postalCode"
+                  value={data.postalCode}
+                  onChange={handleIdChange}
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-40 border hover:border-black"
                 />
@@ -441,7 +448,7 @@ export default function Personal() {
             <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3 ">
               <div>
                 <label
-                  htmlFor="presentaddress"
+                  htmlFor="permanentaddress"
                   className="text-sm text-black-light"
                 >
                   Permanent Address
@@ -449,6 +456,9 @@ export default function Personal() {
                 <br />
                 <input
                   type="text"
+                  name="permanentAddress"
+                  value={data.permanentAddress}
+                  oncahnge
                   placeholder=""
                   className="p-1 bg-slate-200 rounded-lg pl-3 w-48 border hover:border-black"
                 />
