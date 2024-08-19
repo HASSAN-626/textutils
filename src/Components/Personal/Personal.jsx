@@ -45,7 +45,6 @@ export default function Personal() {
   return (
     <>
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        
         <form action="">
           <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
             <IconUser width={"20"} height={"20"} />
