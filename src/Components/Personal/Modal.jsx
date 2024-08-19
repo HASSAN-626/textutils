@@ -25,30 +25,30 @@ const Modal = ({ isVisible, onClose, children }) => {
     <div
       className="fixed inset-0 bg-black bg-opacity-55 backdrop-blur-md flex justify-center items-center"
     >
-      <div className="flex-col mb-80 bg-slate-200 p-1 rounded-md">
+      <div className=" mb-80 bg-slate-200  rounded-md">
         <button
-          className={`pb-5 hover:text-primary ${activeTab === 'profile' ? 'text-primary' : ''}`}
+          className={`pb-6 pt-2  hover:text-primary ${activeTab === 'profile' ? 'text-primary border-2 border-r-primary my-1 ' : ''}`}
           onClick={() => setActiveTab('profile')}
         >
           <IconUserCircle /> 
         </button>
         <br />
         <button
-          className={`pb-5 hover:text-primary ${activeTab === 'details' ? 'text-primary' : ''}`}
+          className={`pb-6 hover:text-primary ${activeTab === 'details' ? 'text-primary border-2 border-r-primary my-1' : ''}`}
           onClick={() => setActiveTab('details')}
         >
           <IconId /> 
         </button>
         <br />
         <button
-          className={`pb-5 hover:text-primary ${activeTab === 'documents' ? 'text-primary' : ''}`}
+          className={`pb-6 hover:text-primary ${activeTab === 'documents' ? 'text-primary border-2 border-r-primary my-1' : ''}`}
           onClick={() => setActiveTab('documents')}
         >
           <IconFileDescription /> 
         </button>
         <br />
         <button
-          className={`pb-5 hover:text-primary ${activeTab === 'credentials' ? 'text-primary' : ''}`}
+          className={`pb-4 hover:text-primary ${activeTab === 'credentials' ? 'text-primary border-2 border-r-primary my-1' : ''}`}
           onClick={() => setActiveTab('credentials')}
         >
           <IconKey /> 
