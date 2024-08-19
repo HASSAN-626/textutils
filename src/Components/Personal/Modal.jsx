@@ -12,10 +12,10 @@ const Modal = ({ isVisible, onClose,children }) => {
     flex justify-center items-center"
       >
       <div className="flex-col mb-80 bg-slate-200 p-1 rounded-md">
-      <button className="pt-2 pb-5 hover:text-primary "><IconUserCircle/></button> <br />
-      <button className="pb-5 hover:text-primary"><IconId/></button> <br />
-      <button className="pb-5 hover:text-primary"><IconFileDescription/></button> <br />
-      <button className="pb-5 hover:text-primary"><IconKey /></button> 
+      <button className="pt-2 pb-5 hover:text-primary ">Profile<IconUserCircle/></button> <br />
+      <button className="pb-5 hover:text-primary">Details<IconId/></button> <br />
+      <button className="pb-5 hover:text-primary">Document<IconFileDescription/></button> <br />
+      <button className="pb-5 hover:text-primary">Credentials<IconKey /></button> 
       </div>
         <div className="w-2/4 flex flex-col">
           <button
