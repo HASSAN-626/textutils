@@ -32,7 +32,69 @@ export default function Details() {
           </select>
           <div className=" mt-6 pr-2 w-full border border-x-black-lighter "></div>
           <p className="text-black-light pt-3 pb-2">BANK DETAILS</p>
+          <div className="grid grid-rows-1 grid-flow-col mt-2  ">
+            <div>
+              <label
+                htmlFor="bankname"
+                className="text-sm text-black-light"
+              >
+                Bank Name *
+              </label>
+              <br />
+              <input
+                type="text"
+                name="bankname"
+                placeholder=""
+                className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="branchname"
+                className="text-sm text-black-light"
+              >
+                Branch Name *
+              </label>
+              <br />
+              <input
+                type="text"
+                name="branchname"
+                placeholder=""
+                className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="accountitle"
+                className="text-sm text-black-light"
+              >
+                Account Title *
+              </label>
+              <br />
+              <input
+                type="text"
+                name="accounttitle"
+                placeholder=""
+                className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="accountnumber"
+                className="text-sm text-black-light"
+              >
+                Account Number / IBAN *
+              </label>
+              <br />
+              <input
+                type="text"
+                name="accountnumber"
+                placeholder=""
+                className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
+              />
+            </div>
 
+          </div>
         </div>
       </form>
     </>
