@@ -34,10 +34,7 @@ export default function Details() {
           <p className="text-black-light pt-3 pb-2">BANK DETAILS</p>
           <div className="grid grid-rows-1 grid-flow-col mt-2  ">
             <div>
-              <label
-                htmlFor="bankname"
-                className="text-sm text-black-light"
-              >
+              <label htmlFor="bankname" className="text-sm text-black-light">
                 Bank Name *
               </label>
               <br />
@@ -49,10 +46,7 @@ export default function Details() {
               />
             </div>
             <div>
-              <label
-                htmlFor="branchname"
-                className="text-sm text-black-light"
-              >
+              <label htmlFor="branchname" className="text-sm text-black-light">
                 Branch Name *
               </label>
               <br />
@@ -64,10 +58,7 @@ export default function Details() {
               />
             </div>
             <div>
-              <label
-                htmlFor="accountitle"
-                className="text-sm text-black-light"
-              >
+              <label htmlFor="accountitle" className="text-sm text-black-light">
                 Account Title *
               </label>
               <br />
@@ -93,8 +84,18 @@ export default function Details() {
                 className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
               />
             </div>
-
           </div>
+          <div className="mt-5 flex items-end justify-end gap-5">
+              <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
+                SAVE & NEXT
+              </button>
+              <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
+                NEXT
+              </button>
+              <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
+                SAVE & EXIT
+              </button>
+            </div>
         </div>
       </form>
     </>
