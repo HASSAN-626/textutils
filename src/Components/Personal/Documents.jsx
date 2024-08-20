@@ -26,7 +26,7 @@ export default function Documents() {
             SAVE & EXIT
           </button>
         </div>
-        <div className="flex justify-between w- m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
+        <div className="flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
           <p className="text-m text-black-light">Name</p>
           <p className="pr-16 text-m text-black-light">
             <div className=" hover:bg-slate-300 rounded-sm ">Action</div>
