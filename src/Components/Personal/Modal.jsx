@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IconUserCircle, IconFileDescription, IconId, IconKey } from "@tabler/icons-react";
+import { IconUserCircle, IconFileDescription, IconId, IconKey,IconHelpHexagon } from "@tabler/icons-react";
 import Details from "./Details";
 import Documents from "./Documents";
 import Credentials from "./Credentials";
