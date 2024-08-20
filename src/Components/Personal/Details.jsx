@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { IconUser, IconHelpHexagon } from "@tabler/icons-react";
 export default function Details() {
+  const [data, setData] = useState({
+  martialStatus:"Single",
+  bankName:"Nayapay",
+  branchName:"Online",
+  accountTitle:"Savings",
+  accountNumberIBAN:"03165105988",
+  });
+  function handleIdChange(e) {
+    let name = e.target.name;
+    let value = e.target.value;
+
+    setData((d) => {
+      d[name] = value;
+      return { ...d };
+    });
+  }
+
+  console.log(data); 
   return (
     <>
       <form action="">
@@ -22,7 +40,9 @@ export default function Details() {
           </label>
           <br />
           <select
-            name="title"
+            name="martialstatus"
+            value={data.martialstatus}
+            onChange={handleIdChange}
             id=""
             className="p-1  bg-slate-200 rounded-lg pl-1 w-60 font-medium  border hover:border-black"
           >
@@ -41,7 +61,9 @@ export default function Details() {
               <br />
               <input
                 type="text"
-                name="bankname"
+                name="bankName"
+                value={data.bankName}
+                onChange={handleIdChange}
                 placeholder=""
                 className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
               />
@@ -53,7 +75,9 @@ export default function Details() {
               <br />
               <input
                 type="text"
-                name="branchname"
+                name="branchName"
+                value={data.branchName}
+                onChange={handleIdChange}
                 placeholder=""
                 className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
               />
@@ -65,8 +89,9 @@ export default function Details() {
               <br />
               <input
                 type="text"
-                name="accounttitle"
-                placeholder=""
+                name="accountTitle"
+                value={data.accountTitle}
+                onChange={handleIdChange}
                 className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
               />
             </div>
@@ -80,8 +105,9 @@ export default function Details() {
               <br />
               <input
                 type="text"
-                name="accountnumber"
-                placeholder=""
+                name="accountNumberIBAN"
+                value={data.accountNumberIBAN}
+                onChange={handleIdChange}
                 className="p-1 bg-slate-200 rounded-lg pl-3 w-56 border hover:border-black"
               />
             </div>
