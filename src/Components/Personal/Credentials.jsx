@@ -70,6 +70,18 @@ export default function Credentials() {
               className="mt-1 p-1 bg-slate-200 rounded-lg w-64 border hover:border-black"
             />
           </div>
+          <div>
+            <label htmlFor="employeeid" className=" text-sm text-black-light ">
+              Confirm New Pasword
+            </label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              placeholder=""
+              className="mt-1 p-1 bg-slate-200 rounded-lg w-64 border hover:border-black"
+            />
+          </div>
         </div>
       </div>
     </form>
