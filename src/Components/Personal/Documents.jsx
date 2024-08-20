@@ -26,10 +26,22 @@ export default function Documents() {
             SAVE & EXIT
           </button>
         </div>
-        <div className="flex justify-between  w-96 m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
-          <p className="pl-2 text-m text-black-light">Name</p>
+        <div className="flex justify-between  w-96 m-1 p-2 rounded-lg bg-gray-200  hover:bg-gray-200 ">
+          <p className="pl-2 text-m text-black-lighter">Name</p>
           <p className="pr-2 text-m text-black-light">
             <div className=" hover:bg-slate-300 rounded-sm ">Actions</div>
+          </p>
+        </div>
+        <div className="mt-2 flex justify-between  w-96 m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
+          <p className="pl-2 text-m text-black-light font-thin">CNIC Front</p>
+          <p className="pr-2 text-m text-black-light">
+            <div className=" hover:bg-slate-300 rounded-sm text-red-600">X</div>
+          </p>
+        </div>
+        <div className="mt-2 flex justify-between  w-96 m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
+          <p className="pl-2 text-m text-black-light font-thin">CNIC back</p>
+          <p className="pr-2 text-m text-black-light">
+            <div className=" hover:bg-slate-300 rounded-sm text-red-600">X</div>
           </p>
         </div>
       </div>
