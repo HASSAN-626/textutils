@@ -9,12 +9,29 @@ export default function Documents() {
       </p>
       <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
       <div
-        className="p-2 h-60vh overflow-auto  "
+        className="p-2 h-60vh overflow-auto  justify-between"
         style={{
           scrollbarWidth: "thin",
         }}
       >
         <p className="text-black-light pb-2">EMPLOYEE DOCUMENTS</p>
+        <div className="mt-5 flex items-end justify-end gap-5">
+          <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
+            SAVE & NEXT
+          </button>
+          <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
+            NEXT
+          </button>
+          <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
+            SAVE & EXIT
+          </button>
+        </div>
+        <div className="flex justify-between w- m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
+          <p className="text-m text-black-light">Name</p>
+          <p className="pr-16 text-m text-black-light">
+            <div className=" hover:bg-slate-300 rounded-sm ">Action</div>
+          </p>
+        </div>
       </div>
     </form>
   );
