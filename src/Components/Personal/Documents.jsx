@@ -5,7 +5,7 @@ export default function Documents() {
     <form action="">
       <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
         <IconUser width={"20"} height={"20"} />
-        &nbsp; EDIT HASSAN SARDAR - DETAILS
+        &nbsp; EDIT HASSAN SARDAR - DOCUMENTS
       </p>
       <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
       <div
@@ -14,7 +14,7 @@ export default function Documents() {
           scrollbarWidth: "thin",
         }}
       >
-        <p className="text-black-light pb-2">EMPLOYEE DETAILS</p>
+        <p className="text-black-light pb-2">EMPLOYEE DOCUMENTS</p>
       </div>
     </form>
   );
