@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { IconDownload } from "@tabler/icons-react";
-import { IconUser } from "@tabler/icons-react";
+import { IconDownload , IconUser , IconHelpHexagon} from "@tabler/icons-react";
 import Modal from "./Modal";
 export default function Personal() {
   const [showModal, setShowModal] = useState(false);
@@ -48,7 +47,8 @@ export default function Personal() {
         <form action="">
           <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
             <IconUser width={"20"} height={"20"} />
-            &nbsp; EDIT HASSAN SARDAR - PROFILE
+            &nbsp; EDIT HASSAN SARDAR - PROFILE &nbsp;{" "}
+            <IconHelpHexagon width={"20"} height={"20"} />
           </p>
           <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
           <div

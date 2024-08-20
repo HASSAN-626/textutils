@@ -1,12 +1,13 @@
 import React from "react";
-import { IconUser,IconHelpHexagon } from "@tabler/icons-react";
+import { IconUser, IconHelpHexagon } from "@tabler/icons-react";
 export default function Details() {
   return (
     <>
       <form action="">
         <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
           <IconUser width={"20"} height={"20"} />
-          &nbsp;EDIT HASSAN SARDAR - DETAILS&nbsp; <IconHelpHexagon width={"20"} height={"20"}/>
+          &nbsp;EDIT HASSAN SARDAR - DETAILS &nbsp;{" "}
+          <IconHelpHexagon width={"20"} height={"20"} />
         </p>
         <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
         <div
@@ -86,16 +87,16 @@ export default function Details() {
             </div>
           </div>
           <div className="mt-5 flex items-end justify-end gap-5">
-              <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
-                SAVE & NEXT
-              </button>
-              <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
-                NEXT
-              </button>
-              <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
-                SAVE & EXIT
-              </button>
-            </div>
+            <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
+              SAVE & NEXT
+            </button>
+            <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
+              NEXT
+            </button>
+            <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
+              SAVE & EXIT
+            </button>
+          </div>
         </div>
       </form>
     </>
