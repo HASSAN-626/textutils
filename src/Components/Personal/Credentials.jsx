@@ -83,6 +83,17 @@ export default function Credentials() {
             />
           </div>
         </div>
+        <div className="mt-8 flex items-end justify-end gap-6">
+              <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-10 pr-10 font-medium hover:opacity-55">
+                SAVE
+              </button>
+              <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
+                BACK
+              </button>
+              <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
+                SAVE & EXIT
+              </button>
+            </div>
       </div>
     </form>
   );
