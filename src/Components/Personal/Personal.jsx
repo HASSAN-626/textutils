@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { IconDownload , IconUser , IconHelpHexagon} from "@tabler/icons-react";
+
 import Modal from "./Modal";
 export default function Personal() {
   const [showModal, setShowModal] = useState(false);
