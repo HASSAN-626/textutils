@@ -1,13 +1,29 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { IconUser, IconHelpHexagon } from "@tabler/icons-react";
 
 export default function Documents() {
-
+  const [uploadedFiles, setUploadedFiles] = useState([]);
   const fileInputRef = useRef(null);
-
 
   const handleUploadClick = () => {
     fileInputRef.current.click();
+  };
+
+  const handleFileChange = (e) => {
+    const files = Array.from(e.target.files);
+    setUploadedFiles((prevFiles) => [
+      ...prevFiles,
+      ...files.map((file) => ({
+        name: file.name,
+        url: URL.createObjectURL(file),
+      })),
+    ]);
+  };
+
+  const handleFileRemove = (fileName) => {
+    setUploadedFiles((prevFiles) =>
+      prevFiles.filter((file) => file.name !== fileName)
+    );
   };
 
   return (
@@ -36,29 +52,16 @@ export default function Documents() {
             SAVE & EXIT
           </button>
         </div>
-        <div className="flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-200 hover:bg-gray-200">
-          <p className="pl-2 text-m text-black-lighter">Name</p>
-          <p className="pr-2 text-m text-black-light">
-            <div className="hover:bg-slate-300 rounded-sm">Actions</div>
-          </p>
-        </div>
-        <div className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
-          <p className="pl-2 text-m text-black-light font-thin">CNIC Front</p>
-          <p className="pr-2 text-m text-black-light">
-            <div className="hover:bg-slate-300 rounded-sm text-red-600 pl-1 pr-1">
-             <button>X</button> 
-            </div>
-          </p>
-        </div>
-        <div className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
-          <p className="pl-2 text-m text-black-light font-thin">CNIC back</p>
-          <p className="pr-2 text-m text-black-light">
-            <div className="hover:bg-slate-300 rounded-sm text-red-600 pl-1 pr-1">
-            <button>X</button>
-            </div>
-          </p>
-        </div>
-
+        {uploadedFiles.map((file) => (
+          <div key={file.name} className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
+            <p className="pl-2 text-m text-black-light font-thin">{file.name}</p>
+            <p className="pr-2 text-m text-black-light">
+              <div className="hover:bg-slate-300 rounded-sm text-red-600 pl-1 pr-1">
+                <button onClick={() => handleFileRemove(file.name)}>X</button>
+              </div>
+            </p>
+          </div>
+        ))}
         <div className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-300">
           <p className="pl-2 text-m text-black-light text-sm">
             Document Type <br />
@@ -83,7 +86,7 @@ export default function Documents() {
           </p>
           <p className="pr-2 text-m text-black-light">
             <button
-              type="button" 
+              type="button"
               onClick={handleUploadClick}
               className="hover:opacity-80 rounded-md p-1 mt-3 pl-3 pr-3 bg-primary text-slate-200 font-thin"
             >
@@ -92,10 +95,9 @@ export default function Documents() {
             <input
               type="file"
               ref={fileInputRef}
-              style={{ display: 'none' }} 
-              onChange={(e) => {
-                console.log(e.target.files);
-              }}
+              style={{ display: 'none' }}
+              onChange={handleFileChange}
+              multiple
             />
           </p>
         </div>
@@ -103,4 +105,3 @@ export default function Documents() {
     </form>
   );
 }
-// asdada
