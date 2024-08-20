@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IconUserCircle, IconFileDescription, IconId, IconKey } from "@tabler/icons-react";
 import Details from "./Details";
+import Documents from "./Documents";
 const Modal = ({ isVisible, onClose, children }) => {
   const [activeTab, setActiveTab] = useState('profile');
 
@@ -13,7 +14,7 @@ const Modal = ({ isVisible, onClose, children }) => {
       case 'details':
         return <div className=""><Details/></div>;
       case 'documents':
-        return <div>Documents Content: Write your documents here.</div>;
+        return <div><Documents /></div>;
       case 'credentials':
         return <div>Credentials Content: Write your credentials here.</div>;
       default:
