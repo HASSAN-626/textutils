@@ -14,8 +14,8 @@ export default function Documents() {
           scrollbarWidth: "thin",
         }}
       >
-        <p className="text-black-light pb-2">EMPLOYEE DOCUMENTS</p>
-        <div className="mt-5 flex items-end justify-end gap-5">
+        <p className="text-black-light pb-1">EMPLOYEE DOCUMENTS</p>
+        <div className=" flex items-end justify-end gap-5">
           <button className="bg-blue-100 p-2 rounded-md text-blue-700 pl-9 pr-9 font-medium hover:opacity-55">
             SAVE & NEXT
           </button>
@@ -26,10 +26,10 @@ export default function Documents() {
             SAVE & EXIT
           </button>
         </div>
-            <div className="flex justify-between w-112 m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
-          <p className="text-m text-black-light">Name</p>
-          <p className="pr-11 text-m text-black-light">
-            <div className=" hover:bg-slate-300 rounded-sm ">Action</div>
+        <div className="flex justify-between  w-96 m-1 p-2 rounded-lg bg-gray-100  hover:bg-gray-200 ">
+          <p className="pl-2 text-m text-black-light">Name</p>
+          <p className="pr-2 text-m text-black-light">
+            <div className=" hover:bg-slate-300 rounded-sm ">Actions</div>
           </p>
         </div>
       </div>
