@@ -46,7 +46,7 @@ export default function Documents() {
           <p className="pl-2 text-m text-black-light font-thin">CNIC Front</p>
           <p className="pr-2 text-m text-black-light">
             <div className="hover:bg-slate-300 rounded-sm text-red-600 pl-1 pr-1">
-              X
+             <button>X</button> 
             </div>
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function Documents() {
           <p className="pl-2 text-m text-black-light font-thin">CNIC back</p>
           <p className="pr-2 text-m text-black-light">
             <div className="hover:bg-slate-300 rounded-sm text-red-600 pl-1 pr-1">
-              X
+            <button>X</button>
             </div>
           </p>
         </div>
