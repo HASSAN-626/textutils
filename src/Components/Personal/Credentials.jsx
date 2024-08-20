@@ -16,7 +16,61 @@ export default function Credentials() {
           scrollbarWidth: "thin",
         }}
       >
-        <p className="text-black-light pb-1">Change's Pin</p>
+        <p className="text-black-light pb-1">CHANGE PIN</p>
+        <div className="grid grid-rows-1 grid-flow-col mt-2 ">
+          <div className="w-14">
+            <label htmlFor="employeeid" className=" text-sm text-black-light ">
+              New Pin
+            </label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              placeholder=""
+              className="mt-1 p-1 bg-slate-200 rounded-lg w-64 border hover:border-black"
+            />
+          </div>
+          <div className="w-112">
+            <label htmlFor="employeeid" className=" text-sm text-black-light ">
+              Confirm New Pin
+            </label>
+            <br />
+            <input
+              type="password"
+              name="confirmnewpin"
+              placeholder=""
+              className="mt-1 p-1 bg-slate-200 rounded-lg  w-64 border hover:border-black"
+            />
+          </div>
+        </div>
+        <div className="mt-6 mb-3 pr-2 w-full border border-x-black "></div>
+        <p className="text-black-light pb-1">CHANGE PASSWORD</p>
+        <div className="grid grid-rows-1 grid-flow-col mt-2  ">
+          <div>
+            <label htmlFor="employeeid" className=" text-sm text-black-light ">
+              Current Passowrd
+            </label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              placeholder=""
+              className="mt-1 p-1 bg-slate-200 rounded-lg w-64 border hover:border-black"
+            />
+          </div>
+          <div>
+            <label htmlFor="employeeid" className=" text-sm text-black-light ">
+              Current Passowrd
+            </label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              placeholder=""
+              className="mt-1 p-1 bg-slate-200 rounded-lg w-64 border hover:border-black"
+            />
+          </div>
+        </div>
       </div>
     </form>
   );
