@@ -53,8 +53,13 @@ export default function Documents() {
           </button>
         </div>
         {uploadedFiles.map((file) => (
-          <div key={file.name} className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
-            <p className="pl-2 text-m text-black-light font-thin">{file.name}</p>
+          <div
+            key={file.name}
+            className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-100 hover:bg-gray-200"
+          >
+            <p className="pl-2 text-m text-black-light font-thin">
+              {file.name}
+            </p>
             <p className="pr-2 text-m text-black-light">
               <div className="hover:bg-slate-300 rounded-sm text-red-600 pl-1 pr-1">
                 <button onClick={() => handleFileRemove(file.name)}>X</button>
@@ -95,7 +100,7 @@ export default function Documents() {
             <input
               type="file"
               ref={fileInputRef}
-              style={{ display: 'none' }}
+              style={{ display: "none" }}
               onChange={handleFileChange}
               multiple
             />
