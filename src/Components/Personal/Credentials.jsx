@@ -24,7 +24,7 @@ export default function Credentials() {
         style={{ scrollbarWidth: "thin" }}
       >
         <p className="text-black-light pb-1">CHANGE PIN</p>
-        <div className="grid grid-rows-1 grid-flow-col mt-2 gap-4">
+        <div className="grid grid-rows-1 grid-flow-col mt-2 ">
           <div className="relative w-64">
             <label htmlFor="newpin" className="text-sm text-black-light">
               New Pin
