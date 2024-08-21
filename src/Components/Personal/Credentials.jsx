@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { IconUser, IconHelpHexagon, IconEye, IconEyeOff } from "@tabler/icons-react";
 
 export default function Credentials() {
-  // State to manage visibility for each password field
+ 
   const [showNewPin, setShowNewPin] = useState(false);
   const [showConfirmNewPin, setShowConfirmNewPin] = useState(false);
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmNewPassword, setShowConfirmNewPassword] = useState(false);
 
-  // Function to toggle visibility
+ 
   const toggleVisibility = (setter) => () => setter(prev => !prev);
 
   return (
     <form action="">
-      <p className="pl-3 pb-5 text-black font-semibold flex h-4 items-center">
+      <p className="pl-3 pb-5 text-black font-semibold flex items-center">
         <IconUser width={"20"} height={"20"} />
         &nbsp; EDIT HASSAN SARDAR - CREDENTIALS &nbsp;{" "}
         <IconHelpHexagon width={"20"} height={"20"} />
@@ -25,7 +25,7 @@ export default function Credentials() {
         style={{ scrollbarWidth: "thin" }}
       >
         <p className="text-black-light pb-1">CHANGE PIN</p>
-        <div className="grid grid-rows-1 grid-flow-col gap-4 mt-2">
+        <div className="grid grid-rows-1 grid-flow-col  mt-2">
           <div className="relative w-64">
             <label htmlFor="newpin" className="text-sm text-black-light">
               New Pin
@@ -33,10 +33,11 @@ export default function Credentials() {
             <br />
             <div className="relative">
               <input
-                type={showNewPin ? "text" : "password"}
+                type={showNewPin ? "text" : "password"} 
                 name="newpin"
+                id="newpin"
                 placeholder=""
-                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-12"
+                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-10" 
               />
               <button
                 type="button"
@@ -54,18 +55,27 @@ export default function Credentials() {
             <br />
             <div className="relative">
               <input
-                type={showConfirmNewPin ? "text" : "password"}
+                type={showConfirmNewPin ? "text" : "password"}  
                 name="confirmnewpin"
+                id="confirmnewpin"
                 placeholder=""
-                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-12"
+                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full " 
               />
               <button
                 type="button"
-                onClick={toggleVisibility(setShowConfirmNewPin)}
+                onClick={toggleVisibility(setShowConfirmNewPin)} 
                 className="absolute inset-y-0 right-0 flex items-center pr-3"
               >
                 {showConfirmNewPin ? <IconEyeOff width="20" height="20" /> : <IconEye width="20" height="20" />}
               </button>
+            </div>
+          </div>
+          <div className="relative w-64">
+            <label htmlFor="newpin" className="text-sm text-black-light">
+              
+            </label>
+            <br />
+            <div className="relative">
             </div>
           </div>
         </div>
@@ -79,14 +89,15 @@ export default function Credentials() {
             <br />
             <div className="relative">
               <input
-                type={showCurrentPassword ? "text" : "password"}
+                type={showCurrentPassword ? "text" : "password"} 
                 name="currentpassword"
+                id="currentpassword"
                 placeholder=""
-                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-12"
+                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-10" 
               />
               <button
                 type="button"
-                onClick={toggleVisibility(setShowCurrentPassword)}
+                onClick={toggleVisibility(setShowCurrentPassword)} 
                 className="absolute inset-y-0 right-0 flex items-center pr-3"
               >
                 {showCurrentPassword ? <IconEyeOff width="20" height="20" /> : <IconEye width="20" height="20" />}
@@ -100,14 +111,15 @@ export default function Credentials() {
             <br />
             <div className="relative">
               <input
-                type={showNewPassword ? "text" : "password"}
+                type={showNewPassword ? "text" : "password"} 
                 name="newpassword"
+                id="newpassword"
                 placeholder=""
-                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-12"
+                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-10" 
               />
               <button
                 type="button"
-                onClick={toggleVisibility(setShowNewPassword)}
+                onClick={toggleVisibility(setShowNewPassword)} 
                 className="absolute inset-y-0 right-0 flex items-center pr-3"
               >
                 {showNewPassword ? <IconEyeOff width="20" height="20" /> : <IconEye width="20" height="20" />}
@@ -121,14 +133,15 @@ export default function Credentials() {
             <br />
             <div className="relative">
               <input
-                type={showConfirmNewPassword ? "text" : "password"}
+                type={showConfirmNewPassword ? "text" : "password"} 
                 name="confirmnewpassword"
+                id="confirmnewpassword"
                 placeholder=""
-                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-12"
+                className="mt-1 p-2 bg-slate-200 rounded-lg border w-full pr-10" 
               />
               <button
                 type="button"
-                onClick={toggleVisibility(setShowConfirmNewPassword)}
+                onClick={toggleVisibility(setShowConfirmNewPassword)} 
                 className="absolute inset-y-0 right-0 flex items-center pr-3"
               >
                 {showConfirmNewPassword ? <IconEyeOff width="20" height="20" /> : <IconEye width="20" height="20" />}
