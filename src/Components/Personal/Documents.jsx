@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { IconUser, IconHelpHexagon } from "@tabler/icons-react";
+import { IconUser, IconHelpHexagon, IconFile, IconImage } from "@tabler/icons-react"; // Import additional icons for better file representation
 
 export default function Documents() {
   const [uploadedFiles, setUploadedFiles] = useState([]);
@@ -16,6 +16,7 @@ export default function Documents() {
       ...files.map((file) => ({
         name: file.name,
         url: URL.createObjectURL(file),
+        type: file.type,
       })),
     ]);
   };
@@ -24,6 +25,14 @@ export default function Documents() {
     setUploadedFiles((prevFiles) =>
       prevFiles.filter((file) => file.name !== fileName)
     );
+  };
+
+  const renderFilePreview = (file) => {
+    if (file.type.startsWith("image/")) {
+      return <img src={file.url} alt={file.name} className="w-16 h-16 object-cover" />;
+    } else {
+      return <IconFile size={32} />;
+    }
   };
 
   return (
@@ -36,9 +45,7 @@ export default function Documents() {
       <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter"></div>
       <div
         className="p-2 h-60vh overflow-auto justify-between"
-        style={{
-          scrollbarWidth: "thin",
-        }}
+        style={{ scrollbarWidth: "thin" }}
       >
         <p className="text-black-light pb-1">EMPLOYEE DOCUMENTS</p>
         <div className="flex items-end justify-end gap-5">
@@ -55,16 +62,17 @@ export default function Documents() {
         {uploadedFiles.map((file) => (
           <div
             key={file.name}
-            className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-100 hover:bg-gray-200"
+            className="mt-2 flex items-center justify-between w-96 m-1 p-2 rounded-lg bg-gray-100 hover:bg-gray-200"
           >
-            <p className="pl-2 text-m text-black-light font-thin">
-              {file.name}
-            </p>
-            <p className="pr-2 text-m text-black-light">
-              <div className="hover:bg-slate-300 rounded-sm text-red-600 pl-1 pr-1">
-                <button onClick={() => handleFileRemove(file.name)}>X</button>
-              </div>
-            </p>
+            <div className="flex items-center">
+              {renderFilePreview(file)}
+              <p className="pl-2 text-m text-black-light font-thin">
+                {file.name}
+              </p>
+            </div>
+            <div className="text-red-600 hover:bg-slate-300 rounded-sm pl-1 pr-1">
+              <button onClick={() => handleFileRemove(file.name)}>X</button>
+            </div>
           </div>
         ))}
         <div className="mt-2 flex justify-between w-96 m-1 p-2 rounded-lg bg-gray-300">
@@ -75,9 +83,7 @@ export default function Documents() {
               id=""
               className="p-1 mt-1 bg-gray-200 rounded-lg pl-1 w-48 font-medium border hover:border-black"
             >
-              <option value="text" className="bg-slate-20">
-                Phd
-              </option>
+              <option value="text" className="bg-slate-20">Phd</option>
               <option className="bg-slate-200">Master</option>
               <option className="bg-slate-200">Bachelors</option>
               <option className="bg-slate-200">Metric</option>
