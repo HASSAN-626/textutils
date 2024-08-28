@@ -41,7 +41,7 @@ export default function Personal() {
   }
 
   const handleClick = async () => {
-    fetch("http://localhost:3001")
+    fetch("http://localhost:3001?limit=1&page=2&age=20&")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
