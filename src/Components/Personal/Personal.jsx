@@ -29,8 +29,7 @@ export default function Personal() {
     relationToEmployee: "Brother",
     emergencyPhoneNumber: "03355599885",
   });
-  const [loading, setLoading] = useState(false); // Define loading state
-  const [error, setError] = useState(null); // Define error state
+
   function handleIdChange(e) {
     let name = e.target.name;
     let value = e.target.value;
@@ -42,32 +41,11 @@ export default function Personal() {
   }
 
   const handleClick = async () => {
-    setLoading(true); // Set loading to true
-    setError(null); // Clear any previous error
-
-    try {
-      const response = await fetch('http://localhost:3000/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ key: 'value' }), // Replace with your actual payload
+    fetch("http://localhost:3000/")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
       });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const data = await response.json();
-      console.log('Success:', data);
-      // Handle success (e.g., show a success message)
-    } catch (error) {
-      console.error('Error:', error);
-      setError('Failed to save data. Please try again.');
-      // Handle error (e.g., show an error message)
-    } finally {
-      setLoading(false);
-    }
   };
 
   console.log(data);
@@ -861,7 +839,7 @@ export default function Personal() {
             </div>
           </div>
           <div className="mt-8 flex justify-center">
-            <button className="p-2 pl-8 pr-8 bg-teal-200 hover:opacity-60 rounded-md" onClick={handleClick}>
+            <button className="p-2 pl-8 pr-8 bg-teal-200 hover:opacity-60 rounded-md " onClick={handleClick} >
               Save
             </button>
           </div>
