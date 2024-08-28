@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IconDownload , IconUser , IconHelpHexagon} from "@tabler/icons-react";
+import { IconDownload, IconUser, IconHelpHexagon } from "@tabler/icons-react";
 
 import Modal from "./Modal";
 export default function Personal() {
@@ -829,6 +829,11 @@ export default function Personal() {
                 />
               </p>
             </div>
+          </div>
+          <div className="mt-8 flex justify-center">
+            <button className="p-2 pl-8 pr-8 bg-teal-200 hover:opacity-60 rounded-md">
+              Save
+            </button>
           </div>
         </div>
       </div>

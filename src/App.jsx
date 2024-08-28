@@ -5,7 +5,9 @@ import Dashbord from "./Dashbord";
 import Personal from "./Components/Personal/Personal";
 import { useState } from "react";
 
+
 function App() {
+
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
 
   const Condition = () => {
@@ -25,9 +27,7 @@ function App() {
           <Aside setActiveComponent={setActiveComponent} />
           <div className="flex flex-col w-full ml-48 pr-8 h-screen overflow-x-hidden">
             <Nav />
-            <div className="">
-              {Condition()}
-            </div>
+            <div className="">{Condition()}</div>
           </div>
         </div>
       </div>
@@ -36,7 +36,6 @@ function App() {
 }
 
 export default App;
-
 
 // {/* <div className="bg-gray-100 ">
 //         <div className="flex flex-row">
