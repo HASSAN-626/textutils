@@ -41,7 +41,7 @@ export default function Personal() {
   }
 
   const handleClick = async () => {
-    fetch("http://localhost:3000/")
+    fetch("http://localhost:3001")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
