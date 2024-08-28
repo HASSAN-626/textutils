@@ -40,6 +40,35 @@ export default function Personal() {
     });
   }
 
+  const handleClick = async () => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch('https://api.example.com/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ key: 'value' }), // Replace with your actual payload
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log('Success:', data);
+      // Handle success (e.g., show a success message)
+    } catch (error) {
+      console.error('Error:', error);
+      setError('Failed to save data. Please try again.');
+      // Handle error (e.g., show an error message)
+    } finally {
+      setLoading(false);
+    }
+  };
+
   console.log(data);
 
   return (
@@ -831,7 +860,7 @@ export default function Personal() {
             </div>
           </div>
           <div className="mt-8 flex justify-center">
-            <button className="p-2 pl-8 pr-8 bg-teal-200 hover:opacity-60 rounded-md">
+            <button className="p-2 pl-8 pr-8 bg-teal-200 hover:opacity-60 rounded-md" onClick={handleClick}>
               Save
             </button>
           </div>
