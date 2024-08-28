@@ -29,7 +29,8 @@ export default function Personal() {
     relationToEmployee: "Brother",
     emergencyPhoneNumber: "03355599885",
   });
-
+  const [loading, setLoading] = useState(false); // Define loading state
+  const [error, setError] = useState(null); // Define error state
   function handleIdChange(e) {
     let name = e.target.name;
     let value = e.target.value;
@@ -41,11 +42,11 @@ export default function Personal() {
   }
 
   const handleClick = async () => {
-    setLoading(true);
-    setError(null);
+    setLoading(true); // Set loading to true
+    setError(null); // Clear any previous error
 
     try {
-      const response = await fetch('https://api.example.com/save', {
+      const response = await fetch('http://localhost:3000/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
