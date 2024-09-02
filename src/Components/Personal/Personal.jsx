@@ -41,11 +41,38 @@ export default function Personal() {
   }
 
   const handleClick = async () => {
-    fetch("http://localhost:3001?limit=1&page=2&age=20&")
-      .then((res) => res.json())
-      .then((data) => {
+    async function postProfile() {
+      try {
+        // Create a Request object for the POST request
+        const request = new Request("http://localhost:3001/profile", {
+          method: "POST", // Use POST method
+          body: JSON.stringify({ username: "example" }), // Add request body
+          headers: {
+            "Content-Type": "application/json", // Specify the content type
+          },
+        });
+    
+        // Fetch data using the Request object
+        const response = await fetch(request);
+    
+        // Check if the response is OK (status code 200-299)
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+    
+        // Parse the JSON from the response
+        const data = await response.json();
+    
+        // Log the data
         console.log(data);
-      });
+      } catch (error) {
+        // Handle any errors
+        console.error('Fetch error:', error);
+      }
+    }
+    
+    // Call the async function
+    postProfile();
   };
 
   console.log(data);
