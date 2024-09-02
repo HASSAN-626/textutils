@@ -44,9 +44,31 @@ export default function Personal() {
     async function postProfile() {
       try {
         // Create a Request object for the POST request
-        const request = new Request("http://localhost:3001/profile", {
+        const request = new Request("http://localhost:3001/data", {
           method: "POST", // Use POST method
-          body: JSON.stringify({ username: "example" }), // Add request body
+          body: JSON.stringify({ username: "example",employeeId: "c2o-626",
+            title: "Mr",
+            firstName: "Hassan",
+            middleName: "Sardar",
+            lastName: "Satti",
+            dateOfBirth: "05/09/2004",
+            email: "hassanjaveed626@gmail.com",
+            phoneNumber: "03165105988",
+            cnicNumber: "3740545634941",
+            gender: "Male",
+            bloodGroup: "O+",
+            parentguardianName: "Riffat Samina",
+            parentguardianPhoneNumber: "03325146837",
+            parentguardianCNIC: "3740539969964",
+            presentAddress: "House No 5 , Street No 5 , Kurri road , Rawalpindi",
+            street: "5",
+            city: "Rawalpindi",
+            country: "Pakistan",
+            postalCode: "46000",
+            permanentAddress: "House No 5,Kurri road,Rawalpindi",
+            emergencyContactName: "Wahab Javed",
+            relationToEmployee: "Brother",
+            emergencyPhoneNumber: "03355599885"}), // Add request body
           headers: {
             "Content-Type": "application/json", // Specify the content type
           },
@@ -73,6 +95,7 @@ export default function Personal() {
     
     // Call the async function
     postProfile();
+    
   };
 
   console.log(data);
