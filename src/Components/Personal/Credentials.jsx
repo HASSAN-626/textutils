@@ -8,6 +8,31 @@ export default function Credentials() {
   const [showCurrentPassword, setShowCurrentPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmNewPassword, setShowConfirmNewPassword] = useState(false);
+  const [data, setData] = useState({
+    employeeId: "c2o-626",
+    title: "Mr",
+    firstName: "Hassan",
+    middleName: "Sardar",
+    lastName: "Satti",
+    dateOfBirth: "05/09/2004",
+    email: "hassanjaveed626@gmail.com",
+    phoneNumber: "03165105988",
+    cnicNumber: "3740545634941",
+    gender: "Male",
+    bloodGroup: "O+",
+    parentguardianName: "Riffat Samina",
+    parentguardianPhoneNumber: "03325146837",
+    parentguardianCNIC: "3740539969964",
+    presentAddress: "House No 5 , Street No 5 , Kurri road , Rawalpindi",
+    street: "5",
+    city: "Rawalpindi",
+    country: "Pakistan",
+    postalCode: "46000",
+    permanentAddress: "House No 5,Kurri road,Rawalpindi",
+    emergencyContactName: "Wahab Javed",
+    relationToEmployee: "Brother",
+    emergencyPhoneNumber: "03355599885",
+  });
 
  
   const toggleVisibility = (setter) => () => setter(prev => !prev);
