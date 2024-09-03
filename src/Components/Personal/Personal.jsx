@@ -40,40 +40,40 @@ export default function Personal() {
     });
   }
 
-  const handleClick = async () => {
-    async function postProfile() {
-      try {
-        // Create a Request object for the POST request
-        const request = new Request("http://localhost:3001/data", {
-          method: "POST", // Use POST method
-          body: JSON.stringify(data), // Add request body
-          headers: {
-            "Content-Type": "application/json", // Specify the content type
-          },
-        });
+  // const handleClick = async () => {
+  //   async function postProfile() {
+  //     try {
+  //       // Create a Request object for the POST request
+  //       const request = new Request("http://localhost:3001/data", {
+  //         method: "POST", // Use POST method
+  //         body: JSON.stringify(data), // Add request body
+  //         headers: {
+  //           "Content-Type": "application/json", // Specify the content type
+  //         },
+  //       });
 
-        // Fetch data using the Request object
-        const response = await fetch(request);
+  //       // Fetch data using the Request object
+  //       const response = await fetch(request);
 
-        // Check if the response is OK (status code 200-299)
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
+  //       // Check if the response is OK (status code 200-299)
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP error! status: ${response.status}`);
+  //       }
 
-        // Parse the JSON from the response
-        const responseData = await response.json();
+  //       // Parse the JSON from the response
+  //       const responseData = await response.json();
 
-        // Log the data
-        console.log(responseData);
-      } catch (error) {
-        // Handle any errors
-        console.error("Fetch error:", error);
-      }
-    }
+  //       // Log the data
+  //       console.log(responseData);
+  //     } catch (error) {
+  //       // Handle any errors
+  //       console.error("Fetch error:", error);
+  //     }
+  //   }
 
-    // Call the async function
-    postProfile();
-  };
+  //   // Call the async function
+  //   postProfile();
+  // };
 
   console.log(data);
 
@@ -640,7 +640,7 @@ export default function Personal() {
               </button>
               <button
                 className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55"
-                onClick={handleClick}
+                // onClick={handleClick}
               >
                 SAVE & EXIT
               </button>
