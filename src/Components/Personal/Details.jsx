@@ -156,7 +156,7 @@ export default function Details() {
             <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
               NEXT
             </button>
-            <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55" >
+            <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55" onClick={handleClick} >
               SAVE & EXIT
             </button>
           </div>
