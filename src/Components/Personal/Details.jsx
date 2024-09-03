@@ -56,7 +56,9 @@ export default function Details() {
   console.log(data); 
   return (
     <>
-      <form action="">
+      <form onSubmit={(event) => {
+            event.preventDefault();
+          }}>
         <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
           <IconUser width={"20"} height={"20"} />
           &nbsp;EDIT HASSAN SARDAR - DETAILS &nbsp;{" "}
@@ -154,7 +156,7 @@ export default function Details() {
             <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
               NEXT
             </button>
-            <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55"  onClick={handleClick}>
+            <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55" >
               SAVE & EXIT
             </button>
           </div>
