@@ -46,7 +46,9 @@ export default function Personal() {
         // Create a Request object for the POST request
         const request = new Request("http://localhost:3001/data", {
           method: "POST", // Use POST method
-          body: JSON.stringify({ username: "example",employeeId: "c2o-626",
+          body: JSON.stringify({
+            username: "example",
+            employeeId: "c2o-626",
             title: "Mr",
             firstName: "Hassan",
             middleName: "Sardar",
@@ -60,7 +62,8 @@ export default function Personal() {
             parentguardianName: "Riffat Samina",
             parentguardianPhoneNumber: "03325146837",
             parentguardianCNIC: "3740539969964",
-            presentAddress: "House No 5 , Street No 5 , Kurri road , Rawalpindi",
+            presentAddress:
+              "House No 5 , Street No 5 , Kurri road , Rawalpindi",
             street: "5",
             city: "Rawalpindi",
             country: "Pakistan",
@@ -68,34 +71,34 @@ export default function Personal() {
             permanentAddress: "House No 5,Kurri road,Rawalpindi",
             emergencyContactName: "Wahab Javed",
             relationToEmployee: "Brother",
-            emergencyPhoneNumber: "03355599885"}), // Add request body
+            emergencyPhoneNumber: "03355599885",
+          }), // Add request body
           headers: {
             "Content-Type": "application/json", // Specify the content type
           },
         });
-    
+
         // Fetch data using the Request object
         const response = await fetch(request);
-    
+
         // Check if the response is OK (status code 200-299)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-    
+
         // Parse the JSON from the response
         const data = await response.json();
-    
+
         // Log the data
         console.log(data);
       } catch (error) {
         // Handle any errors
-        console.error('Fetch error:', error);
+        console.error("Fetch error:", error);
       }
     }
-    
+
     // Call the async function
     postProfile();
-    
   };
 
   console.log(data);
@@ -103,7 +106,11 @@ export default function Personal() {
   return (
     <>
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        <form action="">
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+          }}
+        >
           <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
             <IconUser width={"20"} height={"20"} />
             &nbsp; EDIT HASSAN SARDAR - PROFILE &nbsp;{" "}
@@ -657,7 +664,10 @@ export default function Personal() {
               <button className="bg-purple-100 p-2 rounded-md text-purple-700 pl-10 pr-10 font-medium hover:opacity-55">
                 NEXT
               </button>
-              <button className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55">
+              <button
+                className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55"
+                onClick={handleClick}
+              >
                 SAVE & EXIT
               </button>
             </div>
@@ -889,7 +899,7 @@ export default function Personal() {
             </div>
           </div>
           <div className="mt-8 flex justify-center">
-            <button className="p-2 pl-8 pr-8 bg-teal-200 hover:opacity-60 rounded-md " onClick={handleClick} >
+            <button className="p-2 pl-8 pr-8 bg-teal-200 hover:opacity-60 rounded-md ">
               Save
             </button>
           </div>
