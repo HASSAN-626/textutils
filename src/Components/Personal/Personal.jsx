@@ -70,7 +70,8 @@ export default function Personal() {
       try {
         // Create a Request object for the POST request
         const request = new Request("http://localhost:3001/data/66dadf07f1c7f37f80d209ce", {
-          method: "PUT", // Use PUT method
+          method: "PUT",
+           // Use PUT method
           body: JSON.stringify(data), // Add request body
           headers: {
             "Content-Type": "application/json", // Specify the content type
