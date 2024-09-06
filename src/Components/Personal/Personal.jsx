@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IconDownload, IconUser, IconHelpHexagon } from "@tabler/icons-react";
 
 import Modal from "./Modal";
+
 export default function Personal() {
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState({
@@ -30,6 +31,8 @@ export default function Personal() {
     emergencyPhoneNumber: "03355599885",
   });
 
+  const [fetchedData, setFetchedData] = useState(null);
+
   function handleIdChange(e) {
     let name = e.target.name;
     let value = e.target.value;
@@ -40,42 +43,64 @@ export default function Personal() {
     });
   }
 
-  // const handleClick = async () => {
-  //   async function postProfile() {
-  //     try {
-  //       // Create a Request object for the POST request
-  //       const request = new Request("http://localhost:3001/data", {
-  //         method: "POST", // Use POST method
-  //         body: JSON.stringify(data), // Add request body
-  //         headers: {
-  //           "Content-Type": "application/json", // Specify the content type
-  //         },
-  //       });
+  async function fetchData() {
+    try {
+      const response = await fetch("http://localhost:3001/data"); // Adjust the URL if necessary
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await response.json();
+      setFetchedData(data); // Update state with fetched data
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setFetchedData("Error fetching data"); // Handle errors by setting a message
+    }
+  }
 
-  //       // Fetch data using the Request object
-  //       const response = await fetch(request);
+  // Optionally, fetch data when the component mounts
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-  //       // Check if the response is OK (status code 200-299)
-  //       if (!response.ok) {
-  //         throw new Error(`HTTP error! status: ${response.status}`);
-  //       }
+  console.log(fetchedData);
+  
 
-  //       // Parse the JSON from the response
-  //       const responseData = await response.json();
+  const handleClick = async () => {
+    async function postProfile() {
+      try {
+        // Create a Request object for the POST request
+        const request = new Request("http://localhost:3001/data/66dadf07f1c7f37f80d209ce", {
+          method: "PUT", // Use PUT method
+          body: JSON.stringify(data), // Add request body
+          headers: {
+            "Content-Type": "application/json", // Specify the content type
+          },
+        });
 
-  //       // Log the data
-  //       console.log(responseData);
-  //     } catch (error) {
-  //       // Handle any errors
-  //       console.error("Fetch error:", error);
-  //     }
-  //   }
+        // Fetch data using the Request object
+        const response = await fetch(request);
 
-  //   // Call the async function
-  //   postProfile();
-  // };
+        // Check if the response is OK (status code 200-299)
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-  console.log(data);
+        // Parse the JSON from the response
+        const responseData = await response.json();
+
+        // Log the data
+        console.log(responseData);
+      } catch (error) {
+        // Handle any errors
+        console.error("Fetch error:", error);
+      }
+    }
+
+    // Call the async function
+    postProfile();
+  };
+
+  console.log(fetchedData);
 
   return (
     <>
@@ -640,7 +665,7 @@ export default function Personal() {
               </button>
               <button
                 className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55"
-                // onClick={handleClick}
+                 onClick={handleClick}
               >
                 SAVE & EXIT
               </button>
@@ -777,7 +802,7 @@ export default function Personal() {
               <p className="text-black-light font-semibold text-sm">
                 Bank Name
               </p>
-              <p className="text-sm">Nayapay</p>
+              <p className="text-sm">{fetchedData?.bankName}</p>
             </div>
 
             <div>
