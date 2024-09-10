@@ -19,25 +19,28 @@ export default function Details() {
   }
 
   const handleClick = async () => {
-    async function postProfile(data) {
+    async function postProfile() {
       try {
-        // Fetch data using the PUT method
-        const response = await fetch("http://localhost:3001/data/66dadf07f1c7f37f80d209ce", {
-          method: "PUT", // Use PUT method
+        // Create a Request object for the POST request
+        const request = new Request("http://localhost:3001/data/66dfeb76a8d1cef92a449080", {
+          method: "PUT", // Use POST method
           body: JSON.stringify(data), // Add request body
           headers: {
             "Content-Type": "application/json", // Specify the content type
           },
         });
-    
+
+        // Fetch data using the Request object
+        const response = await fetch(request);
+
         // Check if the response is OK (status code 200-299)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-    
+
         // Parse the JSON from the response
         const responseData = await response.json();
-    
+
         // Log the data
         console.log(responseData);
       } catch (error) {
@@ -45,6 +48,7 @@ export default function Details() {
         console.error("Fetch error:", error);
       }
     }
+
     // Call the async function
     postProfile();
   };
