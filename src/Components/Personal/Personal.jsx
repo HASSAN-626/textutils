@@ -822,7 +822,7 @@ export default function Personal() {
               <p className="text-black-light font-semibold text-sm">
                 Account Number
               </p>
-              <p className="text-sm">{fetchedData?.accountnumber}</p>
+              <p className="text-sm">{fetchedData?.accountNumberIBAN}</p>
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
