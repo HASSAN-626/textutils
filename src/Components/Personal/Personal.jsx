@@ -42,7 +42,7 @@ export default function Personal() {
       return { ...d };
     });
   }
-1
+
 
   async function fetchData() {
     try {
