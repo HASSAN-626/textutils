@@ -63,7 +63,6 @@ export default function Personal() {
   }, []);
 
   console.log(fetchedData);
-  
 
   const handleClick = async () => {
     async function postProfile() {
@@ -665,7 +664,7 @@ export default function Personal() {
               </button>
               <button
                 className="bg-green-100 p-2 rounded-md text-green-700 pl-10 pr-10 font-medium hover:opacity-55"
-                 onClick={handleClick}
+                onClick={handleClick}
               >
                 SAVE & EXIT
               </button>
@@ -809,21 +808,21 @@ export default function Personal() {
               <p className="text-black-light font-semibold text-sm">
                 Branch Name
               </p>
-              <p className="text-sm">Online</p>
+              <p className="text-sm">{fetchedData?.branchName}</p>
             </div>
 
             <div>
               <p className="text-black-light font-semibold text-sm ">
                 Account Title
               </p>
-              <p className="text-sm">Savings</p>
+              <p className="text-sm">{fetchedData?.accountTitle}</p>
             </div>
 
             <div>
               <p className="text-black-light font-semibold text-sm">
                 Account Number
               </p>
-              <p className="text-sm">03165105988</p>
+              <p className="text-sm">{fetchedData?.accountnumber}</p>
             </div>
           </div>
           <div className="mt-3 w-full border border- mx-2 "></div>
