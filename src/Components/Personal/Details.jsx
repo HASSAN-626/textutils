@@ -22,7 +22,7 @@ export default function Details() {
     async function postProfile() {
       try {
         // Create a Request object for the POST request
-        const request = new Request("http://localhost:3001/data/66dfeb76a8d1cef92a449080", {
+        const request = new Request("http://localhost:3001/data/66dfea22a8d1cef92a44906e", {
           method: "PUT", // Use POST method
           body: JSON.stringify(data), // Add request body
           headers: {

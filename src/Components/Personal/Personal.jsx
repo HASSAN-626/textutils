@@ -45,7 +45,7 @@ export default function Personal() {
 
   async function fetchData() {
     try {
-      const response = await fetch("http://localhost:3001/data"); // Adjust the URL if necessary
+      const response = await fetch("http://localhost:3001/data/66dfea22a8d1cef92a44906e"); // Adjust the URL if necessary
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
