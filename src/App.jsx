@@ -3,17 +3,24 @@ import Nav from "./Components/Navigation/Nav";
 import Aside from "./Components/Dashboard/Aside";
 import Dashbord from "./Dashbord";
 import Personal from "./Components/Personal/Personal";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 function App() {
+  const [activeComponent, setActiveComponent] = useState("dashboard");
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const [ActiveComponent, setActiveComponent] = useState("dashboard");
+  const toggleTheme = () => {
+    setIsDarkMode(prevMode => !prevMode);
+  };
+
+  useEffect(() => {
+    document.body.className = isDarkMode ? "dark-mode" : "";
+  }, [isDarkMode]);
 
   const Condition = () => {
-    if (ActiveComponent === "dashboard") {
+    if (activeComponent === "dashboard") {
       return <Dashbord />;
-    } else if (ActiveComponent === "personal") {
+    } else if (activeComponent === "personal") {
       return <Personal />;
     } else {
       return <Dashbord />;
@@ -22,11 +29,11 @@ function App() {
 
   return (
     <>
-      <div className="bg-gray-100 ">
+      <div className={`bg-gray-100 ${isDarkMode ? 'dark' : ''}`}>
         <div className="flex flex-row">
           <Aside setActiveComponent={setActiveComponent} />
           <div className="flex flex-col w-full ml-48 pr-8 h-screen overflow-x-hidden">
-            <Nav />
+            <Nav toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
             <div className="">{Condition()}</div>
           </div>
         </div>
