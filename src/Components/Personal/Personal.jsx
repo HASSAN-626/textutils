@@ -46,7 +46,7 @@ export default function Personal() {
 
   async function fetchData() {
     try {
-      const response = await fetch("http://localhost:3001/data/66dfea22a8d1cef92a44906e"); // Adjust the URL if necessary
+      const response = await fetch("http://localhost:3001/data"); // Adjust the URL if necessary
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -69,8 +69,8 @@ export default function Personal() {
     async function postProfile() {
       try {
         // Create a Request object for the POST request
-        const request = new Request("http://localhost:3001/data", {
-          method: "POST", // Use POST method
+        const request = new Request("http://localhost:3001/data/66dfea22a8d1cef92a44906e", {
+          method: "PUT", // Use POST method
           body: JSON.stringify(data), // Add request body
           headers: {
             "Content-Type": "application/json", // Specify the content type
@@ -100,12 +100,12 @@ export default function Personal() {
     postProfile();
   };
 
-  console.log(fetchedData);
+  console.log(data); 
 
   return (
     <>
-      <Modal  isVisible={showModal} onClose={() => setShowModal(false)} >
-        <form 
+      <Modal isVisible={showModal} onClose={() => setShowModal(false)} >
+        <form
           onSubmit={(event) => {
             event.preventDefault();
           }}
@@ -692,68 +692,68 @@ export default function Personal() {
 
               <div>
                 <p className="text-black-light font-semibold text-sm">Email</p>
-                <p className="text-sm">hassansrdar626@gmail.com</p>
+                <p className="text-sm">{fetchedData?.email}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">Gender</p>
-                <p className="text-sm">Male</p>
+                <p className="text-sm">{fetchedData?.gender}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Parent/Guardian Phone No
                 </p>
-                <p className="text-sm">03325146837</p>
+                <p className="text-sm">{fetchedData?.parentguardianPhoneNumber}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Date Of Birth
                 </p>
-                <p className="text-sm">2004-05-09</p>
+                <p className="text-sm">{fetchedData?.dateOfBirth}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Phone Number
                 </p>
-                <p className="text-sm">03165105988</p>
+                <p className="text-sm">{fetchedData?.phoneNumber}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Blood Group
                 </p>
-                <p className="text-sm">O+</p>
+                <p className="text-sm">{fetchedData?.bloodGroup}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Parent/Guardian
                 </p>
-                <p className="text-sm">37405-39969996-4</p>
+                <p className="text-sm">{fetchedData?.parentguardianCNIC}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Martial Status
                 </p>
-                <p className="text-sm">Single</p>
+                <p className="text-sm">{fetchedData?.martialStatus}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   CNIC Number
                 </p>
-                <p className="text-sm">37405-4563494-1</p>
+                <p className="text-sm">{fetchedData?.cnicNumber}</p>
               </div>
 
               <div>
                 <p className="text-black-light font-semibold text-sm">
                   Parent/Guardian Name
                 </p>
-                <p className="text-sm">Riffat Samina</p>
+                <p className="text-sm">{fetchedData?.parentguardianName}</p>
               </div>
 
               <div>
@@ -761,8 +761,7 @@ export default function Personal() {
                   Address
                 </p>
                 <p className="text-sm">
-                  Haroown chowk , Kurri Road , Near Hasnain Shopping Mall,
-                  <p>Rawalpindi</p>
+                {fetchedData?.presentAddress}
                 </p>
               </div>
             </div>
@@ -833,16 +832,16 @@ export default function Personal() {
           <div className="pl-2 pt-2 grid grid-rows-1 grid-flow-col gap-x-24">
             <div>
               <p className="text-black-light font-semibold text-sm ">Name</p>
-              <p className="text-sm">Wahab Javed</p>
+              <p className="text-sm">{fetchedData?.emergencyContactName}</p>
             </div>
             <div className="pr-12">
               <p className="text-black-light font-semibold text-sm">Relation</p>
-              <p className="text-sm">Brother</p>
+              <p className="text-sm">{fetchedData?.relationToEmployee}</p>
             </div>
 
             <div className="pr-11">
               <p className="text-black-light font-semibold text-sm ">Number</p>
-              <p className="text-sm">03355599885</p>
+              <p className="text-sm">{fetchedData?.emergencyPhoneNumber}</p>
             </div>
             <div>
               <p className="text-black-light font-semibold text-sm "></p>
