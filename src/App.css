@@ -49,21 +49,3 @@ table, th, td {
 }
 input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none }
 
-/* App.css */
-
-/* Default light mode styles */
-.bg-gray-100 {
-  background-color: #f7f7f7;
-}
-
-/* Dark mode styles */
-.dark .bg-gray-100 {
-  background-color: #1a1a1a;
-}
-
-/* Additional dark mode styles can be added as needed */
-.dark .text-black-light {
-  color: #cfcfcf;
-}
-
-/* Add more specific dark mode styles here */
