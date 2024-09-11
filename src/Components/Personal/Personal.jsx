@@ -104,8 +104,8 @@ export default function Personal() {
 
   return (
     <>
-      <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
-        <form
+      <Modal  isVisible={showModal} onClose={() => setShowModal(false)} >
+        <form 
           onSubmit={(event) => {
             event.preventDefault();
           }}

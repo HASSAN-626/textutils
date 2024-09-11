@@ -1,19 +1,22 @@
+import React, { useState } from "react";
 import "./App.css";
 import Nav from "./Components/Navigation/Nav";
 import Aside from "./Components/Dashboard/Aside";
 import Dashbord from "./Dashbord";
 import Personal from "./Components/Personal/Personal";
-import { useState } from "react";
-
 
 function App() {
+  const [activeComponent, setActiveComponent] = useState("dashboard");
+  const [isDarkMode, setIsDarkMode] = useState(false); // Manage theme state
 
-  const [ActiveComponent, setActiveComponent] = useState("dashboard");
+  const toggleTheme = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
 
-  const Condition = () => {
-    if (ActiveComponent === "dashboard") {
+  const condition = () => {
+    if (activeComponent === "dashboard") {
       return <Dashbord />;
-    } else if (ActiveComponent === "personal") {
+    } else if (activeComponent === "personal") {
       return <Personal />;
     } else {
       return <Dashbord />;
@@ -21,21 +24,20 @@ function App() {
   };
 
   return (
-    <>
-      <div className="bg-gray-100 ">
-        <div className="flex flex-row">
-          <Aside setActiveComponent={setActiveComponent} />
-          <div className="flex flex-col w-full ml-48 pr-8 h-screen overflow-x-hidden">
-            <Nav />
-            <div className="">{Condition()}</div>
-          </div>
+    <div className={`min-h-screen ${isDarkMode ? 'bg-black text-white' : 'bg-gray-100 text-black'}`}>
+      <div className="flex flex-row">
+        <Aside setActiveComponent={setActiveComponent} />
+        <div className="flex flex-col w-full ml-48 pr-8 h-screen overflow-x-hidden">
+          <Nav toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+          <div>{condition()}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
 export default App;
+
 
 // {/* <div className="bg-gray-100 ">
 //         <div className="flex flex-row">
