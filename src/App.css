@@ -32,6 +32,41 @@
   color: #61dafb;
 }
 
+/* App.css or your styles file */
+.bg-gray-800 {
+  background-color: #1a202c; /* Dark background color */
+}
+
+.bg-white {
+  background-color: #ffffff; /* Light background color */
+}
+
+.bg-blue-600 {
+  background-color:#009A86; /* Darker blue for active state */
+}
+
+.bg-blue-500 {
+  background-color:#009A86; /* Lighter blue for non-active state */
+}
+
+.bg-blue-700 {
+  background-color: ; /* Darker blue for hover state */
+}
+
+.bg-blue-400 {
+  background-color: #009A86; /* Lighter blue for hover state */
+}
+
+.text-white {
+  color: #ffffff; /* White text color */
+}
+
+.text-black {
+  color: #000000; /* Black text color */
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

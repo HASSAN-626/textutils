@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { IconDownload, IconUser, IconHelpHexagon } from "@tabler/icons-react";
-
 import Modal from "./Modal";
 
 export default function Personal() {
@@ -32,6 +31,10 @@ export default function Personal() {
   });
 
   const [fetchedData, setFetchedData] = useState(null);
+  const [image, setImage] = useState(
+    "./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
+  ); // Default image URL
+  const fileInputRef = useRef(null);
 
   function handleIdChange(e) {
     let name = e.target.name;
@@ -43,10 +46,11 @@ export default function Personal() {
     });
   }
 
-
   async function fetchData() {
     try {
-      const response = await fetch("http://localhost:3001/data/66dfea22a8d1cef92a44906e"); // Adjust the URL if necessary
+      const response = await fetch(
+        "http://localhost:3001/data/66dfea22a8d1cef92a44906e"
+      ); // Adjust the URL if necessary
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -63,19 +67,20 @@ export default function Personal() {
     fetchData();
   }, []);
 
-  console.log(fetchedData);
-
-    const handleClick = async () => {
+  const handleClick = async () => {
     async function postProfile() {
       try {
         // Create a Request object for the POST request
-        const request = new Request("http://localhost:3001/data/66e17979332522c088b907be", {
-          method: "PUT", // Use POST method
-          body: JSON.stringify(data), // Add request body
-          headers: {
-            "Content-Type": "application/json", // Specify the content type
-          },
-        });
+        const request = new Request(
+          "http://localhost:3001/data/66e17979332522c088b907be",
+          {
+            method: "PUT", // Use POST method
+            body: JSON.stringify(data), // Add request body
+            headers: {
+              "Content-Type": "application/json", // Specify the content type
+            },
+          }
+        );
 
         // Fetch data using the Request object
         const response = await fetch(request);
@@ -100,45 +105,58 @@ export default function Personal() {
     postProfile();
   };
 
-  console.log(data); 
+  // Handle file input change
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setImage(e.target.result); // Update the image URL
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   return (
     <>
-      <Modal isVisible={showModal} onClose={() => setShowModal(false)} >
-        <form
-          onSubmit={(event) => {
-            event.preventDefault();
-          }}
-        >
-          <p className="pl-3 pb-5 text-black font-semibold flex h-4  ">
+      <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
+        <form onSubmit={(event) => event.preventDefault()}>
+          <p className="pl-3 pb-5 text-black font-semibold flex h-4">
             <IconUser width={"20"} height={"20"} />
             &nbsp; EDIT HASSAN SARDAR - PROFILE &nbsp;{" "}
             <IconHelpHexagon width={"20"} height={"20"} />
           </p>
-          <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter "></div>
+          <div className="mt-4 mb-3 pr-2 w-full border border-x-black-lighter"></div>
           <div
-            className="p-2 h-60vh overflow-auto  "
+            className="p-2 h-60vh overflow-auto"
             style={{
               scrollbarWidth: "thin",
             }}
           >
-            <div className="flex">
-              <form action="">
-                <label htmlFor="file">
+            <div className="flex items-center">
+              <div className="relative">
+                <label htmlFor="file" className="cursor-pointer">
                   <img
-                    src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
+                    src={image}
                     className="h-38 w-28 object-cover rounded-2xl p-2"
-                    alt=""
+                    alt="Profile"
                   />
                 </label>
-                <input type="file" className="hidden" id="file" name="file" />
-              </form>
+                <input
+                  type="file"
+                  className="hidden"
+                  id="file"
+                  name="file"
+                  accept="image/*"
+                  ref={fileInputRef}
+                  onChange={handleImageChange}
+                />
+              </div>
               <div className="flex-col pt-10">
                 <p>HASSAN SARDAR</p>
                 <p className="text-black-light text-sm">IT - Web Dept</p>
               </div>
             </div>
-
             <p className="text-black-light">BASIC INFORMATION</p>
             <div className="grid grid-rows-1 grid-flow-col mt-2 gap-3">
               <div>
@@ -704,7 +722,9 @@ export default function Personal() {
                 <p className="text-black-light font-semibold text-sm">
                   Parent/Guardian Phone No
                 </p>
-                <p className="text-sm">{fetchedData?.parentguardianPhoneNumber}</p>
+                <p className="text-sm">
+                  {fetchedData?.parentguardianPhoneNumber}
+                </p>
               </div>
 
               <div>
@@ -760,9 +780,7 @@ export default function Personal() {
                 <p className="text-black-light font-semibold text-sm">
                   Address
                 </p>
-                <p className="text-sm">
-                {fetchedData?.presentAddress}
-                </p>
+                <p className="text-sm">{fetchedData?.presentAddress}</p>
               </div>
             </div>
             <div>
@@ -777,11 +795,15 @@ export default function Personal() {
                 </button>
               </div>
 
-              <img
-                src="./58a434a3-826c-4c3a-98cc-a818b83def59.jpeg"
-                className="h-38 w-28 object-cover rounded-xl"
-                alt=""
-              />
+              
+                <label htmlFor="file" className="cursor-pointer">
+                  <img
+                    src={image}
+                    className="h-38 w-28 object-cover rounded-xl"
+                    alt="Profile"
+                  />
+                </label>
+              
 
               <p className="text-black-light font-semibold">Hassan Sardar</p>
               <p className="text-black-lighter font-semibold text-sm pl-0">

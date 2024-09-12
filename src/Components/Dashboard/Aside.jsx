@@ -1,18 +1,21 @@
-import { IconLayoutDashboard } from "@tabler/icons-react";
-import { IconUser } from "@tabler/icons-react";
-import { IconSquareRotated } from "@tabler/icons-react";
-import { IconMessages } from "@tabler/icons-react";
-import { IconUserScan } from "@tabler/icons-react";
-import { IconBrandHipchat } from "@tabler/icons-react";
-import { IconAssembly } from "@tabler/icons-react";
-import { IconAbacus } from "@tabler/icons-react";
-import { IconFocus } from "@tabler/icons-react";
-import { IconLayersDifference } from "@tabler/icons-react";
-
+import { useState } from "react";
+import { 
+  IconLayoutDashboard, 
+  IconUser, 
+  IconSquareRotated, 
+  IconMessages, 
+  IconUserScan, 
+  IconBrandHipchat, 
+  IconAssembly, 
+  IconAbacus, 
+  IconFocus, 
+  IconLayersDifference 
+} from "@tabler/icons-react";
 import React from "react";
 
-export default function Aside({ setActiveComponent }) {
-  
+export default function Aside({ setActiveComponent, theme }) {
+  const [activeComponent, setActiveComponentState] = useState("dashboard");
+
   const arr = [
     { title: "Dashboard", Icon: IconLayoutDashboard, component: "dashboard" },
     { title: "Personal", Icon: IconUser, component: "personal" },
@@ -26,22 +29,13 @@ export default function Aside({ setActiveComponent }) {
     { title: "Preference", Icon: IconLayersDifference, component: "preference" },
   ];
 
-  let showArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    showArray.push(
-      <AsideButton 
-        key={i} 
-        title={arr[i].title} 
-        Icon={arr[i].Icon} 
-        onClick={() => setActiveComponent(arr[i].component)} 
-      />
-    );
-  }
+  const handleButtonClick = (component) => {
+    setActiveComponent(component);
+    setActiveComponentState(component);
+  };
+
   return (
-    <div
-      className="w-48 py-6 h-screen fixed left-0 
-      flex flex-col items-center justify bg-white rounded-lg"
-    >
+    <div className={`w-48 py-6 h-screen fixed left-0 flex flex-col items-center justify bg-${theme === "dark" ? "gray-800" : "white"} rounded-lg`}>
       <img
         src="./09261924-a421-4778-be9b-f359c690718f.jpeg"
         alt=""
@@ -49,22 +43,36 @@ export default function Aside({ setActiveComponent }) {
         height={140}
         className="mt-6"
       />
-      {showArray}
+      {arr.map((item) => (
+        <AsideButton
+          key={item.component}
+          title={item.title}
+          Icon={item.Icon}
+          isActive={item.component === activeComponent}
+          onClick={() => handleButtonClick(item.component)}
+          theme={theme}
+        />
+      ))}
     </div>
   );
 }
 
-function AsideButton({ title, Icon, onClick }) {
+function AsideButton({ title, Icon, isActive, onClick, theme }) {
   return (
     <div
       onClick={onClick}
-      className="p-3 pl-8 mt-1 font-semibold flex w-full hover:bg-primary hover:text-white hover:rounded-md cursor-pointer"
+      className={`p-3 pl-8 mt-1 font-semibold flex w-full cursor-pointer items-center rounded-md ${
+        isActive
+          ? `bg-${theme === "dark" ? "blue-600" : "blue-500"} text-white`
+          : `hover:bg-${theme === "dark" ? "blue-700" : "blue-400"} hover:text-white`
+      }`}
     >
-      <Icon className="mr-2 " />
-      <p>{title}</p>
+      <Icon className={`mr-2 ${isActive ? "text-white" : (theme === "dark" ? "text-gray-300" : "text-black")}`} />
+      <p className={`${isActive ? "text-white" : (theme === "dark" ? "text-gray-300" : "text-black")}`}>{title}</p>
     </div>
   );
 }
+
 
 
 //     <><div className="bg-white">

@@ -5,10 +5,13 @@ import Dashbord from "./Dashbord";
 import Personal from "./Components/Personal/Personal";
 import { useState } from "react";
 
-
 function App() {
-
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
+  const [theme, setTheme] = useState("light"); // Default theme
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"));
+  };
 
   const Condition = () => {
     if (ActiveComponent === "dashboard") {
@@ -21,17 +24,15 @@ function App() {
   };
 
   return (
-    <>
-      <div className="bg-gray-100 ">
-        <div className="flex flex-row">
-          <Aside setActiveComponent={setActiveComponent} />
-          <div className="flex flex-col w-full ml-48 pr-8 h-screen overflow-x-hidden">
-            <Nav />
-            <div className="">{Condition()}</div>
-          </div>
+    <div className={`bg-gray-100 ${theme === "dark" ? "dark" : ""}`}>
+      <div className="flex flex-row">
+        <Aside setActiveComponent={setActiveComponent} theme={theme} />
+        <div className="flex flex-col w-full ml-48 pr-8 h-screen overflow-x-hidden">
+          <Nav toggleTheme={toggleTheme} theme={theme} />
+          <div>{Condition()}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
