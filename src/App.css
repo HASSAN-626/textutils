@@ -34,35 +34,33 @@
 
 /* App.css or your styles file */
 .bg-gray-800 {
-  background-color: #1a202c; /* Dark background color */
+  background-color: #1a202c; 
 }
 
 .bg-white {
-  background-color: #ffffff; /* Light background color */
+  background-color: #ffffff; 
 }
 
-.bg-blue-600 {
-  background-color:#009A86; /* Darker blue for active state */
+.bg-primary {
+  background-color:#009A86; 
 }
 
 .bg-blue-500 {
-  background-color:#009A86; /* Lighter blue for non-active state */
+  background-color:#009A86; 
 }
 
-.bg-blue-700 {
-  background-color: ; /* Darker blue for hover state */
-}
 
-.bg-blue-400 {
-  background-color: #009A86; /* Lighter blue for hover state */
+
+.bg-primary {
+  background-color: #009A86; 
 }
 
 .text-white {
-  color: #ffffff; /* White text color */
+  color: #ffffff; 
 }
 
 .text-black {
-  color: #000000; /* Black text color */
+  color: #000000; 
 }
 
 

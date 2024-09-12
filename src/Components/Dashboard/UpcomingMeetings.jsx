@@ -1,10 +1,10 @@
 import React from "react";
 import { IconBuildingSkyscraper } from "@tabler/icons-react";
 import { IconUsers } from "@tabler/icons-react";
-export default function UpcomingMeetings() {
+export default function UpcomingMeetings({ toggleTheme, theme }) {
   return (
     <>
-      <div className="pl-5 pt-6  ">
+      <div className={'pl-5 pt-6 ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"} '}>
         <b className="text-black-light text-xl pl-5">Upcoming Meetings</b>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <button className="pl-3 pr-3 font-semibold text-blue-500 rounded-2xl bg-blue-200 hover:bg-blue-300">
