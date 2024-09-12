@@ -46,7 +46,7 @@ export default function Personal() {
 
   async function fetchData() {
     try {
-      const response = await fetch("http://localhost:3001/data"); // Adjust the URL if necessary
+      const response = await fetch("http://localhost:3001/data/66dfea22a8d1cef92a44906e"); // Adjust the URL if necessary
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -65,11 +65,11 @@ export default function Personal() {
 
   console.log(fetchedData);
 
-  const handleClick = async () => {
+    const handleClick = async () => {
     async function postProfile() {
       try {
         // Create a Request object for the POST request
-        const request = new Request("http://localhost:3001/data/66dfea22a8d1cef92a44906e", {
+        const request = new Request("http://localhost:3001/data/66e17979332522c088b907be", {
           method: "PUT", // Use POST method
           body: JSON.stringify(data), // Add request body
           headers: {
