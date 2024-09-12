@@ -65,6 +65,18 @@
   color: #000000; 
 }
 
+/* Example CSS for the sidebar, which toggles based on the state */
+
+.sidebar {
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Hidden by default */
+}
+
+.sidebar.visible {
+  transform: translateX(0); /* Shown when visible */
+}
+
+
 
 
 @keyframes App-logo-spin {
