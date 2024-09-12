@@ -15,11 +15,11 @@ function App() {
 
   const Condition = () => {
     if (ActiveComponent === "dashboard") {
-      return <Dashbord />;
+      return <Dashbord theme={theme} />; // Pass theme prop here
     } else if (ActiveComponent === "personal") {
       return <Personal />;
     } else {
-      return <Dashbord />;
+      return <Dashbord theme={theme} />; // Pass theme prop here
     }
   };
 
