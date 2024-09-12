@@ -41,7 +41,7 @@
   background-color: #ffffff; 
 }
 
-.bg-primary {
+.bg-blue-600 {
   background-color:#009A86; 
 }
 
@@ -49,9 +49,11 @@
   background-color:#009A86; 
 }
 
+.bg-blue-700 {
+  background-color: ; 
+}
 
-
-.bg-primary {
+.bg-blue-400 {
   background-color: #009A86; 
 }
 
