@@ -33,6 +33,8 @@ function App() {
       return <Chats />;
     } else if (ActiveComponent === "ats") {
       return <Ats />;
+    } else if (ActiveComponent === "cms") {
+      return <Cms />;
     } else {
       return <Dashbord />;
     }
