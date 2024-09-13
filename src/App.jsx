@@ -7,6 +7,7 @@ import { useState } from "react";
 import MyRota from "./MyRota";
 import Inbox from "./inbox";
 import C2oProfile from "./c2oProfile";
+import Chats from "./chats";
 function App() {
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
   const [theme, setTheme] = useState("light"); // Default theme
@@ -26,6 +27,8 @@ function App() {
       return <Inbox />;
     } else if (ActiveComponent === "c2oProfile") {
       return <C2oProfile />;
+    } else if (ActiveComponent === "chats") {
+      return <Chats />;
     } else {
       return <Dashbord />;
     }
