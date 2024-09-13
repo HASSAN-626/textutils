@@ -20,6 +20,22 @@ function App() {
       return <Personal />;
     } else if (ActiveComponent === "myRota") {
       return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
     } else {
       return <Dashbord />;
     }
