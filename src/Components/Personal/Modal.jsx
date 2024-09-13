@@ -30,7 +30,7 @@ const Modal = ({ isVisible, onClose, children }) => {
             <Documents />
           </div>
         );
-      case "credentials":sa
+      case "crdentials":sa
         return (
           <div>
             <Credentials />
