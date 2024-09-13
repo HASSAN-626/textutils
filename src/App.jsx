@@ -10,6 +10,7 @@ import C2oProfile from "./c2oProfile";
 import Chats from "./chats";
 import Ats from "./ats";
 import Cms from "./cms";
+import Oscs from "./oscs";
 function App() {
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
   const [theme, setTheme] = useState("light"); // Default theme
@@ -35,6 +36,8 @@ function App() {
       return <Ats />;
     } else if (ActiveComponent === "cms") {
       return <Cms />;
+    } else if (ActiveComponent === "oscs") {
+      return <Oscs />;
     } else {
       return <Dashbord />;
     }
