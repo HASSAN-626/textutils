@@ -4,7 +4,7 @@ import Aside from "./Components/Dashboard/Aside";
 import Dashbord from "./Dashbord";
 import Personal from "./Components/Personal/Personal";
 import { useState } from "react";
-
+import MyRota from "./MyRota";
 function App() {
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
   const [theme, setTheme] = useState("light"); // Default theme
@@ -18,6 +18,8 @@ function App() {
       return <Dashbord />;
     } else if (ActiveComponent === "personal") {
       return <Personal />;
+    } else if (ActiveComponent === "myRota") {
+      return <MyRota />;
     } else {
       return <Dashbord />;
     }
