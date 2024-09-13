@@ -8,6 +8,7 @@ import MyRota from "./MyRota";
 import Inbox from "./inbox";
 import C2oProfile from "./c2oProfile";
 import Chats from "./chats";
+import Ats from "./ats";
 function App() {
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
   const [theme, setTheme] = useState("light"); // Default theme
@@ -29,6 +30,8 @@ function App() {
       return <C2oProfile />;
     } else if (ActiveComponent === "chats") {
       return <Chats />;
+    } else if (ActiveComponent === "ats") {
+      return <Ats />;
     } else {
       return <Dashbord />;
     }
