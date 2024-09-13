@@ -12,8 +12,29 @@ export default function MyRota() {
     margin: "0",
     textAlign: "center",
     backgroundColor: "#f5f5f5",
-    
-};
+    color: "#333", 
+    animation: "fadeIn 1s ease-out", 
+  };
 
-  return <div style={centerStyle}>Coming Soon</div>;
+  const styleSheet = `
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  `;
+
+  return (
+    <>
+      <style>
+        {styleSheet}
+      </style>
+      <div style={centerStyle}>
+        Coming Soon
+      </div>
+    </>
+  );
 }
