@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function inbox() {
+export default function Inbox() {
   const centerStyle = {
     display: "flex",
     justifyContent: "center",

@@ -5,6 +5,8 @@ import Dashbord from "./Dashbord";
 import Personal from "./Components/Personal/Personal";
 import { useState } from "react";
 import MyRota from "./MyRota";
+import Inbox from "./inbox";
+import C2oProfile from "./c2oProfile";
 function App() {
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
   const [theme, setTheme] = useState("light"); // Default theme
@@ -20,22 +22,10 @@ function App() {
       return <Personal />;
     } else if (ActiveComponent === "myRota") {
       return <MyRota />;
-    } else if (ActiveComponent === "myRota") {
-      return <MyRota />;
     } else if (ActiveComponent === "inbox") {
       return <Inbox />;
-    } else if (ActiveComponent === "myRota") {
-      return <MyRota />;
-    } else if (ActiveComponent === "myRota") {
-      return <MyRota />;
-    } else if (ActiveComponent === "myRota") {
-      return <MyRota />;
-    } else if (ActiveComponent === "myRota") {
-      return <MyRota />;
-    } else if (ActiveComponent === "myRota") {
-      return <MyRota />;
-    } else if (ActiveComponent === "myRota") {
-      return <MyRota />;
+    } else if (ActiveComponent === "c2oProfile") {
+      return <C2oProfile />;
     } else {
       return <Dashbord />;
     }
