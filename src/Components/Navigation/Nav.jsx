@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   IconBell,
   IconLogout,
   IconHelpOctagon,
   IconMoon,
+  IconSun, // Import the sun icon
   IconPinned,
 } from "@tabler/icons-react";
 
 export default function Nav({ toggleTheme, theme }) {
+  // State to keep track of whether the theme is dark or light
+  const [isDarkMode, setIsDarkMode] = useState(theme === "dark");
+
+  // Toggle the theme and icon
+  const handleThemeToggle = () => {
+    setIsDarkMode(prevState => !prevState); // Toggle the state
+    toggleTheme(); // Call the passed function to toggle the theme in the parent
+  };
+
   return (
     <div className="flex justify-between m-3 gap-2 items-center">
       <div className="ml-10">
         <button>
           <IconPinned className={`size-8 p-2 rounded-lg shadow-md ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"} hover:opacity-65`} />
         </button>
-        <button onClick={toggleTheme}>
-          <IconMoon className={`size-8 p-2 ml-4 rounded-lg shadow-md ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"} hover:opacity-65`} />
+        <button onClick={handleThemeToggle}>
+          {isDarkMode ? (
+            <IconSun className={`size-8 p-2 ml-4 rounded-lg shadow-md ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"} hover:opacity-65`} />
+          ) : (
+            <IconMoon className={`size-8 p-2 ml-4 rounded-lg shadow-md ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"} hover:opacity-65`} />
+          )}
         </button>
       </div>
       <div className="flex items-center relative">
