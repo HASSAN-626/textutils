@@ -26,11 +26,11 @@ const Modal = ({ isVisible, onClose, children }) => {
         );
       case "documents":
         return (
-          
+          <div>
             <Documents />
           </div>
         );
-      case "credentials":
+      case "credentials":sa
         return (
           <div>
             <Credentials />
