@@ -40,7 +40,7 @@ function App() {
     } else if (ActiveComponent === "oscs") {
       return <Oscs />;
     } else if (ActiveComponent === "preference") {
-      return <Oscs />;
+      return <Preference />;
     } else {
       return <Dashbord />;
     }
