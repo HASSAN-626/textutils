@@ -22,7 +22,7 @@ function App() {
       return <MyRota />;
     } else if (ActiveComponent === "myRota") {
       return <MyRota />;
-    } else if (ActiveComponent === "myRota") {
+    } else if (ActiveComponent === "inbox") {
       return <MyRota />;
     } else if (ActiveComponent === "myRota") {
       return <MyRota />;
