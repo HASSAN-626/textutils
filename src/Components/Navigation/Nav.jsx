@@ -6,10 +6,10 @@ import {
   IconMoon,
   IconSun,
   IconPinned,
-  IconX, // Import the cross mark icon
+  IconX,
 } from "@tabler/icons-react";
 
-export default function Nav({ toggleTheme, theme }) {
+export default function Nav({ toggleTheme, theme, toggleAside }) {
   const [isDarkMode, setIsDarkMode] = useState(theme === "dark");
   const [showHelpBox, setShowHelpBox] = useState(false);
   const [showNotificationPanel, setShowNotificationPanel] = useState(false);
@@ -33,14 +33,12 @@ export default function Nav({ toggleTheme, theme }) {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('authToken'); // Adjust this as needed
-    window.location.href = '/login'; // Adjust this route as needed
+    localStorage.removeItem('authToken');
+    window.location.href = '/login';
   };
 
   const handleDismissNotification = (id) => {
-    setNotifications((prev) =>
-      prev.filter((notification) => notification.id !== id)
-    );
+    setNotifications((prev) => prev.filter((notification) => notification.id !== id));
   };
 
   const iconColorClass = theme === "dark" ? "text-white" : "text-black";
@@ -48,7 +46,7 @@ export default function Nav({ toggleTheme, theme }) {
   return (
     <div className="flex justify-between m-3 gap-2 items-center relative">
       <div className="ml-10">
-        <button>
+        <button onClick={toggleAside}>
           <IconPinned
             className={`size-8 p-2 rounded-lg shadow-md ${iconColorClass} ${
               theme === "dark" ? "bg-gray-800" : "bg-gray-100"
