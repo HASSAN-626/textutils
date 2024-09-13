@@ -39,6 +39,8 @@ function App() {
       return <Cms />;
     } else if (ActiveComponent === "oscs") {
       return <Oscs />;
+    } else if (ActiveComponent === "preference") {
+      return <Oscs />;
     } else {
       return <Dashbord />;
     }
