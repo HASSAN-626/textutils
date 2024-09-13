@@ -19,37 +19,30 @@ export default function Nav({ toggleTheme, theme }) {
     { id: 3, type: "Alert", title: "Security Alert", message: "Suspicious login attempt detected on your account." },
   ]);
 
-  // Handle theme toggle
   const handleThemeToggle = () => {
     setIsDarkMode((prev) => !prev);
     toggleTheme();
   };
 
-  // Toggle help box visibility
   const handleHelpClick = () => {
     setShowHelpBox((prev) => !prev);
   };
 
-  // Toggle notification panel visibility
   const handleBellClick = () => {
     setShowNotificationPanel((prev) => !prev);
   };
 
-  // Handle logout
   const handleLogout = () => {
-    // Clear user session or authentication token
     localStorage.removeItem('authToken'); // Adjust this as needed
     window.location.href = '/login'; // Adjust this route as needed
   };
 
-  // Dismiss notification
   const handleDismissNotification = (id) => {
     setNotifications((prev) =>
       prev.filter((notification) => notification.id !== id)
     );
   };
 
-  // Determine icon color based on theme
   const iconColorClass = theme === "dark" ? "text-white" : "text-black";
 
   return (
@@ -86,9 +79,9 @@ export default function Nav({ toggleTheme, theme }) {
             } hover:opacity-65`}
           />
           {notifications.length > 0 && (
-            <p className="bg-red-600 text-sm absolute top-0 -right-2 text-white rounded-full">
+            <div className="absolute top-0 right-0 flex items-center justify-center w-5 h-5 bg-red-600 text-white text-xs rounded-full">
               {notifications.length}
-            </p>
+            </div>
           )}
         </button>
         <button onClick={handleHelpClick}>
@@ -135,7 +128,6 @@ export default function Nav({ toggleTheme, theme }) {
         >
           <h3 className="font-semibold text-lg">Frequently Asked Questions</h3>
           <ul className="mt-2 list-disc list-inside pl-5">
-            {/* Add more questions as needed */}
             <li><strong>Question 1:</strong> How do you want to ask?</li>
             <li><strong>Question 2:</strong> Where can I find more information?</li>
             <li><strong>Question 3:</strong> Who should I contact for support?</li>
