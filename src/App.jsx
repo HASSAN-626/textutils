@@ -9,6 +9,7 @@ import Inbox from "./inbox";
 import C2oProfile from "./c2oProfile";
 import Chats from "./chats";
 import Ats from "./ats";
+import Cms from "./cms";
 function App() {
   const [ActiveComponent, setActiveComponent] = useState("dashboard");
   const [theme, setTheme] = useState("light"); // Default theme
