@@ -18,7 +18,7 @@ const Modal = ({ isVisible, onClose, children }) => {
     switch (activeTab) {
       case "profile":
         return <div>{children}</div>;
-      case "details":s
+      case "details":
         return (
           <div>
             <Details />
